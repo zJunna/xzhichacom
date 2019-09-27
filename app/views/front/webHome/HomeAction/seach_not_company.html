@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="/HRzhicha/public/stylesheets/webcss/reset.css">
+	<link rel="stylesheet" href="/HRzhicha/public/stylesheets/webcss/home.css">
+	<link rel="stylesheet" href="/HRzhicha/public/stylesheets/webcss/bootstrap.min.css">
+	<link rel="stylesheet" href="/HRzhicha/public/stylesheets/webcss/footer.css">
+	<link rel="stylesheet" href="/HRzhicha/public/stylesheets/webcss/seach_not_person.css">
+	<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/webcss/header.css"/>
+	<script src="/HRzhicha/public/javascripts/webjs/jquery-1.11.1.min.js"></script>
+	<script src="/HRzhicha/public/javascripts/webjs/popper.min.js"></script>
+	<script src="/HRzhicha/public/javascripts/webjs/click.js"></script>
+	
+	
+	
+	<script src="/HRzhicha/public/javascripts/webjs/bootstrap.min.js"></script>
+	
+	<title>查企业</title>
+</head>
+<body>
+	<!-- header -->
+	<div class="head">
+		<div class="headCenter">
+			<div class="banner_top">
+				<h1><img src="/HRzhicha/public/images/webimg/x-logo1.png" alt=""></h1>  
+				<ul>
+					<li>
+						<a href="index1.html">首页</a>
+					</li>
+					<li>
+						<a href="seach_personal.html">查个人</a>
+					</li>
+					<li>
+						<a href="seach_not_company1.html">查企业</a>
+					</li>
+					<li>
+						<a href="my_pay1.html">VIP服务</a>
+					</li>
+					<li>
+						<a href="my_center.html">用户中心</a>
+					</li>
+
+					<li>
+						<a href="about.html">关于我们</a>
+					</li>
+
+				</ul>
+				<div class="btn">
+					<a href="" class="f" id="login">登录</a>
+					<a href="" class="fr" id="register">注册</a>
+				</div> 
+			</div>
+		</div>
+	</div>
+	<!-- header-end -->
+	<!-- 搜索企业名称 -->
+	<div class="searchBox">
+		<!-- input框 -->
+		<div class="searchName">
+			<div class="inputBox">
+				<input class="placeCompony" style="color: #999999;font-size:20px; padding-left:40px;" type="text" placeholder="请输入企业公司名称" name="" id="">
+				<input class="submit" type="submit" name="webSearch" id="webSearch" value="查询" />
+			</div>
+		</div>
+		<!-- 下拉选择框 -->
+		<div class="selectBox">
+			<div class="dropdown">
+				<button type="button" id="btn btn-primary" class="btn dropdown-toggle btnClick" data-toggle="dropdown">
+					不限区域
+				</button>
+				<div class="dropdown-menu" style="margin-top: 12px">
+					<a class="dropdown-item" href="#">不限区域</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">A 安徽</a>
+					<a class="dropdown-item" href="#">B 北京</a>
+					<a class="dropdown-item" href="#">C 重庆</a>
+					<a class="dropdown-item" href="#">F 福建</a>
+					<a class="dropdown-item" href="#">G 广东  广西  贵州  甘肃</a>
+					<a class="dropdown-item" href="#">H海南 河北 河南 湖北 湖南 黑龙江</a>
+					<a class="dropdown-item" href="#">J 江苏  江西  吉林</a>
+					<a class="dropdown-item" href="#">L 辽宁</a>
+					<a class="dropdown-item" href="#">N 内蒙古  宁夏</a>
+					<a class="dropdown-item" href="#">Q 青海</a>
+					<a class="dropdown-item" href="#">S 上海  山东  山西  四川  陕西</a>
+					<a class="dropdown-item" href="#">T 天津</a>
+					<a class="dropdown-item" href="#">X 新疆  西藏</a>
+					<a class="dropdown-item" href="#">Y 云南</a>
+					<a class="dropdown-item" href="#">Z 浙江</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button type="button" id="btn btn-primary" class="btn dropdown-toggle btnClick" data-toggle="dropdown">
+					不限行业
+				</button>
+				<div class="dropdown-menu" style="margin-top: 12px" id="trade">
+					<a class="dropdown-item" href="#">不限行业</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">1. 电力、热力、燃气及水生产和供应业</a>
+					<a class="dropdown-item" href="#">2. 建筑业</a>
+					<a class="dropdown-item" href="#">3. 批发和零售业</a>
+					<a class="dropdown-item" href="#">4. 交通运输、仓储和邮政业</a>
+					<a class="dropdown-item" href="#">5. 农、林、牧、渔业</a>
+					<a class="dropdown-item" href="#">6. 采矿业</a>
+					<a class="dropdown-item" href="#">7. 制造业</a>
+					<a class="dropdown-item" href="#">8. 租赁和商务服务业</a>
+					<a class="dropdown-item" href="#">9. 科学研究和技术服务业</a>
+					<a class="dropdown-item" href="#">10. 水利、环境和公共设施管理业</a>
+					<a class="dropdown-item" href="#">11. 居民服务、修理和其他服务业</a>
+					<a class="dropdown-item" href="#">12. 住宿和餐饮业</a>
+					<a class="dropdown-item" href="#">13. 信息传输、软件和信息技术服务业</a>
+					<a class="dropdown-item" href="#">14. 金融业</a>
+					<a class="dropdown-item" href="#">15. 房地产业</a>
+					<a class="dropdown-item" href="#">16. 国际组织</a>
+					<a class="dropdown-item" href="#">17. 卫生和社会工作</a>
+					<a class="dropdown-item" href="#">18. 教育</a>
+					<a class="dropdown-item" href="#">19. 公共管理、社会保障和社会组织</a>
+					<a class="dropdown-item" href="#">20. 文化、体育和娱乐业</a>
+				</div>
+			</div>
+		</div>
+         <!-- 未查到个人信息 -->
+		<div class="company_notBox">
+            <p>未查到此公司信息！</p>
+            <div class="imgBox"><img class="notPersonimg" src="/HRzhicha/public/images/webimg/notInfor.png" alt=""></div>
+        </div>
+</div>
+	<!-- end -->
+	 <!-- 侧边栏 -->
+	 <div class="sidebar">
+		
+			<ul>
+				<li>
+					<a href="">
+						<img src="/HRzhicha/public/images/webimg/actnavbar_101.jpg" alt="" class="icc">
+						<p>在线客服</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="/HRzhicha/public/images/webimg/actnavbar_103.jpg" alt="" class="icc">
+						<p>APP下载</p>
+						<div style="left: -167px;">
+							<em>安卓系统下载</em><img style="width:89px;height:89px;" src="/HRzhicha/public/images/webimg/yingyongbao.png" alt="">
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="/HRzhicha/public/images/webimg/actnavbar_10.jpg" alt="" class="icc">
+						<p>微信服务</p>
+						<div style="left: -167px;display: none;">
+							<em>关注微信公众号</em><img style="width:89px;height:89px;" src="/HRzhicha/public/images/webimg/zhichaWX.jpg" alt="">
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div class="downs_box">
+				<img src="/HRzhicha/public/images/webimg/actnavbar_14.jpg" alt="">
+				<p>TOP</p>
+			</div>
+		</div>
+	<!-- 底部 -->
+    <div class="footer">
+            <div class="footer_mid">
+                <div class="footer_top clear">
+                    <div class="link_list">
+                        <p>关于淮安</p>
+                        <a href="">公司简介</a>
+                        <a href="">联系我们</a>
+                    </div>
+                    <div class="link_list">
+                        <p>产品服务</p>
+                        <a href="">服务协议</a>
+                        <a href="">隐私说明</a>
+                        <a href="">法律说明</a>
+                    </div>
+                    <div class="link_list">
+                        <p>帮助中心</p>
+                        <a href="">常见问题</a>
+                        <a href="">平台公告</a>
+                    </div>
+                    <div class="link_list">
+                        <p>下载中心</p>
+                        <a href="">安卓版本</a>
+                        <a href="">ios版本</a>
+                        <div class="code"><img style="width:89px;height:89px;" src="/HRzhicha/public/images/webimg/yingyongbao.png" alt=""></div>
+                    </div>
+                    <div class="link_list">
+                        <p>联系方式</p>
+                        <span>客服热线 （09:00 - 17:00）<br>400-6039-818</span>
+                        <span>客服邮箱<br>admin@xzhicha.com</span>
+                        <div class="icon_list">
+                            <a href=""><img src="/HRzhicha/public/images/webimg/icon_47.jpg" alt=""></a>
+                            <a href=""><img src="/HRzhicha/public/images/webimg/icon_49.jpg" alt=""></a>
+                            <a href=""><img src="/HRzhicha/public/images/webimg/icon_51.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom" style="margin-top: 40px;text-align: center;">
+                        <ul>
+                        <li><a href="">知识产权局</a></li>
+                        <li><a href="">中国商标网</a></li>
+                        <li><a href="">人行征信中心</a></li>
+                        <li><a href="">钱上钱</a></li>
+                        <li><a href="">国家版权局</a></li>
+                        <li><a href="">裁判文书网</a></li>
+                        <li><a href="">执行信息网</a></li>
+                        <li><a href="">工商查询网</a></li>
+                        <li><a href="">准安科技</a></li>
+                        <li><a href="">天眼查</a></li>
+                    </ul>
+                    <p>©2019 山东准安互联网科技有限公司 版权所有. <a href="" style="color:#B1B1C7;">鲁ICP备16009413号-1</a>       
+                    </p>
+                </div>
+            </div>
+    
+	</div>
+	<!-- 分页js文件 -->
+	<!-- <script src="./js/MyPage.js"></script> -->
+	<!-- <script type="text/javascript">
+		P.initMathod({
+	        params: {elemId: '#Page',total:'123'},
+	        requestFunction: function () {
+	           // P.config.total = parseInt(Math.random() * 10 + 85);//此处模拟总记录变化
+	
+	            //TODO ajax异步请求过程,异步获取到的数据总条数赋值给 P.config.total
+	            
+	            //列表渲染自行处理
+	            
+	            console.log(JSON.stringify(P.config));
+	        }
+		});
+		/* $(function(){
+			$(".pageIndex").html(pageIndex)
+		}) */
+	</script> -->
+	<!-- 分页js文件end -->
+</body>
+</html>

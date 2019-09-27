@@ -1,0 +1,705 @@
+.clear {
+	clear: both;
+}
+
+
+/*个用户我的点评页面*/
+
+.zjn_ul {}
+
+.zjn_ul li .zjn_com_title {
+	margin-bottom: 30px;
+}
+
+.zjn_ul li .zjn_com_title .zjn_com_title_logo {
+	width: 48px;
+	height: 48px;
+	background: rgba(226, 226, 255, 1);
+	border-radius: 5px;
+	margin-right: 12px;
+}
+
+.zjn_ul li .zjn_com_title .zjn_com_title_logo img {
+	width: 48px;
+	height: 48px;
+}
+
+.zjn_ul li .zjn_com_title .zjn_com_title_txt {}
+
+.zjn_ul li .zjn_com_title .zjn_com_title_txt h2 {
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(99, 97, 125, 1);
+	line-height: 24px;
+}
+
+.zjn_ul li .zjn_com_title .zjn_com_title_txt p {
+	font-size: 14px;
+	font-weight: 400;
+	color: rgba(196, 196, 207, 1);
+	line-height: 17px;
+	margin-top: 16px;
+}
+
+.zjn_ul li .zjn_com_txt {
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(102, 102, 102, 1);
+	line-height: 24px;
+}
+
+.zjn_ul li .zjn_com_time {
+	display: flex;
+	justify-content: space-between;
+	align-items: auto;
+	margin-top: 30px;
+	margin-bottom: 45px;
+}
+
+.zjn_ul li .zjn_com_time .titme {
+	font-size: 14px;
+	font-weight: 400;
+	color: rgba(154, 154, 154, 1);
+	line-height: 23px;
+}
+
+.zjn_ul li .zjn_com_time .zjn_read {
+	display: flex;
+	justify-content: space-between;
+	align-items: auto;
+}
+
+.zjn_ul li .zjn_com_time .zjn_read div {
+	font-size: 14px;
+	font-weight: 400;
+	color: rgba(154, 154, 154, 1);
+	line-height: 23px;
+}
+
+.zjn_ul li .zjn_com_time .zjn_read div span {
+	display: block;
+	float: left;
+	margin-left: 20px;
+}
+
+.zjn_ul li .zjn_com_time .zjn_read div span:nth-of-type(1) img {
+	width: 28px;
+	height: 22px
+}
+
+.zjn_ul li .zjn_com_time .zjn_read div span:nth-of-type(2) img {
+	width: 25px;
+	height: 24px
+}
+
+
+/*被执行人页面、失信信息页面、银行逾期页面、商标查询页面、网贷黑名单页面*/
+
+.zjn_executor_details_title {
+	width: 1200px;
+	margin: auto;
+}
+
+.zjn_executor_details_title_txt {
+	width: 242px;
+	height: 54px;
+	background: rgba(255, 255, 255, 1);
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	color: rgba(110, 60, 255, 1);
+	line-height: 54px;
+	text-align: center;
+	margin: 23px 0 20px 0;
+}
+
+.zjn_li_title_txt_num {
+	font-size: 15px;
+	font-weight: 400;
+	color: rgba(110, 60, 255, 1);
+	line-height: 16px;
+	margin-left: 8px;
+}
+
+
+/*关于我们的页面*/
+
+.zjn_about_fl_box {}
+
+.about_content .fr .qz_title {
+	font-weight: bold;
+}
+
+.about_content .fl .zjn_about_fl_box ul li {
+	height: 70px;
+	padding-left: 50px;
+	background-position: 255px center;
+}
+
+
+/*用户服务协议*/
+
+.zjn_user_areement {
+	overflow: hidden;
+	padding-top: 25px;
+}
+
+.zjn_user_areement p {
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(51, 51, 51, 1);
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+
+.zjn_user_areement h4 {
+	font-size: 16px;
+	font-weight: bold;
+	color: rgba(51, 51, 51, 1);
+	line-height: 24px;
+	margin-top: 30px;
+}
+
+.zjn_user_areement .zjn_user_areement_xx {
+	margin-top: 35px;
+}
+
+.zjn_user_areement .zjn_user_areement_xx p:nth-of-type(1) {
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(51, 51, 51, 1);
+	line-height: 24px;
+}
+
+.zjn_user_areement .zjn_user_areement_xx .zjn_user_areement_xy {
+	font-size: 14px;
+	font-weight: 400;
+	color: rgba(21, 194, 245, 1);
+	margin-top: 43px;
+}
+
+.zjn_user_areement .zjn_user_areement_xx .zjn_user_areement_xy_btn {
+	width: 180px;
+	height: 40px;
+	background: rgba(110, 60, 255, 1);
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 1);
+	line-height: 40px;
+	text-align: center;
+	margin-top: 52px;
+}
+
+.zjn_user_areement .zjn_user_areement_xx .zjn_user_areement_xy_btn2 {
+	width: 150px;
+	height: 40px;
+	background: rgba(110, 60, 255, 1);
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 1);
+	line-height: 40px;
+	text-align: center;
+	margin-top: 52px;
+}
+
+.zjn_user_areement .zjn_user_areement_xx .zjn_user_areement_xy_btn21 {
+	width: 150px;
+	height: 40px;
+	border: 1px solid rgba(110, 60, 255, 1);
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 400;
+	color: rgba(110, 60, 255, 1);
+	line-height: 40px;
+	text-align: center;
+	margin-top: 52px;
+	margin-left: 20px;
+}
+
+.zjn_user_areement .zjn_user_areement_xx .zjn_user_areement_center {
+	text-align: center;
+	padding: 150px 0 200px 0;
+}
+
+
+/*注销账户中的短信验证样式*/
+
+.zjn_user_areement_verification .modal_content {
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.zjn_user_areement_verification .modal_content>div {
+	margin-bottom: 25px;
+}
+
+.zjn_user_areement_verification .modal_content>div:nth-of-type(1) {
+	margin-top: 30px;
+}
+
+.zjn_user_areement_verification label {
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(102, 102, 102, 1);
+	line-height: 40px;
+	margin-right: 30px;
+}
+
+.zjn_user_areement_verification .z_phone1 {
+	width: 290px;
+	height: 40px;
+	background: rgba(255, 255, 255, 1);
+	border: 1px solid rgba(221, 221, 221, 1);
+	border-radius: 5px;
+	display: block;
+	outline: none;
+	/*text-align: center;*/
+	padding-left: 20px;
+	font-size: 14px;
+	font-weight: 400;
+	color: rgba(51, 51, 51, 1);
+	line-height: 36px;
+}
+
+.zjn_user_areement_verification .code1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 290px;
+	height: 40px;
+	font-size: 16px;
+}
+
+.zjn_user_areement_verification .code2 {
+	width: 180px;
+	height: 40px;
+	background: rgba(255, 255, 255, 1);
+	border: 1px solid rgba(221, 221, 221, 1);
+	border-radius: 5px;
+	outline: none;
+	/*text-align: center;*/
+	padding-left: 20px;
+	font-size: 16px;
+}
+
+.zjn_user_areement_verification .btnSendCode1 {
+	width: 90px;
+	height: 40px;
+	border: 1px solid rgba(221, 221, 221, 1);
+	border-radius: 5px;
+	padding: 0 5px;
+	margin: 0;
+	font-size: 14px;
+	font-weight: 400;
+	color: rgba(110, 60, 255, 1);
+	line-height: 18px;
+}
+
+.zjn_user_areement_verification::-webkit-input-placeholder {
+	/* WebKit browsers */
+	font-size: 14px;
+	color: rgba(0, 0, 0, .4);
+}
+
+.zjn_user_areement_verification:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	font-size: 14px;
+	color: rgba(0, 0, 0, .4);
+}
+
+.zjn_user_areement_verification::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	font-size: 14px;
+	color: rgba(0, 0, 0, .4);
+}
+
+.zjn_user_areement_verification:-ms-input-placeholder {
+	/* Internet Explorer 10+ */
+	font-size: 14px;
+	color: rgba(0, 0, 0, .4);
+}
+
+.zjn_user_areement_verification .next {
+	/*text-align: center;*/
+	margin: 20px 0;
+}
+
+.zjn_user_areement_verification .next button {
+	width: 180px;
+	height: 40px;
+	background: rgba(110, 60, 255, 1);
+	border-radius: 5px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	font-size: 14px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 1);
+	line-height: 18px;
+}
+
+.zjn_user_areement_verification .z_phone1_fl {
+	float: left;
+}
+
+
+/*注销账户中的短信验证样式*/
+
+
+/*信用行为风险测评*/
+
+.risk_assessment_box {
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.risk_assessment_box .risk_assessment_text {
+	width: 1200px;
+	height: auto;
+	background: rgba(255, 255, 255, 1);
+	border-radius: 20px;
+	margin: auto;
+	padding: 60px 70px;
+}
+
+.risk_assessment_box .risk_assessment_text h5 {
+	font-size: 26px;
+	font-weight: bold;
+	color: rgba(116, 69, 255, 1);
+	line-height: 36px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.risk_assessment_box .risk_assessment_text .navbar p {
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(51, 51, 51, 1);
+	line-height: 46px;
+}
+
+.risk_assessment_box .risk_assessment_text ul li {
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(51, 51, 51, 1);
+	line-height: 36px;
+}
+
+.risk_assessment_box .risk_assessment_text ul li span {
+	display: block;
+	float: left;
+}
+
+.risk_assessment_box .risk_assessment_text ul li .checkbox {
+	width: 20px;
+	height: 20px;
+	border: 1px solid rgba(199, 199, 199, 1);
+	border-radius: 50%;
+	margin-top: 8px;
+	margin-left: 30px;
+	margin-right: 22px;
+}
+
+.risk_assessment_box .risk_assessment_text ul li.on {
+	/*color: #6E3CFF;*/
+	font-weight: 500;
+	background-image: url(/HRzhicha/public/images/webimg/re.png);
+	background-repeat: no-repeat;
+	background-size: 19px 19px;
+	background-position: 31px 9px;
+}
+.risk_assessment_box .risk_assessment_text ul li.on .checkbox{
+	border: none;
+}
+.risk_assessment_box .risk_assessment_text .risk_assessment_text_btn {
+	width: 262px;
+	height: 48px;
+	background: rgba(110, 60, 255, 1);
+	border-radius: 20px;
+	font-size: 22px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 1);
+	line-height: 48px;
+	text-align: center;
+	margin: 80px auto;
+}
+
+
+/*信用管理页面*/
+
+.credit_management {
+	width: 1200px;
+	margin: auto;
+	background: #FFFFFF;
+	border-radius: 20px;
+	padding: 60px 100px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	min-height: 680px;
+}
+
+.credit_management h2 {
+	font-size: 26px;
+	font-weight: 400;
+	color: rgba(51, 51, 51, 1);
+	line-height: 26px;
+	text-align: center;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #EAEAEA;
+}
+
+.credit_management .credit_management_right {
+	width: 572px;
+	height: 300px;
+	background: rgba(248, 248, 255, 1);
+	border-radius: 10px;
+	margin-left: 25px;
+	margin-top: 120px;
+	padding: 40px;
+}
+
+.credit_management .credit_management_right .boost {
+	margin-bottom: 20px;
+}
+
+.credit_management .credit_management_right .boost_l {
+	width: 6px;
+	height: 20px;
+	background: rgba(239, 201, 128, 1);
+	border-radius: 3px;
+}
+
+.credit_management .credit_management_right .boost_txt {
+	font-size: 20px;
+	font-weight: 500;
+	color: rgba(51, 51, 51, 1);
+	line-height: 20px;
+	margin-left: 20px;
+}
+
+.credit_management .credit_management_right ul li {
+	margin-top: 30px;
+}
+
+.credit_management .credit_management_right ul li span {
+	display: block;
+}
+
+.credit_management .credit_management_right ul li span:nth-of-type(1) {
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(102, 102, 102, 1);
+	line-height: 20px;
+}
+
+.credit_management .credit_management_right ul li span:nth-of-type(2) {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.credit_management .credit_management_right ul li .c3b {
+	color: #CD783B!important;
+}
+
+.credit_management .credit_management_right ul li .c99 {
+	color: #999999;
+}
+
+
+/*信用评估页面*/
+
+.credit_evaluation {
+	margin-top: 50px;
+}
+
+.credit_evaluation_l {
+	/*width: 30%;*/
+}
+
+.credit_evaluation_cen {
+	/*	width: 30%;*/
+	margin-top: 38px;
+	margin-left: 50px;
+}
+
+.credit_evaluation_cen h4 {
+	font-size: 28px;
+	font-weight: bold;
+	color: rgba(102, 102, 102, 1);
+	line-height: 30px;
+	margin-bottom: 23px;
+}
+
+.credit_evaluation_cen p {
+	font-size: 24px;
+	font-weight: 400;
+	color: rgba(102, 102, 102, 1);
+	line-height: 26px;
+}
+
+.credit_evaluation_r {
+	/*width: 30%;*/
+	margin-top: 38px;
+}
+
+.credit_evaluation_r .credit_evaluation_r_btn {
+	width: 200px;
+	height: 50px;
+	background: rgba(21, 194, 245, 1);
+	border-radius: 25px;
+	font-size: 20px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 1);
+	line-height: 50px;
+	text-align: center;
+	margin-bottom: 23px;
+}
+
+.credit_evaluation_r p {
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(102, 102, 102, 1);
+	line-height: 20px;
+	text-align: center;
+}
+
+
+/*评分完成时*/
+
+.credit_evaluation1_bot {}
+
+.credit_evaluation1_bot ul p {
+	padding: 17px 60px;
+	background: rgba(248, 248, 255, 1);
+	border-radius: 10px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(102, 102, 102, 1);
+	line-height: 26px;
+}
+
+.credit_evaluation1_bot ul p em {
+	color: #FC5E65;
+}
+
+.credit_evaluation1_bot ul li {
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(102, 102, 102, 1);
+	line-height: 26px;
+	padding: 15px 60px;
+	background: rgba(248, 248, 255, 1);
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.credit_evaluation1_bot ul li span {
+	display: block;
+}
+
+.credit_evaluation1_bot ul li span:nth-of-type(1) {
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(102, 102, 102, 1);
+	line-height: 26px;
+}
+
+.credit_evaluation1_bot ul li span img {
+	width: 30px;
+	height: 30px;
+}
+
+.credit_evaluation1_bot ul li .gr {
+	color: #0AC1A2;
+}
+
+.credit_evaluation1_bot ul li .bl {
+	color: #15C2F5;
+}
+
+.credit_evaluation1_bot ul li .dw {
+	color: #999999;
+}
+
+
+/*风险测评题页面的弹窗*/
+
+.risk_Pop_ups {
+	/*background: #000;
+	height: 100%;
+	width: 100%;
+	opacity: .2;
+	position: absolute;
+	top: 0;
+	left: 0;*/
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.1);
+	z-index: 9999999;
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.risk_Pop_ups .risk_Pop_ups_box {
+	/*	overflow: hidden;
+	width: 400px;
+	background: #fff;
+	border-radius: 6px;
+	position: relative;
+	padding: 40px;
+	margin:30% auto;
+	z-index: 999999999;*/
+	overflow: hidden;
+	padding: 40px;
+	box-sizing: border-box;
+	width: 400px;
+	background: rgba(255, 255, 255, 1);
+	border: 1px solid rgba(255, 255, 255, 0.05);
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+}
+
+.risk_Pop_ups .risk_Pop_ups_box p {
+	font-size: 20px;
+	font-weight: 400;
+	color: rgba(54, 54, 54, 1);
+	line-height: 34px;
+	text-align: center;
+}
+
+.risk_Pop_ups .risk_Pop_ups_btn {
+	width: 310px;
+	height: 40px;
+	background: rgba(110, 60, 255, 1);
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 1);
+	line-height: 40px;
+	text-align: center;
+	margin-top: 50PX;
+}
+
+
+/*关于我们页面*/
+
+.about_content .fr .about_fr_title {
+	background: none;
+	background: url(/HRzhicha/public/images/webimg/ab_img.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	/*background-position: 31px 9px;*/
+}

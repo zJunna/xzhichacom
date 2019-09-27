@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>X职查-职场信用共享查询平台</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="renderer" content="webkit">
+		<link rel="shortcut icon" type="image/png" href="@{'/HRzhicha/public/images/favicon.ico'}" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/xstyle.css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/swiper.min.css" />
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/jquery.1.9.1.js"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/js.js"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/swiper.min.js"></script>
+		<style type="text/css">
+			.up {
+				width: 100%;
+				height: 270px;
+				position: absolute;
+				display: none;
+				z-index: 999999999;
+				background: #fff;
+			}
+			
+			.mask {
+				width: 100%;
+				height: 100%;
+				background: #000;
+				opacity: 0.6;
+				top: 0;
+				filter: alpha(opacity=60);
+				left: 0;
+				display: none;
+				position: fixed;
+				z-index: 9999999;
+			}
+		</style>
+	</head>
+
+	<body class="ggg">
+		<div class="xhome">
+			<div class="xseach">
+				<div class="xseach_inp">
+					<input type="text" name="" id="" class="xInp" value="" placeholder="请输入股东高管" />
+					<img src="/HRzhicha/public/images/img/ss2.png" class="xsimg" />
+					<img src="/HRzhicha/public/images/img/xx.png" class="xsimg2" style="display: none;" />
+				</div>
+
+				<div class="clear"></div>
+			</div>
+			<div class="xhome_content">
+				<div class="xnav">
+					<ul>
+						<li>
+							<a href="xEducation.html">
+								<img src="/HRzhicha/public/images/img/xed.png" class="" />
+								<p>学历验证</p>
+							</a>
+						</li>
+						<li>
+							<a href="xsocial_security.html">
+								<img src="/HRzhicha/public/images/img/xso_se.png" class="" />
+								<p>社保查询</p>
+							</a>
+						</li>
+						<li>
+							<a href="xbank_overdue.html">
+								<img src="/HRzhicha/public/images/img/xbank_ov.png" class="" />
+								<p>银行逾期</p>
+							</a>
+						</li>
+						<li>
+							<a href="xinvolved_information.html">
+								<img src="/HRzhicha/public/images/img/xinv_in.png" class="" />
+								<p>涉诉信息</p>
+							</a>
+						</li>
+						<li>
+							<a href="xonline_loan.html">
+								<img src="/HRzhicha/public/images/img/xbad_re.png" class="" />
+								<p>网贷黑名单</p>
+							</a>
+						</li>
+						<li>
+							<a href="xbad_record.html">
+								<img src="/HRzhicha/public/images/img/xbe_ex.png" class="" />
+								<p>不良记录</p>
+							</a>
+						</li>
+						<li>
+							<a href="xexecuted_person.html">
+								<img src="/HRzhicha/public/images/img/xon_lo.png" class="" />
+								<p>被执行人</p>
+							</a>
+						</li>
+						<li>
+							<a href="xuntrustworthy_person.html">
+								<img src="/HRzhicha/public/images/img/xun_pe.png" class="" />
+								<p>失信人</p>
+							</a>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+
+				<div class="xswiper" id="">
+					<div class="swiper-container swiper1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="/HRzhicha/public/images/img/xme_2x.png" /></div>
+							<div class="swiper-slide"><img src="/HRzhicha/public/images/img/xev1.png" /></div>
+							<div class="swiper-slide view" id="view">
+								<!--<img src="/HRzhicha/public/images/img/xme_21x.png" />-->
+								<!--<a href="####" onclick="showView('/HRzhicha/data/movie.mp4')"></a>-->
+								<video width="800" height="" src="../../../../../data/movie.mp4">
+									
+								</video>
+							</div>
+
+						</div>
+						<div class="swiper-pagination"></div>
+
+					</div>
+				</div>
+				<div class="xnews">
+					<div class="zhicha1">
+						<span>职查头条</span>
+						<img src="/HRzhicha/public/images/img/xsm_sp.png" />
+						<div class="clear"></div>
+					</div>
+					<div class="xnews_list">
+						<div class="swiper-container swiper2">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">1离职员工再入职一定会遇到的4个风险，千万要4个风险.</div>
+								<div class="swiper-slide">2离职员工再入职一定会遇到的4个风险，千万要...</div>
+								<div class="swiper-slide">3离职员工再入职一定会遇到的4个风险，千万要... </div>
+
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+			</div>
+			<div class="gray"></div>
+			<div class="xnext">
+				<div class="xcredit_service">
+					<div class="xcredit_service_txt">
+						<h2>信用服务</h2>
+					</div>
+					<div class="xcredit_service_img">
+						<div><img src="/HRzhicha/public/images/img/xcredit2.png" class="" /></div>
+						<div><img src="/HRzhicha/public/images/img/xcredit1.png" class="" /></div>
+						<div><img src="/HRzhicha/public/images/img/xcredit.png" class="" /></div>
+
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="xindustry_news">
+					<div class="xindustry_news_txt">
+						<h2>行业资讯</h2>
+					</div>
+
+					<div class="xnews_list">
+						<ul>
+							<a href="xjob_review_details.html">
+								<li>
+									<p class="title_p">《中国信用》杂志</p>
+
+									<div class="xnews_list_t">
+										<div class="xnews_list_txt">
+											<p>大连：在花园城市感受诚信之美大连：在花园城市感受诚信之美大连：在花园城市感受诚信之美 </p>
+											<span class="xnews_time">
+											2019-04-10
+										</span>
+										</div>
+										<div class="xnews_list_img">
+											<img src="/HRzhicha/public/images/img/trade1.png" class="" />
+										</div>
+										<div class="clear"></div>
+									</div>
+								</li>
+							</a>
+							<li>
+								<p class="title_p">中国金融信息网</p>
+
+								<div class="xnews_list_t">
+									<div class="xnews_list_txt">
+										<p> 匡乐成：以社会信用建设为抓手推动经济高质量发展</p>
+										<span class="xnews_time">
+											2019-03-10
+										</span>
+									</div>
+									<div class="xnews_list_img">
+										<img src="/HRzhicha/public/images/img/trade2.png" class="" />
+									</div>
+									<div class="clear"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div style="height: .98rem;"></div>
+			<footer>
+				<div>
+					<a href="@{front.home.HomeAction.home()}">
+						<img src="/HRzhicha/public/images/img/chageren.png" />
+						<p class="txtcloar">查个人</p>
+					</a>
+				</div>
+				<div>
+					<a href="@{front.home.HomeAction.home()}">
+						<img src="/HRzhicha/public/images/img/chaqiye1.png" />
+						<p >查企业</p>
+					</a>
+				</div>
+				<div>
+					<a href="@{front.home.UploadInformation.upload()}">
+						<img src="/HRzhicha/public/images/img/qudianping1.png" />
+						<p>去点评</p>
+					</a>
+				</div>
+				<div>
+					<a href="@{front.account.AccountHome.home()}" id="home">
+						<img src="/HRzhicha/public/images/img/wode1.png" />
+						<p>我的</p>
+					</a>
+				</div>
+			</footer>
+
+
+			<div class="xhome_circle">
+				去查询
+			</div>
+
+			<div class="seach_pop" id="seach_pop" style="display: none;">
+
+				<div class="seach_pop_c" id="seach_pop_c">
+					<h3>查询个人</h3>
+
+					<div class="xname xname1">
+						<input type="text" name="" id="" placeholder="请输入姓名" />
+						<img src="/HRzhicha/public/images/img/ss.png" class="xname_img" />
+					</div>
+					<div class="clear"></div>
+
+					<div class="xname xname2">
+						<input type="text" name="" id="" placeholder="请输入身份证号" />
+						<img src="/HRzhicha/public/images/img/ss.png" class="xname_img" />
+					</div>
+					<div class="clear"></div>
+
+					<div class="xseach_btn">
+						查询
+					</div>
+				</div>
+				<div class="xdel_img">
+					<img src="/HRzhicha/public/images/img/xx2.png" class="" />
+				</div>
+			</div>
+
+			<!--<div class="protocol_appeal"  style="background: #4C4C4C;display:none!important ;">
+				<div class="video_up" style="width: 100%; height: 300;">
+				<div class="">
+					<video  width="100%" height="" controls autoplay preload src = "../../../../../data/xuanchuanpian.mp4"></video>
+				</div>
+			</div>
+			</div>-->
+	
+			<script type="text/javascript">
+				//两种方式实现div居中：1：用css方式：top：50%，left：50%； margin-let:-divwidth/2 margin-top:divheight/2; 2:用js实现：获取窗口的高宽，top=（屏幕高-div高）/2,为了随时的监听浏览器的改变，需要用到浏览器事件
+				function getScrollTop() {
+					var scrollTop = 0;
+					if(document.documentElement && document.documentElement.scrollTop) {
+						scrollTop = document.documentElement.scrollTop;
+					} else if(document.body) {
+						scrollTop = document.body.scrollTop;
+					}
+					return scrollTop;
+				}
+
+				function showView(PlaySrc) {
+					document.getElementById("open").onclick();
+					//设置数据源，播放器开始播放
+					var mediaImageObj = document.getElementById("mediaImage");
+					mediaImageObj.src = PlaySrc;
+					mediaImageObj.play();
+
+					return false;
+				}
+
+				window.onload = function() {
+					function $(id) {
+						return document.getElementById(id);
+					}
+					//将div的位置封装在一个函数内部，直接调用
+
+					function myDiv() {
+						var mTop = getScrollTop();
+
+						var windowsHeight = window.innerHeight;
+						var addHeight = (windowsHeight - 300) / 2;
+
+						var windowsHeight = window.innerWidth;
+						var addWidth = (windowsHeight - 750) / 2;
+
+						mTop = mTop + addHeight;
+						var mleft = (document.documentElement.clientWidth - 400) / 2;
+						$("up").style.top = mTop + "px";
+						/*$("up").style.left = addWidth + "px";*/
+					}
+
+					$("open").onclick = function() {
+						myDiv();
+						$("up").style.display = "block";
+						mask.style.display = "block";
+
+					}
+					$("close").onclick = function() {
+						$("up").style.display = "none";
+						mask.style.display = "none"
+						//播放器停止播放
+						var mediaImageObj = document.getElementById("mediaImage");
+						mediaImageObj.pause();
+
+					}
+					//创建一个DIV
+					var mask = document.createElement("div");
+					// //给这个DIV一个id和class属性
+					// mask.id="mask";
+					mask.className = "mask";
+					mask.style.width = document.documentElement.clientWidth;
+					mask.style.height = document.documentElement.clientHeight;
+					//将这个DIV放置到body里面--》一般是：父节点.appendChild(子节点)
+					//这里注意的是absolute，要设置top和left；
+					document.body.appendChild(mask);
+
+					//屏幕改变大小的时候，div不会自动的改变，需要添加窗口改变事件
+					window.onresize = function() {
+						myDiv();
+						mask.style.width = document.documentElement.clientWidth;
+						mask.style.height = document.documentElement.clientHeight;
+					}
+				}
+				
+			</script>
+			<span id="open"></span>
+
+			<div class="up" id="up">
+
+				<div style="float: right; padding-right: 10px;">
+					<img id="close" src="/HRzhicha/public/images/img/closesa_03.jpg" onclick="divClose()" />
+				</div>
+				<section id="player">
+					<!--<video id="mediaImage" class="video-i" width="372" controls poster tabindex="2" mediatype="video" preload="auto" webkit-playsinline="true" playsinline="true" >
+						<source id="mediaMp4" />
+
+					</video>-->
+					<video  id="mediaImage" src="" width="300" height="" controls="controls"> </video>
+				</section>
+			</div>
+			<!-- 视频展示结束 -->
+			<script type="text/javascript">
+				/*$("#view").click(function() {
+							$('.protocol_appeal').css('display','flex');
+							})*/
+			</script>
+			<script type="text/javascript">
+				$(".xseach_inp .xInp").click(function() {
+					$('.xsimg2').css('display', 'block');
+				})
+				$(".xhome_circle").click(function() {
+					$('.seach_pop').css('display', 'flex');
+					$('.xhome_circle').css('display', 'none');
+					$('#seach_pop_c').css('display', 'block');
+				})
+				$(".xdel_img").click(function() {
+					$('.seach_pop').css('display', 'none');
+					$('.xhome_circle').css('display', 'block');
+
+				})
+				$('.seach_pop').bind('click', function(e) {
+					var e = e || window.event; //浏览器兼容性 
+					var elem = e.target || e.srcElement;
+					while(elem) { //循环判断至跟节点，防止点击的是div子元素 
+						if(elem.id && elem.id == 'seach_pop_c') {
+							return;
+						}
+						elem = elem.parentNode;
+					}
+					$('#seach_pop_c').css('display', 'none'); //点击的不是div或其子元素 
+					$('.seach_pop').css('display', 'none');
+					$('.xhome_circle').css('display', 'block');
+					$('#seach_pop_c').css('display', 'block');
+				});
+			</script>
+
+			<!--<script type="text/javascript">
+				$(window).scroll(function() {
+					var hei = $(document).scrollTop()
+					if(hei >= 10) {
+
+						$('.xseach').css({
+							'position': 'fixed',
+							
+							'background': '#ffffff',
+							'box-shadow': '0px 4px 17px 3px rgba(234, 234, 234, 0.35)',
+							'z-index': '99999999999999',
+
+						})
+					} else {
+						$('.xseach').css({
+							'position': 'static',
+							
+							'background': '#ffffff',
+							'box-shadow': 'none',
+							'z-index': '99999999999999',
+
+						})
+
+					}
+				});
+			</script>
+-->
+
+			<script type="text/javascript">
+				var mySwiper = new Swiper('.swiper1', {
+					loop: true,
+					pagination: {
+						el: '.swiper-pagination',
+					},
+//					autoplay: {
+//						delay: 3000, //3秒切换一次
+//					}
+
+				})
+				var swiper = new Swiper('.swiper2', {
+					direction: 'vertical',
+
+					loop: true,
+					autoplay: {
+						delay: 2000, //2秒切换一次
+					}
+				});
+			</script>
+	</body>
+
+</html>

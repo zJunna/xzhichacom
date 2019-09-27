@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>信用管理</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="shortcut icon" type="image/png" href="@{' /HRzhicha/public/images/favicon.ico'}" />
+		<link rel="stylesheet" type="text/css" href=" /HRzhicha/public/stylesheets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href=" /HRzhicha/public/stylesheets/css/style.css" />
+		<link rel="stylesheet" type="text/css" href=" /HRzhicha/public/stylesheets/css/xstyle.css" />
+		<script type="text/javascript" src=" /HRzhicha/public/javascripts/js/jquery.1.9.1.js"></script>
+		<script type="text/javascript" src=" /HRzhicha/public/javascripts/js/js.js"></script>
+		<script type="text/javascript" src=" /HRzhicha/public/javascripts/js/xcreditManagement.js"></script>
+		<style>
+			canvas {
+				width: 100%;
+				/* border: 1px solid red;*/
+				position: relative;
+				margin-top: .3rem;
+				z-index: 9999999;
+				/*color: red;*/
+				-webkit-font-smoothing:none
+				/*left: 50%;
+				  top: 50%;
+				transform: translate(-50%, -50%);*/
+               /* background: -webkit-linear-gradient(top, #0e83f5 0%, #21bdf6 100%);
+                background: -ms-linear-gradient(top, #0e83f5 0%, #21bdf6 100%);
+                background: -moz-linear-gradient(top, #0e83f5 0%, #21bdf6 100%);
+                background: linear-gradient(top, #0e83f5 0%, #21bdf6 100%);
+           */
+			}
+		</style>
+	</head>
+
+	<body class="ggg">
+		<div class="pay_tits1" style="background: none;">
+			<img src="/HRzhicha/public/images/img/fhl.png" onclick="javascript:history.back(-1);" />
+			<p class="txtl" style="color: #FFFFFF;">信用管理</p>
+		</div>
+		<div class="xcreditManagement">
+
+			<div class="credit_management">
+				<div class="credit_pad" style="">
+					<!--<img src="/HRzhicha/public/images/img/credit2.png" />-->
+					<canvas id="canvas" width="700" height="700" data-score='96'></canvas>
+				</div>
+
+			</div>
+
+			<div class="credit_privilege">
+
+				<div class="privilege_img fl">
+					<img src="/HRzhicha/public/images/img/credit4.png" />
+
+				</div>
+
+				<div class="privilege_text fl">
+					<h6>信用特权</h6>
+					<p>信用越好权益越多，科学准确提升分数！</p>
+				</div>
+
+				<div class="clear"></div>
+
+			</div>
+
+			<div class="boost">
+				<div class="boost_l fl"></div>
+
+				<div class="boost_txt fl">提升信用</div>
+
+				<div class="clear"></div>
+			</div>
+
+			<div class="boost_list">
+				<ul>
+					<li>
+						<span class="boost_list_txt fl">个人信用</span>
+						<img src="/HRzhicha/public/images/img/center_36.jpg" class="fr" />
+						<span class="boost_list_txt2 dw fr">去查询</span>
+						<div class="clear"></div>
+					</li>
+					<li>
+						<span class="boost_list_txt fl">企业信用</span>
+						<img src="/HRzhicha/public/images/img/center_36.jpg" class="fr" />
+						<span class="boost_list_txt2 fr dw">去查询</span>
+						<div class="clear"></div>
+					</li>
+					<li>
+						<span class="boost_list_txt fl">行为风险测评</span>
+						<img src="/HRzhicha/public/images/img/center_36.jpg" class="fr" />
+						<span class="boost_list_txt2 fr yw">已完成</span>
+						<div class="clear"></div>
+					</li>
+					<li>
+						<span class="boost_list_txt fl">信用评估</span>
+						<img src="/HRzhicha/public/images/img/center_36.jpg" class="fr" />
+						<span class="boost_list_txt2 fr dw">待完成</span>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+	</body>
+	<script type="text/javascript">
+	</script>
+
+</html>

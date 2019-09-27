@@ -1,0 +1,244 @@
+.hqs{
+	float: left;
+    overflow: hidden;
+    width: 90px;
+    height: 40px;
+    border-radius: 6px;
+    background: #6E3CFF;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.hqs:hover{
+	#ffffff;
+}
+
+
+/* 解决按钮点击出现蓝色边框的问题 */
+
+button {
+	outline: none;
+}
+
+.person_notBox,
+.company_notBox {
+	width: 1200px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.person_notBox {
+	margin: 160px auto 230px;
+}
+
+.company_notBox {
+	margin: 75px auto 230px;
+	    min-height: 800px;
+}
+
+.imgBox {
+	width: 314px;
+}
+
+.notPersonimg {
+	width: 100%;
+	margin-top: 42px;
+}
+
+
+/*被执行人信息*/
+
+.backBox {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -285px;
+	margin-top: -390px;
+	width: 570px;
+	height: 780px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.05);
+}
+
+.backBox .personIf {
+	width: 370px;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0 auto;
+}
+
+.backBox .personIf h4 {
+	font-size: 48px;
+	color: #363636;
+	font-weight: 400;
+	vertical-align: middle;
+	margin: 89px 0 0;
+}
+
+.backBox .personIf .placeSeach {
+	font-size: 24px;
+	color: #666;
+	margin-bottom: 59px;
+}
+
+.backBox .personIf input {
+	width: 370px;
+	height: 60px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background: rgba(251, 251, 251, 0.5);
+	border-radius: 10px;
+	color: #999;
+	font-size: 16px;
+	margin-bottom: 30px;
+	padding-left: 24px;
+	box-shadow: 0 0 0px 1000px #fbfbfb inset;
+}
+
+.backBox .seachBtn {
+	width: 370px;
+	height: 60px;
+	background: #6E3CFF;
+	border-radius: 15px;
+	font-size: 18px;
+	color: #fff;
+	border: 0;
+	font-weight: bold;
+	cursor: pointer;
+}
+.backBox .seachBtn12 {
+	width: 370px;
+	height: 60px;
+	background: #fff;
+	border-radius: 15px;
+	font-size: 18px;
+	color: #6E3CFF;
+	border: 0;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.srSeach {
+	margin-top: 28px;
+	color: #363636;
+	font-size: 14px;
+}
+
+.helpUser {
+	margin-top: 52px;
+	color: #363636;
+	font-size: 14px;
+}
+
+.srError {
+	margin: 12px auto 0;
+	font-size: 14px;
+	color: #FF0101;
+}
+
+.srWrongImg {
+	width: 18px;
+	position: absolute;
+	top: 20px;
+	right: 24px;
+	/* display: none; */
+}
+
+
+/* 多重选择   切换账户*/
+
+.backBox .personIf .mulBoxImg {
+	width: 370px;
+	height: 230px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.backBox .personIf .mulBoxImg .srComponySwitch {
+	width:100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.pla {
+	margin-top: 40px;
+}
+
+.mulP {
+	margin: 29px 0 46px;
+}
+
+.srSwitch {
+	margin: 29px 0 64px;
+}
+
+.srCompany {
+	margin-top: 50px;
+}
+
+.srPerson {
+	margin-top: 40px;
+}
+
+/*#return {
+	border: 2px solid #6E3CFF;
+	background: #fff;
+	color: #6E3CFF;
+	font-size: 18px;
+}*/
+.backBox .seachBtn12{
+	border: 2px solid #6E3CFF;
+	/*background: #fff;
+	color: #6E3CFF;
+	font-size: 18px;*/
+	}
+
+.verticalAlign {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+/* 被执行人 */
+
+.inventory_person {
+	width: 242px;
+	height: 54px;
+	text-align: center;
+	border-radius: 10px;
+	background: #fff;
+	color: #6E3CFF;
+	font-size: 16px;
+	line-height: 54px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+#darkDetail {
+	font-size: 14px;
+	color: #000;
+	margin-left: 10px;
+	cursor: pointer;
+}
+#darkDetail {
+	font-size: 14px;
+	color: #6E3CFF;
+	margin-left: 10px;
+	cursor: pointer;
+}
+#darkDetail_detail{
+	font-size: 16px;
+	color: #000;
+	margin-left: 10px;
+	cursor: pointer;
+	line-height: 18px;
+}

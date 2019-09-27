@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>信用管理</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="shortcut icon" type="image/png" href="@{' /HRzhicha/public/images/favicon.ico'}" />
+		<link rel="stylesheet" type="text/css" href=" /HRzhicha/public/stylesheets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href=" /HRzhicha/public/stylesheets/css/style.css" />
+		<link rel="stylesheet" type="text/css" href=" /HRzhicha/public/stylesheets/css/xstyle.css" />
+		<link rel="stylesheet" type="text/css" href=" /HRzhicha/public/stylesheets/css/dial.css" />
+		<script type="text/javascript" src=" /HRzhicha/public/javascripts/js/jquery.1.9.1.js"></script>
+		<script type="text/javascript" src=" /HRzhicha/public/javascripts/js/js.js"></script>
+
+	</head>
+
+	<body class="ggg">
+		<div class="pay_tits1" style="background: none;">
+			<img src="/HRzhicha/public/images/img/fhl.png" onclick="javascript:history.back(-1);" />
+			<p class="txtl" style="color: #FFFFFF;">信用管理</p>
+		</div>
+		<div class="xcreditManagement">
+
+			<div class="credit_management">
+				<div class="credit_pad" style="overflow: hidden;">
+					<!--	<img src="/HRzhicha/public/images/img/credit2.png" />-->
+
+					<div id="container">
+						<div id="clockBoard" style="background: none;">
+							<canvas id="clock" width="550px" height="560px"></canvas>
+							<canvas id="pointer" width="550px" height="460px"></canvas>
+							<!--<input type="text" id="value" placeholder="你想得到的值">
+							<button id="run">Run</button>-->
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="credit_privilege">
+
+				<div class="privilege_img fl">
+					<img src="/HRzhicha/public/images/img/credit4.png" />
+
+				</div>
+
+				<div class="privilege_text fl">
+					<h6>信用特权</h6>
+					<p>信用越好权益越多，科学准确提升分数！</p>
+				</div>
+
+				<div class="clear"></div>
+
+			</div>
+
+			<div class="boost">
+				<div class="boost_l fl"></div>
+
+				<div class="boost_txt fl">提升信用</div>
+
+				<div class="clear"></div>
+			</div>
+
+			<div class="boost_list">
+				<ul>
+					<li>
+						<span class="boost_list_txt fl">个人信用</span>
+						<img src="/HRzhicha/public/images/img/center_36.jpg" class="fr" />
+						<span class="boost_list_txt2 dw fr">去查询</span>
+						<div class="clear"></div>
+					</li>
+					<li>
+						<span class="boost_list_txt fl">企业信用</span>
+						<img src="/HRzhicha/public/images/img/center_36.jpg" class="fr" />
+						<span class="boost_list_txt2 fr dw">去查询</span>
+						<div class="clear"></div>
+					</li>
+					<li>
+						<span class="boost_list_txt fl">行为风险测评</span>
+						<img src="/HRzhicha/public/images/img/center_36.jpg" class="fr" />
+						<span class="boost_list_txt2 fr yw">已完成</span>
+						<div class="clear"></div>
+					</li>
+					<li>
+						<span class="boost_list_txt fl">信用评估</span>
+						<img src="/HRzhicha/public/images/img/center_36.jpg" class="fr" />
+						<span class="boost_list_txt2 fr dw">待完成</span>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<script type="text/javascript">
+			window.onload = function() {
+				var canvas = document.getElementById('clock');
+				var ctx = canvas.getContext('2d');
+				// 绘制外环
+				ctx.beginPath();
+				//左右距离      上下距离       外圈大小    左右弧度的大小 
+				ctx.arc(185, 200, 120, 30 / 180 * Math.PI, 150 / 180 * Math.PI, true);
+				ctx.strokeStyle = '#F4F4F4'; //大圈的颜色 
+				ctx.lineWidth = '3'; //大圈的宽度/
+				ctx.stroke();
+				ctx.closePath();
+				// 绘制内环
+				ctx.beginPath();
+				ctx.arc(185, 200, 100, 30 / 180 * Math.PI, 150 / 180 * Math.PI, true);
+				ctx.strokeStyle = '#F4F4F4'; //内圈的颜色 
+				ctx.lineWidth = '12'; //内圈的宽度 
+				ctx.stroke();
+				ctx.closePath();
+				ctx.translate(185, 200); //刻度的位置/
+
+				// 绘制刻度
+				var total = [0, '一般', 60, '中等', 70, '良好', 80, '优秀', 90, '极好', 100];
+				/*for(var i = 0; i < 17; i++) {
+					if(i % 6 === 3) {
+						ctx.beginPath();
+						ctx.lineWidth = '2';//整数的刻度宽度
+						ctx.strokeStyle = 'red';//大刻度的刻度颜色
+						ctx.moveTo(144 * Math.sin(7.5 * i / 180 * Math.PI), -144 * Math.cos(7.5 * i / 180 * Math.PI));
+						ctx.lineTo(156 * Math.sin(7.5 * i / 180 * Math.PI), -156 * Math.cos(7.5 * i / 180 * Math.PI));
+						ctx.moveTo(-144 * Math.sin(7.5 * i / 180 * Math.PI), -144 * Math.cos(7.5 * i / 180 * Math.PI));
+						ctx.lineTo(-156 * Math.sin(7.5 * i / 180 * Math.PI), -156 * Math.cos(7.5 * i / 180 * Math.PI));
+						ctx.stroke();
+						ctx.closePath();
+					} else {
+						ctx.beginPath();
+						ctx.lineWidth = '1';
+						ctx.strokeStyle = '#8dc9f8';//小刻度的颜色
+						ctx.moveTo(150 * Math.sin(7.5 * i / 180 * Math.PI), -150 * Math.cos(7.5 * i / 180 * Math.PI));
+						ctx.lineTo(156 * Math.sin(7.5 * i / 180 * Math.PI), -156 * Math.cos(7.5 * i / 180 * Math.PI));
+						ctx.moveTo(-150 * Math.sin(7.5 * i / 180 * Math.PI), -150 * Math.cos(7.5 * i / 180 * Math.PI));
+						ctx.lineTo(-156 * Math.sin(7.5 * i / 180 * Math.PI), -156 * Math.cos(7.5 * i / 180 * Math.PI));
+						ctx.stroke();
+						ctx.closePath();
+					}
+				}*/
+				// 绘制文本
+				ctx.font = '';
+				ctx.fillStyle = '#8dc9f8';
+				ctx.textAlign = 'center';
+				ctx.textBaseline = 'top';
+				ctx.rotate((-7.5 * 15) / 180 * Math.PI); //刻度
+				for(var i = 0; i < 11; i++) {
+					ctx.fillStyle = i % 2 ? '#999999' : '#999999'; //中等的大小和数字的字体颜色/
+					ctx.fillText(total[i], 0, -85); //刻度的半径/
+					ctx.rotate((7.5 * 3) / 180 * Math.PI); //刻度
+				}
+				ctx.rotate(-7.5 * 18 / 180 * Math.PI);
+				ctx.fillStyle = '#666666'; //beta和时间字体的颜色/
+				ctx.font = '15px normal'; //beta的大小/
+				//ctx.fillText('BETA', 0, -55);//位置/ 
+				ctx.font = '14px normal'; //时间大小/
+				// 获取当前日期
+				var date = new Date();
+				var ymd = date.getFullYear() + '.' + (date.getMonth() + 1) + '.' + date.getDate();
+				ctx.fillText('评估时间 : ' + ymd, 0, 50);
+				ctx.font = '25px bold';
+
+				// 绘制动画需要重置幕布，所以重建一个canvas对象
+				var pointer = document.getElementById('pointer');
+				var ctxPoint = pointer.getContext('2d');
+
+				function run(inputValue) {
+					var timer;
+					var i = 0;
+					ctxPoint.translate(170, 175); //小球的位置/
+					ctxPoint.fillStyle = '#5FB878';
+					ctxPoint.strokeStyle = '#F59E15'; //小球/
+					// 设置最终的值
+					var finalValue = inputValue;
+					var value = 0;
+					// 根据值的大小确定应该到达的位置
+					if(finalValue < 60) {
+						value = (finalValue - 316.7) * 0.225;
+					} else if(finalValue < 70) {
+						value = (finalValue - 55) * 0.9 + 52.5;
+					} else {
+						value = finalValue > 100 ? 100 : finalValue;
+						value = (value - 70) * 0.18 + 187.5;
+					}
+					var evluate = '';
+					if(inputValue < 60) {
+						evluate = '较差'
+					} else if(inputValue < 70) {
+						evluate = '中等';
+					} else if(inputValue < 75) {
+						evluate = '良好';
+					} else if(inputValue < 95) {
+						evluate = '优秀';
+					} else {
+						evluate = '极好';
+					}
+					ctxPoint.font = '45px bold';
+					ctxPoint.textAlign = 'center';
+					ctxPoint.shadowColor = '#fff';
+					// 所有的动画事件
+					function slideValue() {
+						//小球的联系样式多少
+						ctxPoint.translate(-175, -270); //小球的运动轨迹
+						ctxPoint.clearRect(0, 0, pointer.width, pointer.height);
+						ctxPoint.translate(175, 270); //小球的运动轨迹 
+						i++;
+						// 绘制滚动元素 
+						ctxPoint.beginPath();
+						ctxPoint.shadowBlur = 10;
+						ctxPoint.arc(-100 * Math.sin((i + 60) / 180 * Math.PI), 90 * Math.cos((i + 60) / 180 * Math.PI), 5, 0, 2 * Math.PI, true);
+						ctxPoint.fillStyle = '#8dc9f8';
+						ctxPoint.fill();
+						ctxPoint.arc(-100 * Math.sin((i + 60) / 180 * Math.PI), 85 * Math.cos((i + 60) / 180 * Math.PI), 3, 0, 2 * Math.PI, true);
+						ctxPoint.fillStyle = '#EFC980';
+						ctxPoint.fill();
+						// 填充分数和评分
+						ctxPoint.font = '60px bold'; //评分是数字的大小
+						var text = 0;
+						if(i < 52.5) {
+							text = i / 0.225 + 316.7;
+						} else if(i < 187.5) {
+							text = (i - 52.5) / 0.9 + 550;
+						} else {
+							text = (i - 187.5) / 0.18 + 700;
+							text = text > 1000 ? 1000 : text;
+						}
+						text = text > inputValue ? inputValue : text;
+						ctxPoint.shadowBlur = 0;
+						ctxPoint.fillText(parseInt(text, 10), 8, 5); //数字位置 
+						ctxPoint.stroke();
+						ctxPoint.font = '25px bold';
+						ctxPoint.stroke();
+						ctxPoint.closePath();
+						// 如果到达所需要的弧度，则停止，否则继续跳动
+						if(i > value) {
+							setTimeout(function() {
+								ctxPoint.fillText('信用' + evluate, 10, 50); //信用位置 
+							}, 200);
+							clearTimeout(timer);
+						} else {
+							timer = setTimeout(slideValue, text / finalValue * 15);
+						}
+					}
+					slideValue();
+				}
+				// 打开页面时默认的跳动数字
+				run(90);
+				// 重新绘制的函数
+				var runBtn = document.getElementById('run');
+				var valueInput = document.getElementById('value');
+
+				function reRun() {
+					// 判断输入的内容是否合乎预期
+					if(isNaN(parseInt(valueInput.value), 10)) {
+						return 0;
+					}
+					ctxPoint.translate(-275, -330);
+					run(parseInt(valueInput.value, 10));
+				}
+				// 按钮事件，当点击时重新绘制
+				runBtn.onclick = reRun;
+				// 键盘事件，当输入数字回车后重新绘制
+				window.document.onkeydown = function(e) {
+					var e = e || window.event;
+					if(e.keyCode === 13) {
+						reRun();
+					}
+				}
+			}
+		</script>
+	</body>
+
+</html>

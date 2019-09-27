@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>注册</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="shortcut icon" type="image/png" href="@{'/HRzhicha/public/images/favicon.ico'}" />
+		<link rel="stylesheet" type="text/css" href="@{'/HRzhicha/public/stylesheets/css/reset.css'}" />
+		<link rel="stylesheet" type="text/css" href="@{'/HRzhicha/public/stylesheets/css/style.css'}" />
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/jquery.1.9.1.js" ></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/js.js"></script>
+	</head>
+    
+	<body>
+		<header>
+			<img src="/HRzhicha/public/images/img/land_icon_03.png"  onclick="javascript:history.back(-1);"/>
+			<a href="@{front.account.RegisterAndLogin.login()}">登录</a>
+		</header>
+		 <form action="@{front.account.RegisterAndLogin.passwordSet()}" method="post" id="form" > 
+		<div class="content" id="form1">
+			<h2>请输入您的手机号</h2>
+			<div class="box_inp">
+				<div class="lable">
+					<p>+86</p>
+					<input type="text" name="mobile" id="mobile" value="" placeholder="手机号" />
+				</div>
+			</div>
+			<div class="reg" style="padding: 0.1rem">
+			<div class="reg_lable">
+				<input type="text" placeholder="请输入验证码" id="yanzhengma" value="" name="yanzhengma"/>
+				<a href="#" class="hqs" id="codeTimes" onclick="sendCode();">获取验证码</a>
+			</div>
+		</div>
+			<div class="xiy">
+				<div id="checkbox"></div>
+				<p id="agreement">同意《X职查平台使用协议》</p>
+			</div>
+			<span id="errorInfo" style="color: #f85d7a; font-size:.26rem;position: absolute;top: 81%;left: 9%;">${flash?.error}</span>
+			<div class="btn" id="btn">
+				<a href="#" >下一步</a>
+			</div>
+		 </div>
+		
+		 </form> 
+		 <div class="pro_fade" style="display: none" id="divAgree">
+					<div class="fade_mid" style="height: 70%;width: 6.9rem;padding-top: 0.2rem;">
+							#{include "common/registerAgree.html"/}
+					</div>
+		</div>
+		<script>
+			$('.content .xiy').click(function() {
+				if($(this).children('div').hasClass('on')) {
+					$(this).children('div').removeClass('on');
+				} else {
+					$(this).children('div').addClass('on');
+				}
+			})
+			$('.content .box_inp .lable input').bind('input propertychange', function() {
+				if($(this).val() != '') {
+					$('.content .btn').addClass('on');
+				} else {
+					$('.content .btn').removeClass('on');
+				}
+			});
+		</script>
+		
+		<script type="text/javascript">
+		    
+		var remain = 60;
+		
+		function countDown() {
+		  if (remain == 0) {
+		    remain = 60;
+		    $("#codeTimes").html("点击发送");
+		    $("#codeTimes").attr("onclick", "sendCode();");
+		    return;
+		  }
+		  $("#codeTimes").html("" + remain-- + "秒后重发");
+		  setTimeout("countDown()",1000);
+		}
+			
+		function sendCode(){
+			
+			var mobile = $("#mobile").val();
+			if(mobile == ""){
+		   	 $("#errorInfo").html("请输入手机号码");
+					return false;
+		    }else if(!(/^1[34578]\d{9}$/.test(mobile))){ 
+		     $("#errorInfo").html("手机号码格式有误，请重新输入");
+		        return false; 
+		    }
+		     var verifyMobile = #{jsAction @verifyMobile(':mobile')/}
+			$.post(verifyMobile({mobile:mobile}),function(data){
+			    if(data.error.code < 0){
+				    $("#errorInfo").html(data.error.msg);
+				  /*  if(data.error.code==-2){
+				    location.href="@{front.account.RegisterAndLogin.login()}";
+				   } */
+			    }else{
+			    	$("#errorInfo").html("");
+					countDown();
+					$("#codeTimes").attr("onclick", "void(0);");
+				}
+			},'json');
+		    }
+  </script>
+  
+  <script type="text/javascript">
+  		$("#btn").click(function(){
+  		 if($("#mobile").val() == ''){
+			$("#errorInfo").html("请输入您的手机号"); 
+			return false;
+		 } 
+		 
+		 if($("#mobile").val()!=""){
+			    if(!(/^1[34578]\d{9}$/.test($("#mobile").val()))){
+				     $("#errorInfo").html("手机号码格式有误，请重新输入"); 
+				        return false; 
+				    }
+	    	}
+	    if($("#yanzhengma").val() == ''){
+			$("#errorInfo").html("请输入验证码"); 
+			return false;
+		 } 
+		 
+		if($("#checkbox").css("backgroundImage").replace('url(','').replace(')','')=="none"){
+  				$("#errorInfo").html("请仔细阅读X职查平台使用协议");
+  					return false;
+  			}
+		/* 
+		验证验证码
+		*/
+		var verifySmsCodeForReg = #{jsAction @verifySmsCodeForReg(':mobile',':smsCode')/}
+	  		$.post(verifySmsCodeForReg({mobile:$("#mobile").val().trim(),smsCode:$("#yanzhengma").val()}),function(data){
+			   if(data.code<0){
+		    	  $("#errorInfo").html(data.msg);
+			   }else{
+			   $("#errorInfo").html("");
+			 $("#form").submit(); 
+	  			 }
+  		});
+  	});	
+  	$("#agreement").click(function(){
+  	       $("#divAgree").css("display","flex");
+  	})
+  	$("#black").click(function(){
+  	       $("#divAgree").css("display","none");
+  	})
+  </script>
+</body>
+</html>

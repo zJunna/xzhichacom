@@ -1,0 +1,2451 @@
+/*底部导航*/
+
+footer {
+	height: 0.98rem;
+	border-top: 1px solid #cbcbcb;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	background: #fff;
+	bottom: 0;
+	left: 0;
+	z-index: 9999999;
+}
+
+footer div {
+	width: 25%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	float: left;
+	display: flex;
+}
+
+footer div img {
+	width: 0.49rem;
+	height: 0.48rem;
+	margin: auto;
+	margin-bottom: 0.08rem;
+}
+
+footer div p {
+	font-size: 0.18rem;
+	color: #383552;
+	text-align: center;
+}
+
+footer div .txtcloar {
+	color: #6E3CFF;
+}
+
+.clear {
+	clear: both;
+}
+
+.gray {
+	height: .2rem;
+	background: #F9F9F9;
+}
+
+
+/*悬浮按钮*/
+
+.xhome_circle {
+	width: 1rem;
+	height: 1rem;
+	background: rgba(110, 60, 255, 1);
+	box-shadow: 0 .06rem 0.11rem .01rem rgba(187, 187, 255, 1);
+	border-radius: 50%;
+	font-size: .22rem;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 1);
+	line-height: 1rem;
+	text-align: center;
+	position: fixed;
+	bottom: 1.4rem;
+	right: .3rem;
+}
+
+
+/*.ggg {
+	background: #FFFFFF;
+}*/
+
+
+/*搜索框弹窗*/
+
+.seach_pop {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 99999999999999999;
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.seach_pop .seach_pop_c {
+	width: 6.9rem;
+	box-sizing: border-box;
+	background: #fff;
+	border-radius: .2rem;
+	margin: 0 .3rem;
+	padding: 0 .3rem .5rem;
+	position: relative;
+	left: .5rem;
+}
+
+.seach_pop .seach_pop_c h3 {
+	font-size: .34rem;
+	font-weight: bold;
+	color: rgba(110, 60, 255, 1);
+	line-height: .44rem;
+	margin: .5rem 0 .5rem 0;
+	text-align: center;
+}
+
+.seach_pop .seach_pop_c .xname {
+	width: 100%;
+	height: .8rem;
+	float: left;
+	position: relative;
+}
+
+.seach_pop .seach_pop_c .xname input {
+	width: 5.63rem;
+	height: .8rem;
+	background: #F8F8F8;
+	border: none;
+	float: left;
+	border-radius: .2rem;
+	padding-left: .67rem;
+	font-size: .28rem;
+	line-height: .34rem;
+}
+
+.seach_pop .seach_pop_c .xname .xname_img {
+	width: .26rem;
+	height: .26rem;
+	position: absolute;
+	top: .25rem;
+	left: .2rem;
+}
+
+.seach_pop .seach_pop_c .xname .xsimgtwo {
+	width: .32rem;
+	height: .32rem;
+	position: absolute;
+	top: .27rem;
+	right: .2rem;
+}
+
+.seach_pop .seach_pop_c .xname1 {
+	margin-bottom: .2rem;
+}
+
+.seach_pop .seach_pop_c .xname2 {
+	margin-bottom: .6rem;
+}
+
+.seach_pop .seach_pop_c .xseach_btn {
+	width: 6.3rem;
+	height: .80rem;
+	background: rgba(110, 60, 255, 1);
+	box-shadow: 0 .02rem .04rem 0 rgba(110, 255, 60, 0.35);
+	border-radius: .4rem;
+	font-size: .3rem;
+	font-weight: bold;
+	color: rgba(250, 250, 250, 1);
+	line-height: .8rem;
+	text-align: center;
+}
+
+.seach_pop .xdel_img {
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	z-index: 1;
+	position: relative;
+	bottom: -4.4rem;
+	right: 3.7rem;
+}
+
+.seach_pop .xdel_img img {
+	width: 1rem;
+	height: 1rem;
+}
+
+
+/*搜索框*/
+
+.xhome_content {
+	padding: 0 .3rem .3rem;
+	background: #FFFFFF;
+}
+
+.xseach {
+	width: 6.9rem;
+	padding: .3rem .3rem .12rem .3rem;
+}
+
+.xseach .xseach_inp {
+	float: left;
+	position: relative;
+}
+
+.xseach .xseach_inp .xInp {
+	float: left;
+	width: 6.13rem;
+	height: .64rem;
+	line-height: .3rem;
+	border: none;
+	background: #F8F8F8;
+	border-radius: .32rem;
+	font-size: .28rem;
+	font-weight: 400;
+	color: #63617D;
+	padding-left: .77rem;
+}
+
+.xseach .xseach_inp .xsimg {
+	width: .26rem;
+	height: .26rem;
+	position: absolute;
+	top: .21rem;
+	left: .3rem;
+}
+
+.xseach .xseach_inp .xsimg2 {
+	width: .32rem;
+	height: .32rem;
+	position: absolute;
+	top: .19rem;
+	right: .4rem;
+}
+
+
+/*菜单列表*/
+
+.xnav {
+	padding: .3rem 0;
+}
+
+.xnav ul li {
+	width: 25%;
+	align-items: center;
+	justify-content: center;
+	float: left;
+	display: flex;
+}
+
+.xnav ul li a:active {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.xnav ul li img {
+	width: .7rem;
+	height: .7rem;
+	margin: auto;
+}
+
+.xnav ul li p {
+	font-size: .24rem;
+	font-weight: 500;
+	color: rgba(99, 97, 125, 1);
+	line-height: .44rem;
+	margin-top: .3rem;
+}
+
+.xnav ul li:nth-of-type(1),
+.xnav ul li:nth-of-type(2),
+.xnav ul li:nth-of-type(3),
+.xnav ul li:nth-of-type(4) {
+	margin-bottom: .4rem;
+}
+
+
+/*swiper*/
+
+.xswiper {
+	height: 1.8rem;
+	margin-bottom: .54rem;
+}
+
+.xswiper .swiper-container {
+	height: 1.8rem;
+}
+
+.xswiper .swiper-slide img {
+	border-radius: .2rem;
+	height: 100%;
+}
+
+
+/*这里存在为题：样式是：
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 0;
+*/
+
+.xswiper .swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+	/*这里存在为题：后台的样式是：*/
+	top: 29px;
+	left: 0;
+	width: 100%;
+	height: 0;
+}
+
+.xswiper .swiper-pagination-bullet-active {
+	background: #E2E2FF !important;
+	width: 20px !important;
+	height: 6px !important;
+	display: inline-block !important;
+	border-radius: 3px !important;
+}
+
+.xswiper .swiper-pagination-bullet {
+	width: 6px;
+	height: 6px;
+	display: inline-block;
+	border-radius: 100%;
+	background: #9875FE;
+}
+
+
+/*头条信息*/
+
+.xnew {}
+
+.zhicha1 {
+	width: 1.5rem;
+	float: left;
+	margin-top: .08rem;
+}
+
+.zhicha1 span {
+	font-size: .24rem;
+	font-weight: bold;
+	color: rgba(99, 97, 125, 1);
+	line-height: .24rem;
+	float: left;
+}
+
+.zhicha1 img {
+	width: .31rem;
+	height: .28rem;
+	float: left;
+	margin-left: .05rem;
+}
+
+.xnews .xnews_list {
+	height: .4rem;
+	overflow: hidden;
+}
+
+.xnews .xnews_list .swiper-container {
+	height: .4rem;
+}
+
+.xnews .xnews_list .swiper-slide {
+	height: .4rem;
+	font-size: .24rem;
+	font-weight: 400;
+	color: #63617D;
+	line-height: .4rem;
+	margin-left: .1rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+	-moz-text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+/*信用服务*/
+
+.xnext {
+	background: #FFFFFF;
+	padding: .3rem;
+}
+
+.xnext .xcredit_service {}
+
+.xnext .xcredit_service .xcredit_service_txt h2 {
+	font-size: .32rem;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 1);
+	line-height: .34rem;
+	padding-bottom: .4rem;
+}
+
+.xnext .xcredit_service .xcredit_service_img {
+	width: 100%;
+	height: 1.4rem;
+	margin-bottom: .4rem;
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+}
+
+.xnext .xcredit_service .xcredit_service_img div {
+	width: 2.18rem;
+	height: 1.4rem;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	float: left;
+}
+
+.xnext .xcredit_service .xcredit_service_img div img {
+	width: 100%;
+	height: 100%;
+	border-radius: .1rem;
+}
+
+
+/*行业资讯*/
+
+.xindustry_news {}
+
+.xindustry_news .xindustry_news_txt h2 {
+	font-size: .32rem;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 1);
+	line-height: .34rem;
+	padding-bottom: .4rem;
+}
+
+.xindustry_news .xnews_list {}
+
+.xindustry_news .xnews_list ul li {
+	border-bottom: .01rem solid #EEEEEE;
+	padding: .4rem 0 .21rem 0;
+	position: relative;
+}
+
+.xindustry_news .xnews_list ul li:nth-of-type(1) {
+	border-top: .01rem solid #EEEEEE;
+}
+
+.xindustry_news .xnews_list ul li .title_p {
+	font-size: .24rem;
+	font-weight: 500;
+	color: rgba(102, 102, 102, 1);
+	line-height: .30rem;
+	margin-bottom: .29rem;
+}
+
+.xindustry_news .xnews_list ul li .xnews_list_txt {
+	width: 4rem;
+	overflow: hidden;
+	float: left;
+}
+
+.xindustry_news .xnews_list ul li .xnews_list_txt p {
+	font-size: .28rem;
+	font-weight: bold;
+	color: rgba(69, 69, 69, 1);
+	line-height: .40rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.xindustry_news .xnews_list ul li .xnews_list_txt .xnews_time {
+	font-size: .22rem;
+	font-weight: 500;
+	color: rgba(102, 102, 102, 1);
+	line-height: .30rem;
+	display: block;
+	position: absolute;
+	bottom: .21rem;
+	left: 0;
+}
+
+.xindustry_news .xnews_list ul li .xnews_list_img {
+	width: 2.16rem;
+	height: 1.4rem;
+	float: right;
+}
+
+.xindustry_news .xnews_list ul li .xnews_list_img img {
+	width: 2.16rem;
+	height: 1.4rem;
+	border-radius: .1rem;
+}
+
+
+/*学历验证*/
+
+.pay_tits1 {
+	background: #FFFFFF;
+	left: 0;
+	top: 0;
+	z-index: 9999999999999999999;
+	width: 100%;
+	overflow: hidden;
+	height: 0.9rem;
+	position: relative;
+}
+
+.pay_tits1 img {
+	width: 0.24rem;
+	position: absolute;
+	left: 0.38rem;
+	top: 50%;
+	margin-top: -.21rem;
+}
+
+.pay_tits1 p {
+	font-size: 0.34rem;
+	color: #403F3F;
+	text-align: center;
+	line-height: 0.9rem;
+}
+
+.pay_tits1 .job_details_title {
+	width: 4rem;
+	margin: 0 auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+	-moz-text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+/*个人查询---学历验证、社保、银行逾期、涉诉信息、网贷黑名单、不良记录、被执行人、失信人的样式。公用样式开始。*/
+
+.education_banner {
+	height: 4rem;
+	position: absolute;
+}
+
+.education_banner img {
+	height: 4rem;
+}
+
+.education_seach {
+	width: 6.3rem;
+	background: #FFFFFF;
+	padding: 0 .3rem .3rem;
+	border-radius: .2rem;
+	z-index: 9999;
+	position: absolute;
+	top: 4.4rem;
+	left: .3rem;
+	right: .3rem;
+}
+
+.education_seach h2 {
+	font-size: .34rem;
+	font-weight: bold;
+	color: rgba(110, 60, 255, 1);
+	line-height: .44rem;
+	padding-top: .7rem;
+	padding-bottom: .5rem;
+	text-align: center;
+}
+
+.education_seach .education_seach_inp {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+.education_seach .education_seach_inp .esinp {
+	width: 5.63rem;
+	height: .8rem;
+	background: #F8F8F8;
+	border: none;
+	float: left;
+	border-radius: .2rem;
+	padding-left: .67rem;
+	font-size: .28rem;
+	line-height: .34rem;
+}
+
+.education_seach .education_seach_inp .img {
+	width: .26rem;
+	height: .26rem;
+	position: absolute;
+	top: .3rem;
+	left: .2rem;
+}
+
+.education_seach .education_seach_inp .xsimg2 {
+	width: .32rem;
+	height: .32rem;
+	position: absolute;
+	top: .25rem;
+	right: .2rem;
+}
+
+.education_seach .education_seach_inp .esinp1 {
+	margin-bottom: .2rem;
+}
+
+.education_seach .education_seach_inp .esinp2 {
+	margin-bottom: .4rem;
+}
+
+.errorFormat {
+	width: 100%;
+	height: .6rem;
+	background: #Fff0f0;
+	font-size: .22rem;
+	font-weight: 500;
+	color: #FF0000;
+	line-height: .6rem;
+	text-align: center;
+	opacity: .5;
+	filter: Alpha(opacity=50);
+	margin-bottom: .2rem;
+}
+
+.education_seach .education_seach_ss {
+	width: 100%;
+	height: .8rem;
+	background: #6E3CFF;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: .8rem;
+	border-radius: .4rem;
+	font-size: .3rem;
+	font-weight: bold;
+	margin-bottom: .49rem;
+}
+
+.education_seach .education2_ss {
+	width: 6.3rem;
+	height: .8rem;
+	background: #F8F8F8;
+	border-radius: .2rem;
+	margin-bottom: .6rem;
+	font-size: .3rem;
+	font-weight: bold;
+	color: #7D7D7D;
+	line-height: .8rem;
+	text-align: center;
+}
+
+.education_seach p {
+	font-size: .22rem;
+	font-weight: 400;
+	color: rgba(153, 153, 153, 1);
+	line-height: .44rem;
+	text-align: center;
+}
+
+
+/*个人查询---学历验证、社保、银行逾期、涉诉信息、网贷黑名单、不良记录、被执行人、失信人的样式。公用样式结束。*/
+
+
+/*职查头条页样式开始*/
+
+.job_review {
+	padding: 0 .3rem .3rem;
+}
+
+.job_review ul li {
+	padding: .41rem 0 0.21rem 0;
+	border-bottom: .01rem solid #EEEEEE;
+	position: relative;
+}
+
+.job_review ul li .job_txt {
+	width: 4rem;
+	overflow: hidden;
+	float: left;
+}
+
+.job_review ul li .job_txt div {
+	font-size: .28rem;
+	font-weight: bold;
+	color: rgba(69, 69, 69, 1);
+	line-height: .40rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.job_review ul li .job_txt span {
+	font-size: .22rem;
+	font-weight: 500;
+	color: rgba(102, 102, 102, 1);
+	line-height: .30rem;
+	display: block;
+	position: absolute;
+	bottom: .21rem;
+	left: 0;
+}
+
+.job_review ul li .job_img {
+	width: 2.16rem;
+	height: 1.4rem;
+	float: right;
+}
+
+.job_review ul li .job_img img {
+	width: 2.16rem;
+	height: 1.4rem;
+	border-radius: .1rem;
+}
+
+
+/*职查头条页样式结束*/
+
+
+/*职查头条详情页*/
+
+.job_review_details {}
+
+.job_review_details h1 {
+	font-size: .40rem;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 1);
+	line-height: .58rem;
+	padding: .4rem 0 .6rem 0;
+}
+
+.job_review_details .job_details_logo {
+	margin-bottom: .6rem;
+}
+
+.job_review_details .job_details_logo .logo_img {
+	width: .64rem;
+	height: .64rem;
+}
+
+.job_review_details .job_details_logo .logo_text {
+	margin-left: .3rem;
+}
+
+.job_review_details .job_details_logo .logo_text span {
+	display: block;
+}
+
+.job_review_details .job_details_logo .logo_text span:nth-of-type(1) {
+	font-size: .28rem;
+	font-weight: 500;
+	color: rgba(69, 69, 69, 1);
+	line-height: .3rem;
+	margin-bottom: .18rem;
+}
+
+.job_review_details .job_details_logo .logo_text span:nth-of-type(2) {
+	font-size: .22rem;
+	font-weight: 500;
+	color: rgba(158, 158, 158, 1);
+	line-height: .3rem;
+}
+
+.job_review_details .job_review_text {
+	font-size: .34rem;
+	font-weight: 500;
+	color: rgba(69, 69, 69, 1);
+}
+
+.job_review_details .job_review_text p {
+	font-size: .34rem;
+	font-weight: 500;
+	color: rgba(69, 69, 69, 1);
+	line-height: .56rem;
+	margin-bottom: .6rem;
+}
+
+.job_review_details .job_review_text:img:nth-last-of-type(1) {
+	height: 3.5rem;
+}
+
+
+/*被执行人-查询列表、失信人-查询列表*/
+
+.xexecuted_number {
+	padding: .27rem .3rem;
+	font-size: .26rem;
+	font-weight: 500;
+	color: rgba(155, 155, 187, 1);
+	line-height: .3rem;
+}
+
+.xexecuted_number i {
+	color: #FC5E65;
+}
+
+.xexecuted_list {
+	padding-bottom: .7rem;
+}
+
+.xexecuted_list ul li {
+	padding: .4rem .3rem;
+	background: #FFFFFF;
+	margin-bottom: .2rem;
+	position: relative;
+}
+
+.xexecuted_list ul li h2 {
+	font-size: .3rem;
+	font-weight: bold;
+	color: rgba(110, 60, 255, 1);
+	line-height: .3rem;
+	margin-bottom: .28rem;
+}
+
+.xexecuted_list ul li p {
+	font-size: .28rem;
+	font-weight: 500;
+	color: rgba(69, 69, 69, 1);
+	line-height: .46rem;
+}
+
+.xexecuted_list ul li p span {
+	color: #777777;
+}
+
+.xexecuted_list ul li .right_img {
+	width: .14rem;
+	height: .24rem;
+	position: absolute;
+	right: .5rem;
+	top: 50%;
+}
+
+.xexecuted_list ul li .right_img img {
+	width: .14rem;
+	height: .24rem;
+}
+
+
+/*失信人-查询详情*/
+
+.xuntrustworthy_person_details {
+	padding-bottom: .7rem;
+}
+
+.xuntrustworthy_person_details ul {
+	background: #FFFFFF;
+	margin: .2rem 0;
+	padding: 0 .3rem;
+}
+
+.xuntrustworthy_person_details ul li {
+	padding: .31rem 0;
+	font-size: .28rem;
+	font-weight: 500;
+	color: rgba(51, 51, 51, 1);
+	line-height: .29rem;
+}
+
+.xuntrustworthy_person_details .li_border li {
+	border-bottom: .01rem solid #EEEEEE;
+}
+
+.xuntrustworthy_person_details .li_border li:nth-last-child(1) {
+	border-bottom: none;
+}
+
+.xuntrustworthy_person_details ul li span {
+	color: #777777;
+}
+
+
+/*未查询到信息*/
+
+.xseach_nofound {}
+
+.xseach_nofound h2 {
+	font-size: .3rem;
+	font-weight: 500;
+	color: rgba(99, 97, 125, 1);
+	line-height: .3rem;
+	margin-top: 1.17rem;
+	text-align: center;
+}
+
+.xseach_nofound img {
+	width: 2.2rem;
+	height: 1.7rem;
+	margin: .4rem auto;
+}
+
+
+/*授权页面的样式*/
+
+.xauthorize {
+	position: relative;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	zoom: 1;
+	background-color: #fff;
+	background: url(/HRzhicha/public/images/img/xau1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-position: center 0;
+}
+
+.xauthorize .xauthorize_text {
+	padding-top: 6.5rem;
+	margin-left: .7rem;
+}
+
+.xauthorize .xauthorize_text h5 {
+	font-size: .28rem;
+	font-weight: 400;
+	color: rgba(254, 254, 255, 1);
+	line-height: .44rem;
+}
+
+.xauthorize .xauthorize_text p {
+	font-size: .24rem;
+	font-weight: 400;
+	color: rgba(254, 254, 255, 1);
+	line-height: .44rem;
+}
+
+.xauthorize .xauthorize_mode {
+	margin-top: .5rem;
+	margin-left: .7rem;
+	padding-bottom: 1rem;
+}
+
+.xauthorize .xauthorize_mode .authorize_btn {
+	width: 6.5rem;
+	height: .8rem;
+	background: rgba(110, 60, 255, 1);
+	box-shadow: 0 .02rem .04rem 0 rgba(110, 255, 60, 0.35);
+	border-radius: .4rem;
+	font-weight: bold;
+	font-size: .3rem;
+	color: #FFFFFF;
+	line-height: .8rem;
+	text-align: center;
+	margin-top: .6rem;
+}
+
+
+/*授权中*/
+
+.authorized {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 99999999999999999;
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.authorized_img {
+	margin: 0 .3rem;
+	padding: 0 .3rem 0;
+}
+
+.authorized_img .img_bg {
+	z-index: -10;
+	zoom: 1;
+	position: relative;
+}
+
+.authorized_img .authorized_time {
+	font-size: .28rem;
+	font-weight: bold;
+	color: rgba(21, 194, 245, 1);
+	line-height: .48rem;
+	position: relative;
+	bottom: 2.4rem;
+	text-align: center;
+}
+
+.authorized_img h4 {
+	font-size: .34rem;
+	font-weight: bold;
+	color: rgba(21, 194, 245, 1);
+	line-height: .48rem;
+	text-align: center;
+	position: relative;
+	bottom: 2.7rem;
+}
+
+.authorized_img h5 {
+	font-size: .34rem;
+	font-weight: bold;
+	color: #6E3CFF;
+	line-height: .48rem;
+	text-align: center;
+	position: relative;
+	bottom: 2.7rem;
+}
+
+.authorized_img h6 {
+	font-size: .34rem;
+	font-weight: bold;
+	color: #FC5F65;
+	line-height: .48rem;
+	text-align: center;
+	position: relative;
+	bottom: 2.7rem;
+}
+
+.authorized_img .imgl {
+	width: .88rem;
+	height: .88rem;
+	position: relative;
+	bottom: 2.2rem;
+	margin: auto;
+}
+
+.authorized_img .no_aut {
+	width: 4.4rem;
+	height: .8rem;
+	background: #FC5E65;
+	border-radius: .4rem;
+	box-shadow: 0 .12rem .24rem 0 rgba(40, 45, 200, 0.27);
+	font-size: .26rem;
+	font-weight: 500;
+	color: #FFFFFF;
+	line-height: .8rem;
+	text-align: center;
+	position: relative;
+	bottom: 2rem;
+	margin: auto;
+}
+
+
+/*二维码*/
+
+.authorized .QrCode {
+	background: #FFFFFF;
+	border-radius: .2rem;
+	width: 4.9rem;
+	padding: .4rem 0;
+}
+
+.authorized .QrCode h2 {
+	font-size: .34rem;
+	font-weight: bold;
+	color: #000;
+	line-height: .48rem;
+	text-align: center;
+}
+
+.authorized .QrCode .QrCodeImg {
+	padding: .3rem;
+	width: 3.89rem;
+	margin: auto;
+}
+
+
+/*个人查询-授权人*/
+
+.xauthorize1 {
+	position: fixed;
+	/*top: 0;*/
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	zoom: 1;
+	background-color: #fff;
+	background: url(/HRzhicha/public/images/img/xau2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-position: center 0;
+}
+
+.xauthorize1 h4 {
+	font-size: .28rem;
+	font-weight: 500;
+	color: rgba(254, 254, 255, 1);
+	line-height: .44rem;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.xauthorize1 h3 {
+	font-size: .34rem;
+	font-weight: 500;
+	color: rgba(254, 254, 255, 1);
+	line-height: .44rem;
+	text-align: center;
+	margin-top: .47rem;
+}
+
+.xauthorize1 img {
+	width: 2.13rem;
+	margin: 1.02rem auto;
+}
+
+.xauthorize1 .aut {
+	width: 6.5rem;
+	height: .8rem;
+	box-shadow: 0 .02rem .04rem 0 rgba(110, 255, 60, 0.35);
+	border-radius: .4rem;
+	font-size: .3rem;
+	font-weight: bold;
+	color: rgba(250, 250, 250, 1);
+	line-height: .8rem;
+	text-align: center;
+	margin: auto;
+}
+
+.xauthorize1 .t_aut {
+	margin-top: 1rem;
+	background: #6E3CFF;
+}
+
+.xauthorize1 .no_aut {
+	margin-top: .6rem;
+	background: #675781;
+}
+
+.authorize_xy {
+	font-size: .24rem;
+	font-weight: 500;
+	color: rgba(153, 153, 153, 1);
+	line-height: .44rem;
+	margin-top: .4rem;
+	text-align: center;
+}
+
+.authorize_xy span {
+	color: #0DC4F5;
+}
+
+
+/*协议内容*/
+
+.protocol_appeal {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.1);
+	z-index: 9999999;
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.protocol_appeal .pro_appeal_mid {
+	overflow: hidden;
+	padding: .7rem 0 .5rem 0;
+	box-sizing: border-box;
+	background: #fff;
+	border-radius: .2rem;
+	height: 70%;
+	width: 6.9rem;
+	padding-top: 0.2rem;
+	margin-top: -1rem;
+}
+
+.protocol_appeal .protocol_detail {
+	margin-left: .5rem;
+	margin-right: .5rem;
+}
+
+.protocol_appeal .protocol_detail .protocol_detail_txt {
+	font-size: .4rem;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	padding-bottom: .3rem;
+}
+
+.protocol_appeal .protocol_detail .protocol_text1 {
+	font-size: .26rem;
+	font-weight: 400;
+	color: #000000;
+	line-height: .6rem;
+}
+
+.del_img {
+	width: .72rem;
+	height: .72rem;
+	position: absolute;
+	bottom: 1rem;
+}
+
+
+/*系统设置*/
+
+.xmy_settings {}
+
+.xmy_settings ul {
+	margin-top: .2rem;
+	background: #FFFFFF;
+}
+
+.xmy_settings .ul_m1 {
+	margin-top: .1rem;
+}
+
+.xmy_settings ul li {
+	width: 100%;
+	height: .88rem;
+	border-bottom: .01rem solid #EEEEEE;
+}
+
+.xmy_settings ul li:nth-last-child(1) {
+	border-bottom: none;
+}
+
+.xmy_settings ul li span {
+	display: block;
+}
+
+.xmy_settings ul li span:nth-of-type(1) {
+	font-size: .32rem;
+	font-weight: 500;
+	color: rgba(99, 97, 125, 1);
+	line-height: .88rem;
+	padding-left: .6rem;
+}
+
+.xmy_settings ul li span:nth-of-type(2) {
+	font-size: .24rem;
+	font-weight: 500;
+	color: rgba(154, 154, 154, 1);
+	line-height: .88rem;
+	padding-right: .24rem;
+}
+
+.xmy_settings ul li img {
+	width: .16rem;
+	height: .26rem;
+	margin-right: .3rem;
+	margin-top: .32rem;
+}
+
+.xmy_settings_btn {
+	width: 100% height:.88rem;
+	background: rgba(255, 255, 255, 1);
+	box-shadow: 0 .04rem .17 .03rem rgba(234, 234, 234, 0.35);
+	margin-top: .2rem;
+	font-size: .3rem;
+	font-weight: bold;
+	color: rgba(248, 93, 122, 1);
+	line-height: .88rem;
+	text-align: center;
+}
+
+
+/*注销账号*/
+
+.xaccount_cancellation {
+	padding: 0 .6rem;
+	margin-top: .88rem;
+}
+
+.xaccount_cancellation h3 {
+	font-size: .32rem;
+	font-weight: bold;
+	color: rgba(65, 65, 64, 1);
+	line-height: .44rem;
+	margin-bottom: .4rem;
+}
+
+.xaccount_cancellation p {
+	font-size: .32rem;
+	font-weight: 500;
+	color: rgba(65, 65, 64, 1);
+	line-height: .44rem;
+}
+
+
+/*注销协议*/
+
+.com_appraisal_protocol {
+	width: 100%;
+	margin-top: .8rem;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+
+.com_appraisal_protocol div {
+	width: 0.24rem;
+	height: 0.24rem;
+	box-sizing: border-box;
+	border: 0.02rem solid #6e3cff;
+	border-radius: 50%;
+}
+
+.com_appraisal_protocol div.on {
+	background-image: url(/HRzhicha/public/images/img/land_icon_07.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border: none
+}
+
+.com_appraisal_protocol p {
+	margin-left: .19rem;
+	font-size: .24rem;
+	font-weight: 500;
+	color: rgba(153, 153, 153, 1);
+	line-height: .44rem;
+}
+
+.com_appraisal_protocol p span {
+	color: #15c2f5;
+}
+
+.xaccount_cancellation_btn {
+	width: 6.3rem;
+	height: .8rem;
+	background: rgba(182, 157, 255, 1);
+	border-radius: .1rem;
+	font-size: .26rem;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 1);
+	line-height: .8rem;
+	text-align: center;
+	margin-top: .61rem;
+}
+
+
+/*注销账号xaccount_cancellation1.html页面样式*/
+
+.xaccount_cancellation1 {}
+
+.xaccount_cancellation1 h3 {
+	font-weight: 500;
+}
+
+.xaccount_cancellation1 .lable_inp {
+	width: 100%;
+	height: .9rem;
+	overflow: hidden;
+	border-bottom: .02rem solid #EDEDED;
+}
+
+.xaccount_cancellation1 .lable_inp input {
+	width: 6.3rem;
+	height: .88rem;
+	border: none;
+	line-height: .4rem;
+	font-size: .3rem;
+	font-weight: bold;
+	color: #414140;
+}
+
+.xaccount_cancellation1 .lable_inp input::-webkit-input-placeholder {
+	color: #B1B1C7;
+}
+
+.xaccount_cancellation1 .lable_inp input:-moz-placeholder {
+	color: #B1B1C7;
+}
+
+.xaccount_cancellation1 .lable_inp input:-ms-input-placeholder {
+	color: #B1B1C7;
+}
+
+.xaccount_cancellation1 .inp2 {
+	position: relative;
+}
+
+.xaccount_cancellation1 .xaccount_code {
+	padding: 0 .25rem;
+	height: .7rem;
+	border: 2px solid rgba(236, 236, 236, 1);
+	border-radius: .3rem;
+	border: .01rem solid #ECECEC;
+	font-size: .26rem;
+	font-weight: bold;
+	color: rgba(110, 60, 255, 1);
+	line-height: .7rem;
+	text-align: center;
+	position: absolute;
+	right: 0rem;
+	top: .09rem;
+}
+
+.xaccount_cancellation1 .xaccount_code1 {
+	/*width: 1.8rem;*/
+	padding: 0 .25rem;
+	height: .7rem;
+	border: 2px solid rgba(236, 236, 236, 1);
+	border-radius: .3rem;
+	border: .01rem solid #ECECEC;
+	font-size: .26rem;
+	font-weight: bold;
+	color: #15C2F5;
+	line-height: .7rem;
+	text-align: center;
+	position: absolute;
+	right: 0rem;
+	top: .09rem;
+	display: none;
+}
+
+
+/*注销账号xaccount_cancellation2.html页面样式*/
+
+.xaccount_cancellation2 {
+	margin-top: 2.31rem;
+}
+
+.xaccount_cancellation2 h3 {
+	font-weight: 500;
+	margin-bottom: .2rem;
+	text-align: center;
+}
+
+.x_c_btn2 {
+	background: #6E3CFF;
+	margin-top: 1.05rem;
+}
+
+
+/*注销账号xaccount_cancellation3.html页面样式*/
+
+.xcancellation3 {
+	width: 2.71rem;
+	margin: 1.2rem auto;
+}
+
+
+/*注销账号xaccount_cancellation.html页面使用form表单写的样式*/
+
+.xaccount_cancellation5 {
+	overflow: hidden;
+	padding: 0.5rem 0.6rem 0;
+	box-sizing: border-box;
+}
+
+.xaccount_cancellation5 h2 {
+	font-size: 0.3rem;
+	color: #414140;
+	line-height: .44rem;
+	margin-bottom: 0.58rem;
+}
+
+.xaccount_cancellation5 .box_inp {
+	overflow: hidden;
+}
+
+.xaccount_cancellation5 .box_inp .lable {
+	overflow: hidden;
+	width: 100%;
+	border-bottom: 0.02rem solid #ececec;
+	display: flex;
+	align-items: center;
+	height: 0.9rem;
+}
+
+.xaccount_cancellation5 .box_inp .lable input {
+	width: 5rem;
+	height: 100%;
+	float: left;
+	border: none;
+	outline: none;
+	font-size: 0.28rem;
+	padding-left: 0.2rem;
+	box-sizing: border-box;
+	color: #414140;
+}
+
+.xaccount_cancellation5 .reg {
+	overflow: hidden;
+	background: #fff;
+	padding: .7rem .6rem .6rem .6rem;
+	box-sizing: border-box;
+}
+
+.xaccount_cancellation5 .reg .reg_lable {
+	overflow: hidden;
+	height: .9rem;
+	position: relative;
+	border-bottom: .02rem solid #ECECEC;
+	font-size: 1px;
+}
+
+.xaccount_cancellation5 .reg .reg_lable input {
+	width: 4.5rem;
+	height: 100%;
+	border: none;
+	outline: none;
+	font-size: .28rem;
+}
+
+.xaccount_cancellation5 .reg .reg_lable .hqs {
+	width: 1.8rem;
+	height: .7rem;
+	color: #6e3cff;
+	font-size: .26rem;
+	text-align: center;
+	line-height: .7rem;
+	position: absolute;
+	border-radius: .3rem;
+	right: 0;
+	top: 50%;
+	margin-top: -.35rem;
+	border: 1px solid #ECECEC;
+}
+
+.xaccount_cancellation5 .btn {
+	width: 6.3rem;
+	height: 0.8rem;
+	background: #b69dff;
+	margin: 0 auto;
+	font-size: 0.26rem;
+	text-align: center;
+	line-height: 0.8rem;
+	border-radius: 0.1rem;
+	margin-top: 0.8rem;
+	color: #fff;
+}
+
+
+/*行为风险测评页面*/
+
+.behavioralRiskAssessment {
+	position: relative;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	zoom: 1;
+	background-color: #fff;
+	background: url(/HRzhicha/public/images/img/xau13.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-position: center 0;
+}
+
+.behavioralRiskAssessment .behavioralRisk_pad {
+	padding: .72rem .3rem .6rem .3rem;
+}
+
+.behavioralRisk_title {
+	width: 100%;
+	margin-bottom: .42rem;
+}
+
+.behavioralRisk_title .behavioralRisk_title_img {
+	width: .76rem;
+	height: .76rem;
+}
+
+.behavioralRisk_title .behavioralRisk_title_img img {
+	width: .76rem;
+	height: .76rem;
+}
+
+.behavioralRisk_title span {
+	display: block;
+	font-size: .34rem;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 1);
+	line-height: .76rem;
+	margin-left: .31rem;
+}
+
+.degree_risk {
+	background: #FFFFFF;
+	border-radius: .2rem;
+	padding: .4rem;
+}
+
+.degree_risk h4 {
+	font-size: .34rem;
+	font-weight: bold;
+	color: #42B18A;
+	line-height: .36rem;
+	margin-bottom: .3rem;
+}
+
+.degree_risk .sp {
+	font-size: .22rem;
+	font-weight: 500;
+	color: #999999;
+	line-height: .36rem;
+	margin-bottom: .1rem;
+}
+
+.degree_risk .degree_risk_img {
+	width: 2.34rem;
+	margin-bottom: .3rem;
+}
+
+.degree_risk .degree_risk_img img {
+	width: 2.34rem;
+}
+
+.degree_risk p {
+	font-size: .26rem;
+	font-weight: 500;
+	color: #666666;
+	line-height: .36rem;
+}
+
+.suggestion_risk {
+	background: #FFFFFF;
+	border-radius: .2rem;
+	margin-top: .2rem;
+}
+
+.suggestion_risk .suggestion_risk_title {
+	/*height: .99rem;*/
+	border-bottom: .01rem solid #F1F3F5;
+	padding: .4rem .4rem .3rem .4rem;
+}
+
+.suggestion_risk .suggestion_risk_title .vertical_line {
+	display: block;
+	width: .1rem;
+	height: .34rem;
+	background: #5281ff;
+}
+
+.suggestion_risk .suggestion_risk_title .suggestion_txt {
+	font-size: .32rem;
+	font-weight: 500;
+	color: #333333;
+	line-height: .34rem;
+	margin-left: .15rem;
+}
+
+.suggestion_risk .risk_digital {
+	padding: .68rem .5rem .6rem .5rem;
+}
+
+.suggestion_risk .risk_digital .risk_digital_l {
+	width: 2.82rem;
+}
+
+.suggestion_risk .risk_digital .risk_digital_l {
+	width: 2rem;
+}
+
+.risk_digital_r {
+	width: 2.5rem;
+}
+
+.risk_digital_r .risk_digital_list {
+	margin-bottom: .33rem;
+}
+
+.risk_digital_r .risk_digital_list span {
+	display: block;
+}
+
+.risk_digital_r .risk_digital_list .digital_Piece {
+	width: .22rem;
+	height: .22rem;
+	border-radius: .02rem;
+	margin-top: .1rem;
+}
+
+.risk_digital_r .risk_digital_list .blue {
+	background: rgba(149, 139, 255, 1);
+}
+
+.risk_digital_r .risk_digital_list .red {
+	background: rgba(255, 104, 141, 1);
+}
+
+.risk_digital_r .risk_digital_list .yellow {
+	background: rgba(254, 209, 0, 1);
+}
+
+.risk_digital_r .risk_digital_list .zise {
+	background: red;
+}
+
+.risk_digital_r .risk_digital_list .digital_txt {
+	font-size: .24rem;
+	font-weight: 500;
+	color: #999999;
+	line-height: .4rem;
+	margin-left: .16rem;
+}
+
+.risk_digital_r .risk_digital_list .digital_num {
+	font-size: .22rem;
+	font-weight: 500;
+	color: #333333;
+	line-height: .4rem;
+	margin-left: .6rem;
+}
+
+.risk_digital .summary {
+	font-size: .22rem;
+	font-weight: 500;
+	color: #333333;
+	line-height: .36rem;
+}
+
+
+/*行为风险测试题页面*/
+
+.xbehavioral_risk_test {
+	overflow: auto;
+	position: fixed;
+	/*top: 0;*/
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	zoom: 1;
+	background-color: #fff;
+	background: url(/HRzhicha/public/images/img/risk1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-position: center 0;
+}
+
+.xbehavioral_risk_test .risk_test_box {
+	padding: 0rem .75rem .5rem .75rem;
+}
+
+.xbehavioral_risk_test .risk_test_img {
+	position: relative;
+	padding: .3rem;
+	padding-bottom: 0;
+}
+
+.xbehavioral_risk_test .risk_test_img p {
+	font-size: .36rem;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 1);
+	line-height: .36rem;
+	text-align: center;
+	position: absolute;
+	top: .8rem;
+	left: 2.1rem;
+}
+
+.xbehavioral_risk_test .risk_test_box .risk_test_num {
+	margin-top: .32rem;
+	margin-bottom: .39rem;
+}
+
+.xbehavioral_risk_test .risk_test_box .risk_test_num p {
+	font-size: .32rem;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 1);
+	line-height: .32rem;
+	text-align: center;
+}
+
+.xbehavioral_risk_test .risk_test_list h3 {
+	font-size: .32rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 1);
+	line-height: .39rem;
+	margin-top: 1rem;
+}
+
+.xbehavioral_risk_test .risk_test_list ul {
+	width: 100%;
+	background: #FFFFFF;
+	border-radius: .2rem;
+	margin-top: .42rem;
+}
+
+.xbehavioral_risk_test .risk_test_list ul li {
+	font-size: .28rem;
+	font-weight: 500;
+	color: #333333;
+	line-height: .39rem;
+	padding: .3rem .3rem .3rem .3rem;
+	border-bottom: .02rem solid rgba(229, 229, 229, 1);
+	word-wrap: break-word;
+	word-break: break-all;
+	overflow: hidden;
+}
+
+.xbehavioral_risk_test .risk_test_list ul li:nth-last-of-type(1) {
+	border-bottom: none;
+}
+
+.xbehavioral_risk_test ul li .checkbox {
+	width: 0.32rem;
+	height: 0.32rem;
+	box-sizing: border-box;
+	border: 0.02rem solid #DCDCDC;
+	border-radius: 50%;
+}
+
+.xbehavioral_risk_test .risk_test_list ul li.on {
+	color: #6E3CFF;
+	font-weight: 500;
+	background-image: url(/HRzhicha/public/images/img/rr1.png);
+	background-repeat: no-repeat;
+	background-size: .31rem .31rem;
+	background-position: .3rem .31rem;
+}
+
+.xbehavioral_risk_test .risk_test_list ul li.on .checkbox {
+	border: none;
+}
+
+.xbehavioral_risk_test .risk_test_list ul li span {
+	display: block;
+	margin-left: .19rem;
+	width: 4.8rem !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+	white-space: normal !important;
+}
+
+.xbehavioral_risk_test .swiper-pagination-fraction {
+	top: 10px;
+	font-size: .32rem;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 1);
+	line-height: .32rem;
+	text-align: center;
+}
+
+.xbehavioral_risk_test .risk_botton {
+	width: 6.02rem;
+	height: .88rem;
+	margin-top: .88rem;
+}
+
+.xbehavioral_risk_test .risk_botton div {
+	width: 6.02rem;
+	background: #FEC93B;
+	border-radius: .2rem;
+	text-align: center;
+	font-size: .28rem;
+	font-weight: 500;
+	color: #000;
+	line-height: .88rem;
+}
+
+.xbehavioral_risk_test .risk_botton1 {
+	width: 6.02rem;
+	height: .88rem;
+	margin-top: .88rem;
+}
+
+.xbehavioral_risk_test .risk_botton1 div {
+	width: 2.9rem;
+	background: #FEC93B;
+	border-radius: .2rem;
+	text-align: center;
+	font-size: .28rem;
+	font-weight: 500;
+	color: #000;
+	line-height: .88rem;
+}
+
+.xbehavioral_risk_test .swiper-slide {
+	height: 520px !important;
+}
+
+.xbehavioral_risk_test .swiper-button-next {
+	width: 2.8rem;
+	position: static;
+	margin-top: 0rem;
+	background: none;
+}
+
+.xbehavioral_risk_test .swiper-button-prev {
+	width: 2.8rem;
+	position: static;
+	margin-top: 0rem;
+	background: none;
+}
+
+
+/*信用评估*/
+
+.creditEvaluation {
+	position: fixed;
+	/*top: 0;*/
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	zoom: 1;
+	background-color: #fff;
+	background: url(/HRzhicha/public/images/img/xau17.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-position: center 0;
+}
+
+.creditEvaluation_img {
+	/*	margin-top: .8rem;*/
+	/*margin-bottom: .6rem;*/
+}
+
+.creditEvaluation_img img {
+	width: 4.6rem;
+	margin: auto;
+	padding-top: .8rem;
+}
+
+.creditEvaluation_txt {
+	font-size: .3rem;
+	font-weight: 500;
+	color: #fff;
+	line-height: .36rem;
+	text-align: center;
+}
+
+.evaluation_sample {
+	margin: .49rem .6rem .97rem .6rem;
+}
+
+.evaluation_sample_txt {
+	background: rgba(0, 0, 0, .1);
+	/*box-shadow: 0 .02rem .08rem 0 rgba(7, 11, 33, 0.52);*/
+	border-radius: .1rem;
+}
+
+.evaluation_sample_txt li {
+	padding: .31rem .4rem .4rem .57rem;
+	border-bottom: .01rem solid #695ACA;
+}
+
+.evaluation_sample_txt li:nth-last-child(1) {
+	border-bottom: none;
+}
+
+.evaluation_sample_txt li span {
+	display: block;
+}
+
+.evaluation_sample_txt li .sp_l {
+	font-size: .26rem;
+	font-weight: 500;
+	color: #fff;
+	line-height: .26rem;
+}
+
+.evaluation_sample_txt li .sp_r {
+	font-size: .26rem;
+	font-weight: 500;
+	line-height: .26rem;
+}
+
+.completed {
+	color: rgba(204, 153, 255, 1);
+}
+
+.completed1 {
+	color: rgba(21, 194, 245, 1);
+}
+
+.completed2 {
+	color: rgba(239, 201, 128, 1);
+}
+
+.completed21 {
+	color: rgba(255, 255, 255, 1);
+	opacity: 0.5;
+	filter: Alpha(opacity=50);
+}
+
+.creditEvaluationBtn {
+	/*width:630px;*/
+	height: .8rem;
+	background: rgba(21, 194, 245, 1);
+	box-shadow: 0 .02rem .04rem 0 rgba(110, 255, 60, 0.35);
+	border-radius: .4rem;
+	font-size: .3rem;
+	font-weight: bold;
+	color: #fff;
+	line-height: .8rem;
+	text-align: center;
+	margin-top: .57rem;
+}
+
+.creditEvaluationTime {
+	font-size: .26rem;
+	font-weight: 500;
+	color: #fff;
+	line-height: .26rem;
+	opacity: 0.2;
+	filter: alpha(opacity:20);
+	text-align: center;
+	margin-top: .4rem;
+	padding-bottom: .3rem;
+}
+
+
+/*信用评估1页面*/
+
+.creditEvaluationP {
+	padding: 0 .6rem;
+}
+
+.evaluation_sample_risk li {}
+
+.evaluation_sample_risk .sp_risk_l,
+.sp_risk_r {
+	font-size: .3rem;
+	font-weight: bold;
+	color: #fff;
+	line-height: .28rem;
+}
+
+.evaluation_sample_risk .sp_risk_l i {
+	color: #FC5E65;
+}
+
+.evaluation_sample_risk .sp_risk_r i {
+	color: #09C2A2;
+}
+
+.evaluation_sample img {
+	width: .3rem;
+	height: .3rem;
+}
+
+
+/*信用管理页面xcredit_management.html*/
+
+.credit_management {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 6.8rem;
+	z-index: -100;
+	zoom: 1;
+	background-color: #fff;
+	background: url(/HRzhicha/public/images/img/credit1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-position: center 0;
+}
+
+.credit_management .credit_pad {
+	/*	margin-top: 1.58rem;*/
+}
+
+.credit_management img {
+	width: 4.74rem;
+	margin: auto;
+}
+
+.credit_privilege {
+	/*margin-top: 5.5rem;
+	margin-left: .3rem;*/
+	margin-top: 5.5rem;
+	margin-left: .3rem;
+	width: 6.9rem;
+	padding: .34rem 0 .28rem 0;
+	background: #FFFFFF;
+	border-radius: .2rem;
+	box-shadow: 0 .04rem .17rem .03rem rgba(234, 234, 234, 0.6);
+}
+
+.privilege_img {
+	width: .54rem;
+	margin-top: .07rem;
+	margin-left: .4rem;
+}
+
+.privilege_text {
+	margin-left: .3rem;
+}
+
+.privilege_text h6 {
+	font-size: .28rem;
+	font-weight: 500;
+	color: rgba(209, 169, 100, 1);
+}
+
+.privilege_text p {
+	font-size: .22rem;
+	font-weight: 500;
+	color: #666666;
+}
+
+.xcreditManagement .boost {
+	padding: .3rem;
+	margin-top: .09rem;
+	margin-bottom: .1rem;
+}
+
+.xcreditManagement .boost_l {
+	width: .1rem;
+	height: .3rem;
+	background: rgba(239, 201, 128, 1);
+	border-radius: .04rem;
+	margin-top: .06rem;
+}
+
+.xcreditManagement .boost_txt {
+	font-size: .32rem;
+	font-weight: 500;
+	color: rgba(51, 51, 51, 1);
+	line-height: .4rem;
+	margin-left: .19rem;
+}
+
+.xcreditManagement {}
+
+.xcreditManagement .boost_list {
+	background: #FFFFFF;
+	margin-bottom: .5rem;
+}
+
+.xcreditManagement .boost_list ul {
+	padding: 0 .4rem 0 .6rem;
+}
+
+.xcreditManagement .boost_list ul li {
+	border-bottom: .01rem solid #EEEEEE;
+	padding: .45rem 0 .36rem 0;
+}
+
+.xcreditManagement .boost_list ul li:nth-last-child(1) {
+	border-bottom: none;
+}
+
+.xcreditManagement .boost_list ul li span {
+	display: block;
+}
+
+.xcreditManagement .boost_list ul li .boost_list_txt {
+	font-size: .28rem;
+	font-weight: 500;
+	color: #333333;
+}
+
+.xcreditManagement .boost_list ul li img {
+	width: .11rem;
+	height: .21rem;
+	margin-top: .1rem;
+}
+
+.xcreditManagement .boost_list ul li .boost_list_txt2 {
+	font-size: .26rem;
+	font-weight: 400;
+	margin-right: .14rem;
+}
+
+.xcreditManagement .boost_list ul li .yw {
+	color: #999999;
+}
+
+.xcreditManagement .boost_list ul li .dw {
+	color: #CD783B;
+}
+
+
+/*信息详情*/
+
+.xInformation_details {
+	padding: .3rem .3rem .4rem;
+}
+
+.xInformation_details .basic_inf {
+	width: 100%;
+	background: rgba(255, 255, 255, 1);
+	box-shadow: 0 .04rem .17 .03rem rgba(234, 234, 234, 0.35);
+	border-radius: .2rem;
+}
+
+.xInformation_details .basic_inf li {
+	padding-bottom: .1rem;
+}
+
+.xInformation_details .basic_inf h2 {
+	font-size: .3rem;
+	font-weight: bold;
+	color: #63617D;
+	line-height: .24rem;
+	padding: .3rem;
+	/*	border-bottom: .01rem solid #EEEEEE;*/
+}
+
+.xInformation_details .basic_inf h2 span {
+	font-weight: 500;
+}
+
+.xInformation_details .basic_inf li h3 {
+	font-size: .3rem;
+	font-weight: 800;
+	color: #6E3CFF;
+	line-height: .29rem;
+	padding: .3rem;
+}
+
+.xInformation_details .basic_inf li p {
+	font-size: .28rem;
+	font-weight: 500;
+	color: #63617D;
+	line-height: .3rem;
+	margin-bottom: .3rem;
+	padding-left: .3rem;
+}
+
+.xInformation_details .basic_inf li .div {
+	font-size: .28rem;
+	font-weight: 500;
+	color: #63617D;
+	line-height: .3rem;
+	margin-bottom: .3rem;
+}
+
+.xInformation_details .basic_inf li .div span {
+	padding: 0 .3rem
+}
+
+.xInformation_details .t20 {
+	margin-top: .2rem;
+}
+
+.Overdue_inf li {
+	border-bottom: .01rem solid #EEEEEE;
+	position: relative;
+}
+
+.Overdue_inf li .right_img {
+	width: .14rem;
+	height: .24rem;
+	position: absolute;
+	right: .5rem;
+	top: 40%;
+}
+
+.Overdue_inf li .right_img img {
+	width: .14rem;
+	height: .24rem;
+}
+
+.Overdue_inf li:nth-last-child(1) {
+	border-bottom: none;
+}
+
+.Overdue_inf P span {
+	color: #818181;
+}
+
+.Overdue_inf P:nth-of-type(1) {
+	margin-top: .3rem;
+}
+
+
+/*账户选择*/
+
+.xaccount_selection {}
+
+.xaccount_selection .selection_img {
+	margin-top: 1.87rem;
+	padding: 0 1.03rem;
+}
+
+.xaccount_selection .selection_img img {
+	width: 5.44rem;
+}
+
+.xaccount_selection .selection_text {
+	padding: 0 .5rem;
+	margin-top: 1.27rem;
+}
+
+.xaccount_selection .selection_text h2 {
+	font-size: .46rem;
+	font-weight: 500;
+	color: #333333;
+	line-height: .44rem;
+	text-align: center;
+}
+
+.xaccount_selection .selection_text p {
+	font-size: .36rem;
+	font-weight: 400;
+	color: #333333;
+	line-height: .44rem;
+	margin-top: .4rem;
+	margin-bottom: 1.2rem;
+	text-align: center;
+}
+
+.selection_btn {
+	height: .88rem;
+	font-size: .3rem;
+	font-weight: bold;
+	color: #FAFAFA;
+	line-height: .88rem;
+	text-align: center;
+	background: rgba(110, 60, 255, 1);
+	box-shadow: 0 .02rem .04rem 0px rgba(110, 255, 60, 0.35);
+	border-radius: .2rem;
+}
+
+.sel_btn1 {
+	margin-top: .52rem;
+	margin-bottom: 1.2rem;
+}
+
+.sel_btn11 {
+	margin-top: .52rem;
+	margin-bottom: 1.2rem;
+	background: #B89EFF;
+}
+
+
+/*个人详请页中的个人评价*/
+
+.personal_evaluation {
+	background: rgba(255, 255, 255, 1);
+	box-shadow: 0 0.04rem 0.17rem 0.03rem rgba(234, 234, 234, 0.35);
+	border-radius: .2rem;
+	margin-top: .2rem;
+}
+
+.personal_evaluation .personal_evaluation_title {
+	display: flex;
+	justify-content: space-between;
+	padding: .28rem .4rem;
+	border-bottom: .01rem solid #EDEDED;
+}
+
+.personal_evaluation .personal_evaluation_title div:nth-of-type(1) {
+	font-size: .30rem;
+	font-weight: bold;
+	color: #63617D;
+	line-height: .32rem;
+}
+
+.personal_evaluation .personal_evaluation_title div:nth-of-type(2) {
+	font-size: .28rem;
+	font-weight: 500;
+	color: #6E3CFF;
+	line-height: .32rem;
+}
+
+.personal_evaluation .personal_evaluation_li {
+	padding: 0 .4rem;
+}
+
+.personal_evaluation .personal_evaluation_li ul li {
+	padding: .4rem 0 .45rem 0;
+	border-bottom: .01rem solid #EDEDED;
+}
+
+.personal_evaluation .personal_evaluation_li ul li:nth-last-of-type(1) {
+	border-bottom: none;
+}
+
+.personal_evaluation .personal_evaluation_li .p_evaluation_list_title {
+	display: flex;
+	justify-content: space-between;
+}
+
+.personal_evaluation .personal_evaluation_li .p_evaluation_list_title .p_evaluation_list_title_top {}
+
+.personal_evaluation .personal_evaluation_li .p_evaluation_list_title .p_evaluation_list_title_top img {
+	width: .70rem;
+	height: .70rem;
+}
+
+.personal_evaluation .personal_evaluation_li .p_evaluation_list_title .p_evaluation_list_title_name {
+	margin-left: .3rem;
+	margin-top: .25rem;
+}
+
+.personal_evaluation .personal_evaluation_li .p_evaluation_list_title .p_evaluation_list_title_name h3 {
+	font-size: .3rem;
+	font-weight: 500;
+	color: #63617D;
+	line-height: .32rem;
+}
+
+.personal_evaluation .personal_evaluation_li .personal_evaluation_list_text {
+	font-size: .28rem;
+	font-weight: 500;
+	color: #666666;
+	line-height: .4rem;
+	margin-top: .4rem;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+.personal_evaluation .personal_evaluation_li .personal_evaluation_list_bottom {
+	margin-top: .43rem;
+}
+
+.personal_evaluation .personal_evaluation_li .personal_evaluation_list_bottom .right_img_l p {
+	font-size: .22rem;
+	font-weight: 400;
+	color: #9A9A9A;
+	line-height: .32rem;
+}
+
+.personal_evaluation .personal_evaluation_li .personal_evaluation_list_bottom .right_img_l span {
+	display: block;
+	float: left;
+}
+
+.personal_evaluation .personal_evaluation_li .personal_evaluation_list_bottom .right_img_l span:nth-of-type(1) {
+	font-size: .22rem;
+	font-weight: 400;
+	color: #9A9A9A;
+	line-height: .34rem;
+}
+
+.personal_evaluation .personal_evaluation_li .personal_evaluation_list_bottom .right_img_l span:nth-of-type(2) {
+	width: .44rem;
+	height: .34rem;
+	margin-right: .16rem;
+	margin-left: .16rem;
+}
+
+.personal_evaluation .personal_evaluation_li .personal_evaluation_list_bottom .right_img_r span {
+	display: block;
+	float: left;
+}
+
+.personal_evaluation .personal_evaluation_li .personal_evaluation_list_bottom .right_img_r span:nth-of-type(1) {
+	font-size: .22rem;
+	font-weight: 400;
+	color: #9A9A9A;
+	line-height: .34rem;
+}
+
+.personal_evaluation .personal_evaluation_li .personal_evaluation_list_bottom .right_img_r span:nth-of-type(2) {
+	width: .44rem;
+	height: .34rem;
+	margin-right: .16rem;
+	margin-left: .16rem;
+}
+
+
+/*个人详请页中的个人评价*/

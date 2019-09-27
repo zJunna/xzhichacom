@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>注销账号</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="shortcut icon" type="image/png" href="@{' /HRzhicha/public/images/favicon.ico'}" />
+		<link rel="stylesheet" type="text/css" href=" /HRzhicha/public/stylesheets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href=" /HRzhicha/public/stylesheets/css/style.css" />
+		<link rel="stylesheet" type="text/css" href=" /HRzhicha/public/stylesheets/css/xstyle.css" />
+		<script type="text/javascript" src=" /HRzhicha/public/javascripts/js/jquery.1.9.1.js"></script>
+		<script type="text/javascript" src=" /HRzhicha/public/javascripts/js/js.js"></script>
+	</head>
+
+	<body class="ggg" style="background: #FFFFFF;">
+		<div class="pay_tits1" style="box-shadow:0 .04rem .17rem .03rem rgba(234, 234, 234, 0.35);">
+			<img src="/HRzhicha/public/images/img/land_icon_03.png" onclick="javascript:history.back(-1);" />
+			<p>注销账号</p>
+		</div>
+		<div class="xaccount_cancellation xaccount_cancellation1">
+
+			<h3>请您在注销账户前，先进行安全验证</h3>
+			<div class="lable_inp fl">
+				<input type="text" name="" class="fl" id="" placeholder="请输入手机号" />
+			</div>
+			<div class="clear"></div>
+			<div class="lable_inp fl inp2">
+				<input type="text" name="" class="fl inptwo" id="" placeholder="请输入验证码" />
+				<a class="xaccount_code" style="">
+					获取验证码
+				</a>
+			</div>
+			<div class="clear"></div>
+
+			<div class="xaccount_cancellation_btn">
+				验证
+			</div>
+		</div>
+		<script type="text/javascript">
+		</script>
+		<script type="text/javascript">
+			// 点击获取验证码操作
+			$('.feachBtn').click(function() {
+				let count = 60;
+				const countDown = setInterval(() => {
+					if(count === 0) {
+						$('.feachBtn').text('重新发送').removeAttr('disabled');
+						$('.feachBtn').css({
+							background: '#ff9400',
+							color: '#fff',
+						});
+						clearInterval(countDown);
+					} else {
+						$('.feachBtn').attr('disabled', true);
+						$('.feachBtn').css({
+							background: '#d8d8d8',
+							color: '#707070',
+						});
+						$('.feachBtn').text(count + '秒后可重新获取');
+					}
+					count--;
+				}, 1000);
+			}
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,239 @@
+/* 风险测评报告 */
+
+.srAssessBox {
+	width: 1200px;
+	margin: 175px auto 40px;
+	background: #fff;
+	border-radius: 20px;
+	
+}
+
+.srAssessBox .srAssessContent {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.srAssessBox .srAssessContent h4 {
+	text-align: center;
+	color: #6E3CFF;
+	font-size: 22px;
+	font-weight: bold;
+	margin: 60px auto 0;
+	padding-bottom: 50px;
+	margin-left: 435px;
+}
+
+.seRiskBoxTitle {
+	border-bottom: 1px solid #EAEAEA
+}
+
+.srAssessTitle {
+	margin: 50px 0 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.srAssessTitle .srAssessLeft {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 49px;
+}
+
+.srAssessRight {
+	color: #606060;
+	font-size: 14px;
+}
+
+.srAssessTitle .srAssessLeft .srIdNumber {
+	margin-top: 15px;
+}
+
+.srNameBox {
+	margin-left: 30px;
+}
+
+.srNameBox .srName {
+	color: #333;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.srIdNumber {
+	color: #666;
+	font-size: 16px;
+}
+
+.srIdNumber span {
+	margin-left: 15px;
+	font-size: 16px;
+	color: #666;
+}
+
+.srAssessTitle img {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+
+
+/* 风险程度 */
+
+.srRiskBox {
+	width: 1000px;
+	background: #F8F8FF;
+	border-radius: 20px;
+	padding: 64px 0 52px 144px;
+	margin-bottom: 40px;
+}
+
+.srRiskBox h5 {
+	font-size: 20px;
+	color: #6E3CFF;
+	font-weight: bold;
+}
+
+.srLowHeightMid {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 150px;
+	height: 24px;
+	border-radius: 12px;
+	border: 1px solid #6E3CFF;
+}
+
+.seRiskBoxTitle {
+	display: flex;
+	align-items: center;
+}
+
+.seRiskBoxTitle span {
+	display: block;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #6E3CFF;
+	border-radius: 20px;
+	border: 1px solid #6E3CFF;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.srRiskBox .srDegree p {
+	font-size: 12px;
+	color: #666;
+	margin: 26px 0 13px;
+}
+
+.srLowHeightMid .on {
+	background: #6E3CFF;
+	color: #fff;
+}
+
+.srLowHeightMid .rightRadios {
+	border-radius: 0 13px 13px 0;
+}
+
+.srLowHeightMid .leftRadios {
+	border-radius: 12px 0 0 12px;
+}
+
+.srLowHeightMid div {
+	width: 50px;
+	height: 24px;
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.srDegree .srCheck {
+	color: #333333;
+	font-size: 16px;
+	margin: 26px 0 52px;
+}
+
+.srPromotionBox .srPromWrite {
+	color: #6E3CFF;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.srPromotionBox .srPromWrite span {
+	font-size: 12px;
+	color: #666;
+	margin-left: 15px;
+	font-weight: 400;
+}
+
+.srChartContent {
+	margin: 0 0 0 -66px;
+	display: flex;
+	align-items: center;
+	margin-top: 39px;
+}
+
+.srChartContent .fl {
+	margin-left: 70px;
+}
+
+.srChartRight {
+	margin-left: 200px;
+}
+
+.srChartRight li {
+	margin-bottom: 23px;
+	width: 225px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.srChartRightLBox {
+	display: flex;
+	flex-direction: column;
+}
+
+.srChartRight li .srMid {
+	color: #666;
+	font-size: 14px;
+	margin-left: 17px;
+}
+
+.srChartRight li span {
+	color: #666;
+	font-size: 12px;
+}
+
+.srText {
+	display: flex;
+	align-content: center;
+	justify-content: space-around;
+}
+
+.srChartRight li .square {
+	width: 13px;
+	height: 15px;
+}
+
+.srone {
+	background: #FE6A8E;
+}
+
+.srtwo {
+	background: #9B8AFD;
+}
+
+.srthree {
+	background: #FED404;
+}
+
+.srfour {
+	background: #F74949;
+}

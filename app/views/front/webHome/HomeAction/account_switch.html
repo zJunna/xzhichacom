@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="/HRzhicha/public/stylesheets/webcss/reset.css">
+		<link rel="stylesheet" href="/HRzhicha/public/stylesheets/webcss/seach_not_person.css">
+		<script src="/HRzhicha/public/javascripts/webjs/jquery-1.11.1.min.js"></script>
+		
+		<title>切换账户</title>
+	</head>
+
+	<body style="background: #ccc;">
+		<!-- <button class="count" id="countBtn">账户切换</button>-->
+
+		<!-- 登录 -->
+		<div style="height: 100%;width: 100%;position: fixed;top: 0;left: 0;z-index: 210;display: block" id="srBigBox">
+			<!-- 遮罩层 -->
+			<div style="background:#000;height: 100%;width: 100%;opacity: .4;position: absolute;top: 0;left: 0; z-index: -1;" id="srCountShadow"></div>
+			<!-- 多重选择 -->
+			<div class="backBox" id="seMulSelect" style="display: block;">
+				<div class="personIf verticalAlign">
+					<h4>多重选择</h4>
+					<p class="placeSeach mulP">拥有不一样的体验和服务</p>
+					<div class="mulBoxImg"> <img src="/HRzhicha/public/images/webimg/chart.png" alt=""></div>
+					<button class="seachBtn srCompany" id="srClickCompany">企业用户</button>
+					<button class="seachBtn seachBtn12 srPerson" id="srClickPerson">个人用户</button>
+				</div>
+			</div>
+			<!-- 企业账户 -->
+			<div class="backBox" id="srCompany" style="display: block;">
+				<div class="personIf verticalAlign">
+					<h4>当前为企业账户</h4>
+					<p class="placeSeach srSwitch">切换账号体验个人服务</p>
+					<div class="mulBoxImg"><img class="srComponySwitch" src="/HRzhicha/public/images/webimg/company.png" alt=""></div>
+					<button class="seachBtn srCompany" id="srPersonUser">切换为个人用户</button>
+					<button class="seachBtn srPerson" id="return">返回我的账户</button>
+				</div>
+			</div>
+			<!-- 个人账户 -->
+			<div class="backBox" id="sePerson" style="display: block;">
+				<div class="personIf verticalAlign">
+					<h4>当前为个人账户</h4>
+					<p class="placeSeach srSwitch">切换账号体验全新服务</p>
+					<div class="mulBoxImg"><img class="srComponySwitch" src="/HRzhicha/public/images/webimg/read.png" alt=""></div>
+					<button class="seachBtn srCompany" id="srCompanyUser">切换为企业用户</button>
+					<button class="seachBtn srPerson" id="return">返回我的账户</button>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			$(function() {
+				$("#countBtn").click(function() {
+					$("#srCompany").css("display", "block")
+					$("#srBigBox").css("display", "block")
+
+				});
+				$("#srClickCompany").click(function() {
+					$("#srCompany").css("display", "block")
+
+					$("#sePerson").css("display", "none")
+				});
+				$("#srClickPerson").click(function() {
+
+					$("#srCompany").css("display", "none")
+					$("#sePerson").css("display", "block")
+				});
+				$("#srPersonUser").click(function() {
+					$("#srCompany").css("display", "none")
+					$("#sePerson").css("display", "block")
+
+				});
+				$("#srCompanyUser").click(function() {
+					$("#sePerson").css("display", "none")
+					$("#srCompany").css("display", "block")
+
+				});
+				$("#srCountShadow").click(function() {
+					$("#srBigBox").css("display", "none")
+
+					$("#sePerson").css("display", "none")
+					$("#srCompany").css("display", "none")
+				});
+			})
+		</script>
+	</body>
+
+</html>

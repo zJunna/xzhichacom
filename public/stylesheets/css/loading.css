@@ -1,0 +1,14 @@
+#tipDiv {
+    display: block;
+    position: absolute;
+    left: 39%;
+    top: 2rem;
+    z-index: 9999;
+    background: #d9d9d9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#tipInfo {
+    margin-top: 10px;
+}

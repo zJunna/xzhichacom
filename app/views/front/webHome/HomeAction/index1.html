@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="keywords" content="职场信用，职信，员工征信，职场征信查询"></meta>
+		<meta name="description" content="X职查是一个职场信用共享与查询平台。在X职查平台企业可以把员工的守信和失信行为在系统里共享，也可以在雇佣前或雇佣中查询员工的职场征信。X职查是一个专业的区块链职业信用查询平台。">
+		<title>X职查-职场信用共享查询平台</title>
+		<link rel="stylesheet" href="/HRzhicha/public/stylesheets/webcss/home.css">
+		<link rel="stylesheet" href="/HRzhicha/public/stylesheets/webcss/reset.css">
+		<link rel="stylesheet" href="/HRzhicha/public/stylesheets/webcss/footer.css">
+		 <link rel="stylesheet" href="/HRzhicha/public/stylesheets/webcss/seach_not_person.css">
+		<!--	<link rel="stylesheet" href="css/style.css" />-->
+		<script src="/HRzhicha/public/javascripts/webjs/jquery-2.1.1.min.js"></script>
+		<script src="/HRzhicha/public/javascripts/webjs/click.js"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/webjs/login.js"></script>
+		<!-- <script src="./js/sidebar.js"></script> -->
+	</head>
+
+	<body>
+		<div class="banner">
+			<div class="banner_center">
+				<div class="banner_top">
+					<h1><img src="/HRzhicha/public/images/webimg/x-logo1.png" alt=""></h1>
+					<ul>
+						<li>
+							<a href="index1.html">首页</a>
+						</li>
+						<li>
+							<a href="seach_personal.html">查个人</a>
+						</li>
+						<li>
+							<a href="seach_company_detail.html">查企业</a>
+						</li>
+						<li>
+							<a href="my_pay1.html">VIP服务</a>
+						</li>
+						<li>
+							<a href="my_center.html">用户中心</a>
+						</li>
+
+						<li>
+							<a href="about.html">关于我们</a>
+						</li>
+
+					</ul>
+
+					<div class="land_user" ><img src="images/default.png" class="land_user_img"/>
+						<a href="account_switch.html">
+							<div class="esc_land" style="border-bottom-right-radius: 0;border-bottom-left-radius: 0;">
+								<img src="/HRzhicha/public/images/webimg/s_qh.png" />
+								<p>账户切换</p>
+							</div>
+						</a>
+						<div class="esc_land" style="top:100px;border-radius: 0;">
+							<img src="/HRzhicha/public/images/webimg/s_gr.png" />
+							<p>实名认证</p>
+						</div>
+						<div class="esc_land" style="top:140px;border-radius: 0;">
+							<img src="/HRzhicha/public/images/webimg/s_vip.png" />
+							<p>VIP服务&nbsp;&nbsp;</p>
+						</div>
+
+						<div class="esc_land" style="top:182px;border-top-right-radius: 0;border-top-left-radius: 0;z-index: 99;">
+							<img src="/HRzhicha/public/images/webimg/xs_07.jpg" />
+							<p>退出登录</p>
+						</div>
+
+					</div>
+
+					<div class="btn"  style="display: none;">
+						<a href="" class="f" id="login">登录</a>
+						<a href="" class="fr" id="register">注册</a>
+					</div>
+				</div>
+				<h2>查询职场信用&nbsp;&nbsp;就上X职查</h2>
+				<div class="seach_tab">
+					<div class="layui-tab layuiTabStyle"></div>
+					<ul class="layui-tab-title searchClick">
+						<li class="layui-this">查个人</li>
+						<li>查企业</li>
+					</ul>
+					<div class="layui-tab-content">
+						<div class="layui-tab-item" id="searchEnter">
+							<div class="search">
+								<div class="fl">
+									<div class="sea_inp">
+										<input type="text" class="first_input" style="" placeholder="请输入姓名" name="searchName" id="searchName" value="" />
+										<input type="text" class="last_input" placeholder="身份证号" name="searchIdNumber" id="searchIdNumber" value="" />
+										<div class="line"></div>
+										<input type="text" name="webError" id="webError" placeholder="电话" style="width: 320px;" value="" />
+									<input type="text" name="webError" id="webError" placeholder="444444" style="width: 320px;color: red;" value="" />
+									</div>
+									<input type="submit" name="webSearch" id="webSearch" value="查询" />
+								</div>
+								
+							</div><div id="">
+								<!--	44444444444444444-->
+								</div>
+						</div>
+						<div class="layui-tab-item" id="searchEnter" style="display: none;">
+							<div class="search" style="margin-bottom: 19px;">
+								<div class="fl">
+									<div class="sea_inp lineClear" id="lineClear">
+										<input type="text" class="two_input" style="text-indent: 3%;padding-left: 50px;text-align: left;" placeholder="请输入企业名称" name="companyName" id="companyName" value="" />
+									</div>
+									<input type="submit" name="webSearch" id="webSearch" value="查询" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 热搜信息 -->
+				<ul class="nav">
+					<li>
+						<p>热搜：</p>
+					</li>
+					<li>
+						<p>工商银行</p>
+					</li>
+					<li>
+						<p>当当网</p>
+					</li>
+					<li>
+						<p>淘宝</p>
+					</li>
+					<li>
+						<p>马蜂窝</p>
+					</li>
+					<li>
+						<p>双十一</p>
+					</li>
+					<li>
+						<p>京东</p>
+					</li>
+					<li>
+						<p>百度网盘</p>
+					</li>
+					<li>
+						<p>三只松鼠</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="box">
+			<!-- 最新查询 -->
+			<!-- eight-icon -->
+			<div class="pic_info">
+				<div class="iconBox">
+
+					<div class="iconItem">
+						<a href="">
+							<div class="iconitemBox" style="background: url('./images/web/icon-pe.png')">
+								<i></i>
+							</div>
+							<p>被执行人</p>
+						</a>
+					</div>
+
+					<div class="iconItem">
+						<a href="#">
+							<div class="iconitemBox" style="background: url('./images/web/icon-break.png')">
+								<i></i>
+							</div>
+							<p>失信信息</p>
+						</a>
+					</div>
+					<div class="iconItem">
+						<div class="iconitemBox" style="background: url('./images/web/icon-info.png')">
+							<i></i>
+						</div>
+						<p>涉诉信息</p>
+					</div>
+					<div class="iconItem">
+						<div class="iconitemBox" style="background: url('./images/web/icon-bank.png')">
+							<i></i>
+						</div>
+						<p>银行逾期</p>
+					</div>
+					<div class="iconItem">
+						<div class="iconitemBox" style="background: url('./images/web/icon-serch.png')">
+							<i></i>
+						</div>
+						<p>商标查询</p>
+					</div>
+					<div class="iconItem">
+						<div class="iconitemBox" style="background: url('./images/web/icon-lend.png')">
+							<i></i>
+						</div>
+						<p>网贷黑名单</p>
+					</div>
+
+					<div class="iconItem">
+						<div class="iconitemBox" style="background: url('./images/web/icon-pub.png')">
+							<i></i>
+						</div>
+						<p>招聘信息</p>
+					</div>
+					<div class="iconItem">
+						<div class="iconitemBox" style="background: url('./images/web/z_icon9.png')">
+							<i></i>
+						</div>
+						<p>不良信息</p>
+					</div>
+				</div>
+			</div>
+			<!-- 产品介绍 -->
+			<div class="productBox">
+				<div class="product">
+					<h4>产品介绍</h4>
+					<ul class="clear">
+						<li>
+							<img src="/HRzhicha/public/images/webimg/icon_214.png" alt="">
+							<p>实名共享</p>
+							<span>X职查用户全部需要实名认证才能够使用发布、查询、申诉等操作。</span>
+						</li>
+						<li>
+							<img src="/HRzhicha/public/images/webimg/icon_213.png" alt="">
+							<p>评论机制</p>
+							<span>用户可以对曾任职、面试过的公司进行点评，发表客观真实的意见。</span>
+						</li>
+						<li>
+							<img src="/HRzhicha/public/images/webimg/icon_211.png" alt="">
+							<p>授权机制</p>
+							<span>信息查询需通过授权方式进行验证，以保障个人合法权益。</span>
+						</li>
+						<li>
+							<img src="/HRzhicha/public/images/webimg/icon_212.png" alt="">
+							<p>VIP服务</p>
+							<span>VIP尊享服务，让企业查询服务放心用。</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 平台公告 -->
+			<div class="next_gg">
+				<h2>平台公告</h2>
+				<ul class="clear">
+					<li name="newname">
+						<span>新闻</span>
+						<p>职场界的福尔摩斯--企业查询...</p>
+						<em>近些年，国家对个人征信的关注达到了前所谓有的程度，成立信联、改版征信报告等一系列举措旨在建设一个诚信有序的社会。作为一名从业多年的HR，我们心里也一直有一个强烈...</em>
+					</li>
+					<li name="newname" class="on">
+						<span>新闻</span>
+						<p>X职查1.8版本重磅来袭，个...</p>
+						<em>尊敬的X职查用户：X职查1.8版本全新升级，个人查询功能正式上线，新增众多个人职场信息查询功能。个人信用查询功能：学历验证、社保查询、逾期黑名单、涉诉信息、网贷...</em>
+					</li>
+					<li name="newname">
+						<span>新闻</span>
+						<p>X职查1.5版本重磅来袭，企...</p>
+						<em>又是一年毕业季，又到了应届毕业生们忙着投简历、参加面试的紧张时期。对于求职者来说，了解应聘公司的资质是否可靠是非常重要的。对于外来务工人员来说，了解用人单位是否...</em>
+					</li>
+				</ul>
+				<a href="" class="bot_link">MORE></a>
+			</div>
+			<!-- 行业新闻资讯 -->
+			<div class="Consultation">
+				<h2>行业新闻资讯</h2>
+				<div class="consu_box clear">
+					<div class="fl" id="news">
+						<!-- style="display: none;" -->
+						<a href="####" onclick="showView('/HRzhicha/data/xuanchuanpian.mp4')"><img src="/HRzhicha/public/images/webimg/pic_new.png" />
+							<img src="/HRzhicha/public/images/webimg/pic_logo.png" style="position: absolute;margin-top: -228px;margin-left: 185px;width: 36%;height: 21%;" id="newLogo" />
+							<img src="/HRzhicha/public/images/webimg/pic_bg.png" style="position: absolute;margin-top: -248px;margin-left: 234px;width: 19%;height: 29%;" id="newStart" />
+						</a>
+						<p style="display: none;" id="propagandaLang">X职查企业宣传片</p>
+					</div>
+					<div class="fr">
+						<ul>
+							<li>
+								<a href="">
+									<p>职场中做到学会沟通</p>
+									<p>2019-07-30</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<p>职场界的福尔摩斯--企业查询功能全新升级...</p>
+									<p>2019-07-29</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<p>职场中做到学会沟通</p>
+									<p>2019-07-26</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<p>职场信用---员工玩“闪辞”企业很受伤</p>
+									<p>2019-07-25</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<p>职场中自我激励的方法！</p>
+									<p>2019-07-24</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<p>从入职背调测评切入职场信用！</p>
+									<p>2019-07-23</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 合作伙伴 -->
+			<div class="Partner">
+				<h2>合作伙伴</h2>
+				<ul>
+					<li><img src="./images/icon_34.jpg" alt=""></li>
+					<li><img src="./images/icon_37.jpg" alt=""></li>
+					<li><img src="./images/icon_28.jpg" alt=""></li>
+					<li><img src="./images/icon_31.jpg" alt=""></li>
+					<li><img src="./images/icon_40.jpg" alt=""></li>
+				</ul>
+			</div>
+			<!-- 最新注册企业 -->
+			<div class="Registered">
+				<h2>最新注册企业</h2>
+				<ul>
+					<li>
+						<div>
+							<p>雄玖（上海）建筑工程有限公司</p>
+							<span class="comdata">成立日期：2019-07-30</span>
+							<span>法人代表：徐平阳</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<p>陵川县山和建筑工程有限公司</p>
+							<span class="comdata">成立日期：2019-07-30</span>
+							<span>法人代表：李红卫</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<p>深圳市瑞泰农产品发展有限公司</p>
+							<span class="comdata">成立日期：2019-07-30</span>
+							<span>法人代表：黄伟</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<p>深圳市宝得利实业有限公司</p>
+							<span class="comdata">成立日期：2019-07-30</span>
+							<span>法人代表：蒋红英</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<p>深圳市简浩科技有限公司</p>
+							<span class="comdata">成立日期：2019-07-30</span>
+							<span>法人代表：黄湘文</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<p>深圳市格林尚品装饰有限公司</p>
+							<span class="comdata">成立日期：2019-07-30</span>
+							<span>法人代表：张文斌</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<p>深圳市元华建筑工程有限公司</p>
+							<span class="comdata">成立日期：2019-07-30</span>
+							<span>法人代表：吴官飞</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<p>深圳市斯伯特科技有限公司</p>
+							<span class="comdata">成立日期：2019-07-30</span>
+							<span>法人代表：李天德</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<p>雄玖（上海）建筑工程有限公司</p>
+							<span class="comdata">成立日期：2019-07-30</span>
+							<span>法人代表：徐平阳</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 侧边栏 -->
+		<div class="sidebar">
+			<ul>
+				<li>
+					<a href="">
+						<img src="./images/actnavbar_101.jpg" alt="" class="icc">
+						<p>在线客服</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="./images/actnavbar_103.jpg" alt="" class="icc">
+						<p>APP下载</p>
+						<div style="left: -167px;">
+							<em>安卓系统下载</em><img style="width:89px;height:89px;" src="./images/yingyongbao.png" alt="">
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="./images/actnavbar_10.jpg" alt="" class="icc">
+						<p>微信服务</p>
+						<div style="left: -167px;display: none;">
+							<em>关注微信公众号</em><img style="width:89px;height:89px;" src="./images/zhichaWX.jpg" alt="">
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div class="downs_box">
+				<img src="./images/actnavbar_14.jpg" alt="">
+				<p>TOP</p>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="footer">
+			<div class="footer_mid">
+				<div class="footer_top clear">
+					<div class="link_list">
+						<p>关于淮安</p>
+						<a href="">公司简介</a>
+						<a href="">联系我们</a>
+					</div>
+					<div class="link_list">
+						<p>产品服务</p>
+						<a href="">服务协议</a>
+						<a href="">隐私说明</a>
+						<a href="">法律说明</a>
+					</div>
+					<div class="link_list">
+						<p>帮助中心</p>
+						<a href="">常见问题</a>
+						<a href="">平台公告</a>
+					</div>
+					<div class="link_list">
+						<p>下载中心</p>
+						<a href="">安卓版本</a>
+						<a href="">ios版本</a>
+						<div class="code"><img style="width:89px;height:89px;" src="./images/yingyongbao.png" alt=""></div>
+					</div>
+					<div class="link_list">
+						<p>联系方式</p>
+						<span>客服热线 （09:00 - 17:00）<br>400-6039-818</span>
+						<span>客服邮箱<br>admin@xzhicha.com</span>
+						<div class="icon_list">
+							<a href=""><img src="./images/icon_47.jpg" alt=""></a>
+							<a href=""><img src="./images/icon_49.jpg" alt=""></a>
+							<a href=""><img src="./images/icon_51.jpg" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer_bottom" style="margin-top: 40px;text-align: center;">
+					<ul>
+						<li>
+							<a href="">知识产权局</a>
+						</li>
+						<li>
+							<a href="">中国商标网</a>
+						</li>
+						<li>
+							<a href="">人行征信中心</a>
+						</li>
+						<li>
+							<a href="">钱上钱</a>
+						</li>
+						<li>
+							<a href="">国家版权局</a>
+						</li>
+						<li>
+							<a href="">裁判文书网</a>
+						</li>
+						<li>
+							<a href="">执行信息网</a>
+						</li>
+						<li>
+							<a href="">工商查询网</a>
+						</li>
+						<li>
+							<a href="">准安科技</a>
+						</li>
+						<li>
+							<a href="">天眼查</a>
+						</li>
+					</ul>
+					<p>©2019 山东准安互联网科技有限公司 版权所有.
+						<a href="" style="color:#B1B1C7;">鲁ICP备16009413号-1</a>
+					</p>
+				</div>
+			</div>
+
+		</div>
+		<script type="text/javascript">
+			//两种方式实现div居中：1：用css方式：top：50%，left：50%； margin-let:-divwidth/2 margin-top:divheight/2; 2:用js实现：获取窗口的高宽，top=（屏幕高-div高）/2,为了随时的监听浏览器的改变，需要用到浏览器事件
+			function getScrollTop() {
+				var scrollTop = 0;
+				if (document.documentElement && document.documentElement.scrollTop) {
+					scrollTop = document.documentElement.scrollTop;
+				} else if (document.body) {
+					scrollTop = document.body.scrollTop;
+				}
+				return scrollTop;
+			}
+		
+			function showView(PlaySrc) {
+				document.getElementById("open").onclick();
+				//设置数据源，播放器开始播放
+				var mediaImageObj = document.getElementById("mediaImage");
+				mediaImageObj.src = PlaySrc;
+				mediaImageObj.play();
+		
+				return false;
+			}
+		
+			window.onload = function() {
+				function $(id) {
+					return document.getElementById(id);
+				}
+				//将div的位置封装在一个函数内部，直接调用
+		
+				function myDiv() {
+					var mTop = getScrollTop();
+		
+					var windowsHeight = window.innerHeight;
+					var addHeight = (windowsHeight - 540) / 2;
+		
+					var windowsHeight = window.innerWidth;
+					var addWidth = (windowsHeight - 1020) / 2;
+		
+					mTop = mTop + addHeight;
+					var mleft = (document.documentElement.clientWidth - 400) / 2;
+					$("up").style.top = mTop + "px";
+					$("up").style.left = addWidth + "px";
+				}
+		
+				$("open").onclick = function() {
+					myDiv();
+					$("up").style.display = "block";
+					mask.style.display = "block";
+		
+				}
+				$("close").onclick = function() {
+					$("up").style.display = "none";
+					mask.style.display = "none"
+					//播放器停止播放
+					var mediaImageObj = document.getElementById("mediaImage");
+					mediaImageObj.pause();
+		
+				}
+				//创建一个DIV
+				var mask = document.createElement("div");
+				// //给这个DIV一个id和class属性
+				// mask.id="mask";
+				mask.className = "mask";
+				mask.style.width = document.documentElement.clientWidth;
+				mask.style.height = document.documentElement.clientHeight;
+				//将这个DIV放置到body里面--》一般是：父节点.appendChild(子节点)
+				//这里注意的是absolute，要设置top和left；
+				document.body.appendChild(mask);
+		
+				//屏幕改变大小的时候，div不会自动的改变，需要添加窗口改变事件
+				window.onresize = function() {
+					myDiv();
+					mask.style.width = document.documentElement.clientWidth;
+					mask.style.height = document.documentElement.clientHeight;
+				}
+			}
+		</script> <span id="open" style="background: red;"></span>
+
+		<div class="up" id="up" style="top: 1814.5px; left: -55.5px; display: none;">
+
+			<div class="videoBox">
+				<div style="float: right; padding-right: 10px;">
+					<img id='close' src="./images/close.png" onclick="divClose()" />
+				</div>
+				<section id="player">
+					<video id="mediaImage" width="1020" controls poster="">
+						<source id="mediaMp4" src="" />
+
+					</video>
+				</section>
+			</div>
+		</div>
+		<!-- 视频展示结束 -->
+
+		<!-- <script type="text/javascript">
+        $(function(){
+          var id="383";
+            $("#"+id).addClass('on').siblings().removeClass('on');
+        })
+         $("li[name='newname']").each(function(){
+               $(this).click(function(){
+               var id=$(this).attr("id");
+               location.href="/front/webHome/mediaCoverage?typeid="+id;
+               })
+       });
+       $("body").keydown(function() {
+       if (event.keyCode == "13") {//keyCode=13是回车键
+                if($(".layui-show").attr("id")=="searchEnter"){
+                 $('#webSearch').click();
+                }
+                 if($(".layui-show").attr("id")=="searchEnterWeb"){
+                    $('#comSearch').click();
+                }
+           };
+       });
+   </script> -->
+
+		<!--登录 -->
+		<div style="height: 100%;width: 100%;position: fixed;top: 0;left: 0;z-index: 210;display: none" id="allDiv">
+			<div style="background:#000;height: 100%;width: 100%;opacity: .4;position: absolute;top: 0;left: 0" id="shadowDiv"></div>
+			<!-- 登录 -->
+			<div class="land_box" style="margin-top: 2%;display: none" id="loginDiv">
+				<img src="./images/pass_03.jpg" class="logo" />
+				<h5>登录</h5>
+				<div class="land_lable">
+					<input type="text" placeholder="请输入手机号/邮箱" name="" id="" value="" />
+				</div>
+				<div class="land_lable">
+					<input type="password" id="oas" placeholder="请输入密码" name="" id="" value="" />
+					<img src="./images/pass_10.jpg" class="show_word" />
+					<img src="./images/pass_07.jpg" class="cleahs hide" />
+				</div>
+				<div class="land_lable">
+					<input type="text" placeholder="请输入图片验证码" name="registerYanzhengma" id="registerYanzhengma" value="" />
+					<img id="img" src="/images/登录页面-02_r2_c2.gif" style="position:absolute;width: 8rem;height:3.7rem;border-radius:0.4rem;right: 0px;top: -1%">
+					<input type="hidden" name="randomID" id="randomID" /><br/>
+				</div>
+				<div class="remsa">
+					<a href="#" class="fl" id="yzmLogin">验证码登录</a>
+					<a href="#" class="fr" id="loginForgetPass">忘记密码？</a>
+				</div>
+				<div class="land_btner">登录</div>
+				<p class="name_good1">
+					<a href="#" id="goRegister">注册</a>
+				</p>
+				<div class="qq">
+					<p>OR</p>
+					<div>
+						<img src="./images/pass_23.jpg" />
+						<img src="./images/pass_26.jpg" />
+						<img src="./images/pass_32.jpg" />
+					</div>
+				</div>
+			</div>
+
+			<!-- end -->
+			<!--验证码登录 -->
+			<div class="land_box" style="margin-top: 2%;display: none" id="yzmLoginDiv">
+				<img src="/images/lo_1.png" class="logo" />
+				<h5 style="font-size: 34px">登录</h5>
+				<div class="land_lable">
+					<input type="text" placeholder="请输入手机号/邮箱" name="yzmLoginMobile" id="yzmLoginMobile" value="" />
+				</div>
+				<div class="land_lable">
+					<input type="text" placeholder="请输入图片验证码" name="yzmLoginPhoto" id="yzmLoginPhoto" value="" />
+					<img id="yzmLoginImg" src="/images/登录页面-02_r2_c2.gif" style="position:absolute;width: 8rem;height:3.7rem;border-radius:0.4rem;right: 0px;top: -1%">
+					<input type="hidden" name="yzmLoginRandomID" id="yzmLoginRandomID" /><br/>
+				</div>
+				<div class="land_lable">
+					<input type="text" placeholder="请输入手机验证码" id="yzmLoginMobileCode" value="" name="yzmLoginMobileCode" />
+					<p class="sends" id="yzmLoginCodeTimes" onclick="yzmLoginsendCode();">发送验证码</p>
+				</div>
+				<div class="remsa">
+					<a class="fl" id="passwordLogin" style="cursor:pointer;">密码登录</a>
+					<a href="#" class="fr" id="yzmLoginForgetPass">忘记密码？</a>
+				</div>
+				<p class="gsaw" id="yzmLoginErrorInfo" style="bottom: 315px"></p>
+				<div class="land_btner" id="yzmLoginButton">登录</div>
+				<p class="name_good1">
+					<a href="#" id="yzmGoRegister">注册</a>
+				</p>
+				<div class="qq">
+					<p>OR</p>
+					<div>
+						<img src="/images/pass_23.jpg" />
+						<img src="/images/pass_26.jpg" />
+						<img src="/images/pass_32.jpg" />
+					</div>
+				</div>
+			</div>
+
+			<!--注册 -->
+			<div class="land_box" style="margin-top: 2%;display: block" id="registerDiv">
+				<img src="./images/lo_1.png" class="logo" />
+				<h5 style="font-size: 34px">注册</h5>
+				<div class="land_lable">
+					<input type="text" placeholder="请输入手机号" name="registerMobile" id="registerMobile" value="" />
+				</div>
+				<div class="land_lable">
+					<input type="text" placeholder="请输入图片验证码" name="registerYanzhengma" id="registerYanzhengma" value="" />
+					<img id="img" src="/images/登录页面-02_r2_c2.gif" style="position:absolute;width: 8rem;height:3.7rem;border-radius:0.4rem;right: 0px;top: -1%">
+					<input type="hidden" name="randomID" id="randomID" /><br/>
+				</div>
+				<div class="land_lable">
+					<input type="text" placeholder="请输入验证码" id="yanzhengma" value="" name="yanzhengma" />
+					<p class="sends" id="codeTimes" onclick="sendCode();">发送验证码</p>
+				</div>
+				<div class="land_lable">
+					<input type="password" placeholder="设置密码（6-16位字母数字组合）" name="registerPassword" value="" id="registerPassword" />
+					<img src="/images/pass_10.jpg" class="show_word" id="registerEyes" />
+					<img src="/images/pass_07.jpg" class="cleahs hide" id="registerClear" />
+				</div>
+				<div class="x_xy">
+					<div id="tick"><img src="/images/pass_19.jpg" class="hide" style="display: none" /></div>
+					<p>注册代表您已同意<span id="agreement">《X职查平台使用协议》</span></p>
+				</div>
+				<div class="land_btner" id="registerButton">注册</div>
+				<p class="name_good">已有账号？
+					<a href="#" id="goLogin">去登陆</a>
+				</p>
+				<p class="gsaw" id="errorInfo"></p>
+			</div>
+
+			<!--忘记密码  -->
+			<div class="land_box" style="margin-top: 2%;display: none;" id="forgetPasswordDiv">
+				<h5 style="margin-bottom: 80px;font-size: 48px">查找账号</h5>
+				<div class="land_lable">
+					<input type="text" placeholder="请输入注册手机号/邮箱" name="forgetMobile" id="forgetMobile" value="" />
+				</div>
+				<div class="land_lable">
+					<input type="text" placeholder="输入图形验证码" name="forgetYanzhengma" id="forgetYanzhengma" value="" />
+					<img id="forgetImg" src="/images/登录页面-02_r2_c2.gif" style="position:absolute;width: 8rem;height:3.7rem;border-radius:0.4rem;right: 0px;top: -1%">
+					<input type="hidden" name="forgetRandomID" id="forgetRandomID" /><br/>
+				</div>
+				<div class="land_lable">
+					<input type="text" placeholder="请输入收到的验证码" name="forgetMobileCode" id="forgetMobileCode" value="" />
+					<p class="sends" id="forgetCodeTimes" onclick="forgetsendCode();">发送验证码</p>
+					<img src="/images/pass_07.jpg" style="right: 130px;" class="cleahs hide" />
+				</div>
+				<div class="seng" id="nextButton">下一步</div>
+				<p class="wangjis">长时间未收到，您可以重新发送验证码或
+					<a href="#">联系客服</a>?</p>
+				<p class="gsaw" id="forgetErrorInfo"></p>
+			</div>
+		</div>
+
+		<!-- 登录结束 -->
+ <div style="height: 100%;width: 100%;position: fixed;top: 0;left: 0;z-index: 210;display: none" id="srIfTheBox">
+        <!-- 遮罩层 -->
+        <div style="background:#000;height: 100%;width: 100%;opacity: .4;position: absolute;top: 0;left: 0; z-index: -1;" id="srIfTheShadow" class="srIfTheShadow"></div>
+            <div class="backBox" id="backBox">
+                <div class="personIf">
+                    <h4>被执行人</h4>
+                    <p class="placeSeach pla">请输入被查询对象信息</p>
+                    <div class="seachPersonBox">
+                        <div style="position:relative;">
+                            <input type="text" placeholder="请输入姓名" name="" id="">
+                            <img class="srWrongImg" src="./images/web/DeleteIcon@2x.png" alt="" style="display: none">
+                        </div>
+                        <div style="position:relative;">
+                            <input type="text" placeholder="输入手机号" name="" id="">
+                            <img class="srWrongImg" src="./images/web/DeleteIcon@2x.png" alt="" style="display: none">
+                        </div>
+                        <div style="position:relative;">
+                            <input type="text" placeholder="请输入身份证号" name="" id="">
+                            <img class="srWrongImg" src="./images/web/DeleteIcon@2x.png" alt="" style="display: none">
+                        </div>
+                    </div>
+                    <p class="srError" style="display: none;">信息格式输入错误！</p>
+                    <button class="seachBtn srSeach">立即查询</button>
+                    <p class="helpUser">已帮助<span>3698</span>位用户查询信息</p>
+                </div>
+            </div>
+    </div>
+    <script type="text/javascript">
+    	
+    	 $(".iconitemBox").click(function(){
+            $("#srIfTheBox").css("display","block")
+        })
+    	
+    		$("#srIfTheShadow").click(function(){
+            $("#srIfTheBox").css("display","none")
+        })
+    </script>
+	</body>
+	<script src="./js/login.js"></script>
+	<script>
+		$("#oas").bind('input propertychange', function() {
+			var bal = $(this).val();
+			if(bal != '') {
+				$('.cleahs').show()
+			} else {
+				$('.cleahs').hide()
+			}
+		})
+		$('.cleahs').click(function() {
+			$('#oas').val('')
+		})
+		$('.land_box .land_lable .show_word').click(function() {
+			if($(this).hasClass('a')) {
+				$(this).removeClass('a')
+				$('#oas').attr('type', 'password')
+				$(this).attr('src', 'images/pass_10.jpg')
+			} else {
+				$(this).addClass('a')
+				$('#oas').attr('type', 'text')
+				$(this).attr('src', 'images/pass_13.jpg')
+			}
+		})
+		var sendmin = 60;
+		var flag = true;
+		$('.land_box .land_lable .sends').click(function() {
+			if(flag == true) {
+				flag = false
+				var times = setInterval(function() {
+					if(sendmin <= 0) {
+						sendmin = 60;
+						clearInterval(times)
+						$('.sends').html('发送验证码')
+						flag = true
+					} else {
+						sendmin--;
+						$('.sends').html(sendmin + 's后重发')
+					}
+				}, 1000)
+			} else {
+				return false
+			}
+
+		})
+		$('.land_box .x_xy div').click(function() {
+			if($(this).hasClass('a')) {
+				$(this).removeClass('a')
+				$(this).children().hide()
+			} else {
+				$(this).addClass('a')
+				$(this).children().show()
+			}
+		})
+		$('body,html').animate({scrollTop:0},1000)
+	</script>
+
+</html>

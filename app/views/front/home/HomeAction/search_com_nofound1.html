@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>信息查询</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="renderer" content="webkit">
+		<link rel="shortcut icon" type="image/png" href="@{'/HRzhicha/public/images/favicon.ico'}" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/refactorStyle.css" />
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/jquery.1.9.1.js"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/js.js"></script>
+		<style type="text/css">
+.top_head {
+	width: 100%;
+	background: rgb(152, 117, 254);
+}
+.top_head .top_padding{
+	
+	padding: 0 .3rem;
+}
+.top_head .inp_line {
+	width: 6.9rem;
+	height: .75rem;
+	position: relative;
+	padding: .16rem 0;
+}
+
+.top_head .inp_line input {
+	width: 6.13rem;
+	height: .72rem;
+	background: rgba(248, 248, 255, 1);
+	box-shadow: 0 0 .01rem .01rem rgba(233, 233, 255, 1);
+	border-radius: .36rem;
+	border: none;
+	padding-left: .76rem;
+	font-size: .28rem;
+	font-weight: 500;
+	color: rgba(88, 88, 88, 1);
+	line-height: .4rem;
+}
+
+.top_head .inp_line .ssimg {
+position: absolute;width: .26rem;
+	
+	top: .4rem;
+	left: .3rem;
+}
+.top_head .inp_line .xximg {
+	width: .32rem;
+position: absolute;
+	top: .4rem;
+	right: .3rem;
+}
+		</style>
+	</head>
+
+	<body class="ggg">
+		<div class="pay_tits">
+			<img src="/HRzhicha/public/images/img/reach_03.jpg" onclick="out()" />
+			<p>信息查询</p>
+		</div>
+		<div class="top_head">
+			<div class="top_padding">
+
+				<div class="inp_line fl">
+					<input type="text" name="" class="fl" id="" placeholder="小米" />
+					<img src="/HRzhicha/public/images/img/ss2.png" class="ssimg" />
+					<img src="/HRzhicha/public/images/img/xx.png" class="xximg" />
+
+				</div>
+
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div class="business_list">
+		<div class="main_content " style="">
+			<div class="infos_rea">
+				<p>未查询到此企业的信息 !</p>
+				<img src="/HRzhicha/public/images/img/index_11.jpg"/>
+			</div>
+
+		</div>
+			
+
+		</div>
+
+		<div style="height: .98rem;"></div>
+		<footer>
+				<div>
+					<a href="@{front.home.HomeAction.home()}">
+						<img src="/HRzhicha/public/images/img/chageren1.png" />
+						<p >查个人</p>
+					</a>
+				</div>
+				<div>
+					<a href="@{front.home.HomeAction.home()}">
+						<img src="/HRzhicha/public/images/img/chaqiye.png" />
+						<p  class="txtcloar">查企业</p>
+					</a>
+				</div>
+				<div>
+					<a href="@{front.home.UploadInformation.upload()}">
+						<img src="/HRzhicha/public/images/img/qudianping1.png" />
+						<p>去点评</p>
+					</a>
+				</div>
+				<div>
+					<a href="@{front.account.AccountHome.home()}" id="home">
+						<img src="/HRzhicha/public/images/img/wode1.png" />
+						<p>我的</p>
+					</a>
+				</div>
+			</footer>
+
+	</body>
+
+</html>

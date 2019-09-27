@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>商标信息</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="renderer" content="webkit">
+		<link rel="shortcut icon" type="image/png" href="@{'/HRzhicha/public/images/favicon.ico'}" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/refactorStyle.css" />
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/jquery.1.9.1.js"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/js.js"></script>
+		<style type="text/css">
+			.img {
+				width: 1.2rem;
+				height: 1.2rem;
+				border: .01rem dashed #EEEEEE;
+				margin: 0 auto;
+			}
+			
+			.img img {
+				width: 1.2rem;
+				height: 1.2rem;
+			}
+			
+			tr:nth-of-type(1) {
+				height: 1.46rem;
+			}
+		</style>
+	</head>
+
+	<body class="ggg" style="background: #FFFFFF;">
+		<div class="pay_tits" id="pay_tits">
+			<img src="/HRzhicha/public/images/img/reach_03.jpg" onclick="out()" />
+			<p>商标信息</p>
+		</div>
+		<div class="search_job_offers">
+
+			<table border="" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="35%">
+					<col width="65%">
+				</colgroup>
+				<tbody>
+					<tr>
+						<td height="">
+							商标
+						</td>
+						<td>-</td>
+					</tr>
+
+					<tr>
+						<td>
+							商标名称
+						</td>
+						<td>商标名称</td>
+					</tr>
+					<tr>
+						<td>
+							商标状态
+						</td>
+						<td>受理通知书发文</td>
+					</tr>
+					<tr>
+						<td>
+							申请时间
+						</td>
+						<td>2018-10-25</td>
+					</tr>
+					<tr>
+						<td>
+							注册号
+						</td>
+						<td>34279959</td>
+					</tr>
+					<tr>
+						<td>
+							商标类别
+						</td>
+						<td>17 - 橡胶制品</td>
+					</tr>
+
+				</tbody>
+
+			</table>
+
+			<table border="" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="35%">
+					<col width="65%">
+				</colgroup>
+				<tbody>
+					<tr>
+						<td height="">
+							商标
+						</td>
+						<td>
+
+							<div class="img">
+								<img src="/HRzhicha/public/images/img/reach_03.jpg" />
+							</div>
+
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							商标名称
+						</td>
+						<td>商标名称</td>
+					</tr>
+					<tr>
+						<td>
+							商标状态
+						</td>
+						<td>受理通知书发文</td>
+					</tr>
+					<tr>
+						<td>
+							申请时间
+						</td>
+						<td>2018-10-25</td>
+					</tr>
+					<tr>
+						<td>
+							注册号
+						</td>
+						<td>34279959</td>
+					</tr>
+					<tr>
+						<td>
+							商标类别
+						</td>
+						<td>17 - 橡胶制品</td>
+					</tr>
+
+				</tbody>
+
+			</table>
+			<div class="fenye1">
+				<div class="ttts">首页</div>
+				<div class="top_1 top_11">上一页</div>
+
+				<p>第<span>151</span><i>/</i><span>555</span>页</p>
+				<div class="top_1 top_12 on">下一页</div>
+				<div>尾页</div>
+			</div>
+			<div class="fenye1">
+			<p style="margin: 0 auto;">共<span>1</span>页</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$('.fenye1 div').click(function() {
+				$(this).addClass('on').siblings().removeClass('on')
+			})
+			$('.ttts').click(function() {
+				$('.top_12').css({
+					'color': '#6E3CFF',
+					'border': '.02rem solid #6E3CFF',
+				})
+			})
+		</script>
+	</body>
+
+</html>

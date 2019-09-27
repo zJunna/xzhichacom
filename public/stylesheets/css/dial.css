@@ -1,0 +1,45 @@
+
+
+#container {
+	width: 100%;
+	height:340px;
+	/*margin: 0px auto;*/
+	/*overflow: hidden;*/
+}
+#clockBoard {
+	/*width:100%;*/
+	height: 340px;
+	margin: 0px auto;
+	/*margin-top: -10%;*/
+	margin-bottom: 0px;
+	background: linear-gradient(#0e83f5, #20bcf5);
+	/*margin-left: -88px;*/
+}
+#pointer {
+	position: relative;
+	top: -560px;
+}
+/*#value {
+	position: relative;
+	z-index: 10;
+	top: -799px;
+	
+	border-radius: 5px;
+	line-height: 20px;
+}
+#run {
+	position: relative;
+	z-index: 10;
+	top: -799px;
+	left: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	background: #40ccf5;
+	border: 1px solid #40bce5;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	color: #006600;
+	font: 20px bold;
+}
+*/

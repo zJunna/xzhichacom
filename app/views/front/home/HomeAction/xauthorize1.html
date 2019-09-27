@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>授权中心</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="renderer" content="webkit">
+		<link rel="shortcut icon" type="image/png" href="@{'/HRzhicha/public/images/favicon.ico'}" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/xstyle.css" />
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/jquery.1.9.1.js"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/js.js"></script>
+		<style type="text/css">
+			.txt_p {
+				font-weight: 500;
+			}
+		</style>
+	</head>
+
+	<body class="ggg">
+		<div class="pay_tits1">
+			<img src="/HRzhicha/public/images/img/land_icon_03.png" onclick="javascript:history.back(-1);" />
+			<p class="txtl">授权中心</p>
+		</div>
+		<div class="xauthorize1">
+			<h4>是否授权以下公司查询您的个人信息：</h4>
+			<h3>今日头条有限责任公司</h3>
+			<img src="/HRzhicha/public/images/img/xau8.png" />
+
+			<div class="t_aut aut">
+				同意授权
+			</div>
+
+			<div class="no_aut aut">
+				拒绝授权
+			</div>
+			<div class="authorize_xy">
+				我已阅读并同意<span class="aut_xy">《X职查个人查询授权书》</span>
+			</div>
+
+		</div>
+		<div class=" protocol_appeal" style="background: #4C4C4C;display:none ;">
+			<div class="pro_appeal_mid">
+
+				<div class="protocol_detail">
+
+					<div class="protocol_detail_txt">
+						X职查个人查询授权书
+					</div>
+					<div class="" style="height: 7.8rem;overflow-y:auto;">
+
+						<div class="protocol_text1">
+							<p>特别提示</p>
+							<p>为了保障您的合法权益,您应当阅读并遵守本授权书。请您务必审慎阅读,并充分理解本授权书的全部內容,特别是以加粗形式提示您注意的。</p>
+							<p>若您不接受本授权书的任何条款,请您立即停止授权。若您未停止授权,或进行了其它相关操作等同于同意授权的,均视为您已阅读并接受本授权书的约束。</p>
+							<p>本人清楚理解以下授权的含义并同意授权X职查进行以下事项:</p>
+							<p class="txt_p">一)同意授权某公司通过X职查查询本人信息,并授权X职查向查询企业出具报告。授权查询信息的范围包括但不限于身份信息、学历验证、社保查询、逾期黑名单、涉诉信息、网贷黑名单、不良记录、被执行人、失信人信息。</p>
+							<p class="txt_p">(二)同意授权合法存有本人信息的机构向X职查提供本人的上述信息。</p>
+							<p>特别声明</p>
+							<p>本授权书经接受后即时生效,且效力具有独立性,不因相关业务合同或条款无效或被撤销而无效或失效,本授权一经作出,便不可撤销。</p>
+
+							<p>本授权书签订地为中华人民共和国山东省青岛市,本授权书的成立、生效、履行、解释及争议解决,适用中华人民共和国法律法规(不包括港澳台地区的法律法规及冲突法)。若您和被授权人之间发生任何争议,应友好协商解决;协商不成的,您与被授权人均同意以本授权书签订地人民法院为管辖法院。</p>
+							<p>本人已知悉本授权书全部内容(特别是加粗字体内容)的含义及因此产生的法律效力,自愿作出以上授权。本授权书是本人真实意思表示,本人同意承担由此带来的一切法律后果。</p>
+							<p class="fr">授权人</p>
+							</br>
+							<p class="fr" style="padding-bottom: 2rem;">日期:2019-07-11</p>
+							<div class="clear">
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+			<img src="/HRzhicha/public/images/img/x@2x.png" class="del_img" />
+		</div>
+	</body>
+	<script type="text/javascript">
+		$('.authorize_xy .aut_xy').click(function() {
+			$('.protocol_appeal').css('display', 'flex')
+			$('.pay_tits1').css('display', 'none')
+
+		})
+		$('.del_img').click(function() {
+			$('.protocol_appeal').css('display', 'none')
+			$('.pay_tits1').css('display', 'block')
+
+		})
+	</script>
+	<script type="text/javascript">
+		$('.no_aut').click(function() {
+			$('.no_aut').css('background', '#6E3CFF')
+			$('.t_aut').css('background', '#675781')
+		})
+		$('.t_aut').click(function() {
+			$('.no_aut').css('background', '#675781')
+			$('.t_aut').css('background', '#6E3CFF')
+		})
+	</script>
+
+</html>

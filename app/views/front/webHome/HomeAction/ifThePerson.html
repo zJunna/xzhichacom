@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/HRzhicha/public/stylesheets/webcss/reset.css">
+    <link rel="stylesheet" href="/HRzhicha/public/stylesheets/webcss/seach_not_person.css">
+    <script src="/HRzhicha/public/javascripts/webjs/jquery-2.1.1.min.js"></script>
+    <title>被执行人</title>
+</head>
+<body style="background: #ccc">
+<!--    <button id="seIfTheBtn">点击被执行人</button>-->
+    <div style="height: 100%;width: 100%;position: fixed;top: 0;left: 0;z-index: 210;display: block" id="srIfTheBox">
+        <!-- 遮罩层 -->
+        <div style="background:#000;height: 100%;width: 100%;opacity: .4;position: absolute;top: 0;left: 0; z-index: -1;" id="srIfTheShadow" class="srIfTheShadow"></div>
+            <div class="backBox" id="backBox">
+                <div class="personIf">
+                    <h4>被执行人</h4>
+                    <p class="placeSeach pla">请输入被查询对象信息</p>
+                    <div class="seachPersonBox">
+                        <div style="position:relative;">
+                            <input type="text" placeholder="请输入姓名" name="" id="">
+                            <img class="srWrongImg" src="/HRzhicha/public/images/webimg/DeleteIcon@2x.png" alt="" style="display: none">
+                        </div>
+                        <div style="position:relative;">
+                            <input type="text" placeholder="输入手机号" name="" id="">
+                            <img class="srWrongImg" src="/HRzhicha/public/images/webimg/DeleteIcon@2x.png" alt="" style="display: none">
+                        </div>
+                        <div style="position:relative;">
+                            <input type="text" placeholder="请输入身份证号" name="" id="">
+                            <img class="srWrongImg" src="/HRzhicha/public/images/webimg/DeleteIcon@2x.png" alt="" style="display: none">
+                        </div>
+                    </div>
+                    <p class="srError" style="display: none;">信息格式输入错误！</p>
+                    <button class="seachBtn srSeach">立即查询</button>
+                    <p class="helpUser">已帮助<span>3698</span>位用户查询信息</p>
+                </div>
+            </div>
+    </div>
+</body>
+<script>
+    $(function(){
+        $("#seIfTheBtn").click(function(){
+            $("#srIfTheBox").css("display","block")
+        })
+       $("#srIfTheShadow").click(function(){
+            $("#srIfTheBox").css("display","none")
+        })
+       
+    })
+</script>
+</html>

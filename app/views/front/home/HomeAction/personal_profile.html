@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>信息详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="shortcut icon" type="image/png" href="@{' /HRzhicha/public/images/favicon.ico'}" />
+		<link rel="stylesheet" type="text/css" href=" /HRzhicha/public/stylesheets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href=" /HRzhicha/public/stylesheets/css/style.css" />
+		<link rel="stylesheet" type="text/css" href=" /HRzhicha/public/stylesheets/css/refactorStyle.css" />
+		<script type="text/javascript" src=" /HRzhicha/public/javascripts/js/jquery.1.9.1.js"></script>
+		<script type="text/javascript" src=" /HRzhicha/public/javascripts/js/js.js"></script>
+
+	</head>
+
+	<body class="ggg">
+		<div class="pay_tits">
+			<img src=" /HRzhicha/public/images/img/reach_03.jpg" onclick="javascript:history.back(-1);" />
+			<p class="write_review">信息详情</p>
+		</div>
+		<div class="infoa">
+			<div class="fade_list1">
+				<div class="z_personal_profile">
+
+					<div class="z_personal_profile_box ">
+						<div class="z_personal_profile_img fl">
+							<img src="/HRzhicha/public/images/img/z_icon3.png">
+						</div>
+						<div class="z_personal_profile_name fl">
+							李彦宏
+						</div>
+						<div class="clear"></div>
+					</div>
+
+
+					<div class="z_personal_profile_text">
+						<span class="text">个人简介： 李彦宏，百度公司创始人、董事长兼首席 执行官，全面负责百度公司的战略规划和运营管理。 1991年，李彦宏毕业于北
+							前往美国布法罗纽约州立大学完成计算机科学硕士学
+							位，先后担任道·琼斯公司高级顾问、《华尔街日报》
+							网络版实时金融信息系统设计者，以及国际知名互联
+							网企业——Infoseek公司资深工程师。李彦宏所持有
+							的“超链分析”技术专利，是奠定整个现代搜索引擎发
+							展趋势和方向的基础发明之一。2000年1月，李彦宏</span>
+						<!--<span class="zk">...展开</span>-->
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<!--<script type="text/javascript">
+			var len = 50;
+			$('.z_personal_profile_text').each(function() {
+				if ($(this).find('.text').text().length > len) {
+					$(this).find('.text').addClass('rp')
+					$(this).find('.zk').text('展开')
+
+				} else {
+					$(this).find('.text').removeClass('rp')
+					$(this).find('.zk').text('收起')
+				}
+				if ($(this).find('.text').text().length < len) {
+					$(this).find('.zk').toggleClass("hidden")
+
+				}
+			})
+			$(".zk").click(function() {
+				if ($(this).prev().hasClass('rp')) {
+					$(this).prev().removeClass('rp')
+					$(this).text('收起')
+				} else {
+					$(this).prev().addClass('rp')
+					$(this).text('展开')
+
+				}
+			})
+		</script>-->
+	</body>
+
+
+</html>

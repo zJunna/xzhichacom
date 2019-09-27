@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>员工职场信用查询-X职查</title>
+		<meta name="keywords" content="职场信用，职信，员工征信，职场征信查询">
+		<meta name="description" content="X职查是一个职场信用共享与查询平台。在X职查平台企业可以把员工的守信和失信行为在系统里共享，也可以在雇佣前或雇佣中查询员工的职场征信。X职查是一个专业的区块链职业信用查询平台。">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="shortcut icon" type="image/png" href="@{'/HRzhicha/public/images/favicon.ico'}" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/layui/css/layui.css" />
+		<link href="/HRzhicha/public/stylesheets/webcss/public.css" rel="stylesheet" type="text/css" />
+		<link href="/HRzhicha/public/stylesheets/webcss/style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/webcss/header.css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/webcss/index.css" />
+		<script src="/HRzhicha/public/javascripts/webjs/jquery-2.1.1.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/webjs/js.js"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/webjs/click.js"></script>
+		<link rel="stylesheet" href="/HRzhicha/public/stylesheets/webcss/seach_not_person.css">
+	</head>
+
+	<body style="background: #F7F7F7;" onload="init()">
+		<div class="header">
+			<div class="header_mid">
+				<h1><img src="/HRzhicha/public/images/webimg/x-logo.png" /></h1>
+				<p>职场信息共享平台</p>
+				<ul class="margin22">
+					<li>
+						<a href="index1.html">首页</a>
+					</li>
+					<li>
+						<a href="seach_personal.html">查个人</a>
+					</li>
+					<li>
+						<a href="seach_not_company1.html">查企业</a>
+					</li>
+					<li>
+						<a href="my_pay1.html">VIP服务</a>
+					</li>
+					<li>
+						<a href="my_center.html">用户中心</a>
+					</li>
+
+					<li>
+						<a href="about.html">关于我们</a>
+					</li>
+
+				</ul>
+				<!--<img src="images/web/z_icon3.png" class="users" />-->
+				<div class="land_user" style=""><img src="/HRzhicha/public/images/webimg/z_icon3.png" />
+					<div class="esc_land esc_land1" id="esc_land" style="border-bottom-right-radius: 0;border-bottom-left-radius: 0;">
+						<img src="/HRzhicha/public/images/webimg/s_qh.png" />
+
+						<p>账户切换</p>
+					</div>
+					<div class="esc_land esc_land2" style="top:100px;border-radius: 0;">
+						<img src="/HRzhicha/public/images/webimg/s_gr.png" />
+						<p>实名认证</p>
+					</div>
+					<div class="esc_land esc_land3" style="top:140px;border-radius: 0;">
+						<img src="/HRzhicha/public/images/webimg/s_vip.png" />
+						<p>VIP服务&nbsp;&nbsp;</p>
+					</div>
+					<div class="esc_land esc_land4" style="top:182px;border-top-right-radius: 0;border-top-left-radius: 0;z-index: 99;">
+						<img src="/HRzhicha/public/images/webimg/xs_07.jpg" />
+						<p>退出登录</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="company_detail" style="margin-top: 180px;">
+
+			<div class="z_personal_profile">
+				<div class="clear">
+					<div class="z_personal_profile_left fl">
+						<div class="z_personal_profile_img">
+							<!--<img src="/HRzhicha/public/images/webimg/z_icon4.png" />-->
+							李彦宏
+						</div>
+					</div>
+					<div class="z_personal_profile_right fl">
+						<h4>李彦宏</h4>
+						<div class="z_personal_profile_text clear">
+							<div class="text" style="">
+								个人简介：李彦宏，百度公司创始人、董事长兼首席执行官，全面负责百度公司的战略规划和运营管理。1991年，李彦宏毕业于北京大学 信息管理专业，随后前往美国布法罗纽约州立大学完成计算机科学硕士学位，先后担任道·琼斯公司高级顾问、《华尔街日报》网络版实时 金融信息系统设计者，以及国际知名互联网企业——Infoseek公司资深工程师。李彦宏所持有的“超链分析”技术专利，是奠定整个现代 搜索引擎发展趋势和方向的基础发明之一。2000年1月，李彦宏创建了百度。经过十多年的发展
+							</div>
+							<!--<span class="zk">展开</span>-->
+						</div>
+					</div>
+					<div class="clear"></div>
+
+				</div>
+
+			</div>
+
+			<div class="">
+
+				<div class="company_bottom personal_profile_box">
+					<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+						<div class="11">
+
+							<ul class="layui-tab-title navigation personal_profile_li">
+								<li class="layui-this">
+									<a>担任法定代表人</a>
+								</li>
+								<li>
+									<a>担任股东</a>
+								</li>
+								<li>
+									<a>担任高管</a>
+								</li>
+								<li>
+									<a>他的所有公司</a>
+								</li>
+
+							</ul>
+						</div>
+
+						<div class="layui-tab-content">
+							<!-- 法定代表人 -->
+							<div class="layui-tab-item layui-show">
+								<div class="">
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">法定代表人</span>
+										<div class="clear"></div>
+									</div>
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+											<col width="121">
+											<col width="331">
+											<col width="193">
+											<col width="164">
+											<col width="166">
+											<col width="160">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>企业名称</th>
+												<th>注册资本</th>
+												<th>成立日期</th>
+												<th>省份</th>
+												<th>经营状态</th>
+											</tr>
+										</thead>
+										<tbody class="font_line">
+											<tr>
+												<td>1</td>
+												<td>福建百度博瑞网络科技有限公司</td>
+												<td>10500万人民币</td>
+												<td>2011-08-13</td>
+												<td>山东</td>
+												<td>存续</td>
+											</tr>
+
+										</tbody>
+									</table>
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+											<col width="133">
+											<col width="365">
+											<col width="233">
+											<col width="204">
+											<col width="200">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>企业名称</th>
+												<th>注册资本</th>
+												<th>成立日期</th>
+												<th>经营状态</th>
+
+											</tr>
+										</thead>
+										<tbody class="font_line">
+											<tr>
+												<td>1</td>
+												<td>福建百度博瑞网络科技有限公司</td>
+												<td>10500万人民币</td>
+												<td>2011-08-13</td>
+
+												<td>存续</td>
+
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+							<!-- 担任股东 -->
+							<div class="layui-tab-item ">
+								<div class="">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">担任股东</span>
+										<div class="clear"></div>
+									</div>
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+											<col width="91">
+											<col width="279">
+											<col width="99">
+											<col width="109">
+											<col width="169">
+											<col width="129">
+											<col width="129">
+											<col width="128">
+
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>企业名称</th>
+												<th>投资比例</th>
+												<th>法定代表人</th>
+												<th>注册资本</th>
+												<th>成立时间</th>
+												<th>省份地区</th>
+												<th>经营状态</th>
+											</tr>
+										</thead>
+										<tbody class="font_line">
+											<tr>
+												<td>1</td>
+												<td>北京百众投资管理有限公司</td>
+												<td>90%</td>
+												<td>刘海天</td>
+												<td>1000万人民币</td>
+												<td>2018-01-24</td>
+												<td>北京市</td>
+												<td>在业</td>
+											</tr>
+
+										</tbody>
+									</table>
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+
+											<col width="81">
+											<col width="328">
+											<col width="117">
+											<col width="127">
+											<col width="187">
+											<col width="147">
+											<col width="146">
+
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>企业名称</th>
+												<th>投资比例</th>
+												<th>法定代表人</th>
+												<th>注册资本</th>
+												<th>成立时间</th>
+												<th>经营状态</th>
+											</tr>
+										</thead>
+										<tbody class="font_line">
+											<tr>
+												<td>1</td>
+												<td>北京百众投资管理有限公司</td>
+												<td>90%</td>
+												<td>刘海天</td>
+												<td>1000万人民币</td>
+												<td>2018-01-24</td>
+												<td>在业</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+							<!-- 担任高管 -->
+							<div class="layui-tab-item ">
+
+								<div class="">
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">担任高管</span>
+										<div class="clear"></div>
+									</div>
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+											<col width="81">
+											<col width="320">
+											<col width="100">
+											<col width="109">
+											<col width="169">
+											<col width="139">
+											<col width="107">
+											<col width="107">
+
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>企业名称</th>
+												<th>职位</th>
+												<th>法定代表人</th>
+												<th>注册资本</th>
+												<th>成立时间</th>
+												<th>省份地区</th>
+												<th>经营状态</th>
+											</tr>
+										</thead>
+										<tbody class="font_line">
+											<tr>
+												<td>1</td>
+												<td>宁波梅山保税港区佰兴投资管理有限公司</td>
+												<td>董事长</td>
+												<td>贾栋</td>
+												<td>1000万人民币</td>
+												<td>2017-08-24</td>
+												<td>浙江省</td>
+												<td>存续</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+											<col width="90">
+											<col width="355">
+											<col width="111">
+											<col width="121">
+											<col width="188">
+											<col width="154">
+											<col width="120">
+
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>企业名称</th>
+												<th>职位</th>
+												<th>法定代表人</th>
+												<th>注册资本</th>
+												<th>成立时间</th>
+												<th>经营状态</th>
+											</tr>
+										</thead>
+										<tbody class="font_line">
+											<tr>
+												<td>1</td>
+												<td>宁波梅山保税港区佰兴投资管理有限公司</td>
+												<td>董事长</td>
+												<td>贾栋</td>
+												<td>1000万人民币</td>
+												<td>2017-08-24</td>
+												<td>存续</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+
+							</div>
+							<!-- 他的所有公司 -->
+							<div class="layui-tab-item ">
+
+								<div class="">
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">他的所有公司</span>
+										<div class="clear"></div>
+									</div>
+
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+											<col width="81">
+											<col width="312">
+											<col width="168">
+											<col width="219">
+											<col width="139">
+											<col width="107">
+											<col width="107">
+
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>企业名称</th>
+												<th>职位</th>
+												<th>注册资本</th>
+												<th>成立时间</th>
+												<th>省份地区</th>
+												<th>经营状态</th>
+											</tr>
+										</thead>
+										<tbody class="font_line">
+											<tr>
+												<td>1</td>
+												<td>宁波梅山保税港区佰兴投资管理有限公司</td>
+												<td>董事长</td>
+												<td>1000万人民币</td>
+												<td>2018-01-24</td>
+												<td>浙江省</td>
+												<td>存续</td>
+											</tr>
+										</tbody>
+									</table>
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+											<col width="89">
+											<col width="346">
+											<col width="186">
+											<col width="243">
+											<col width="155">
+											<col width="120">
+
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>企业名称</th>
+												<th>职位</th>
+												<th>注册资本</th>
+												<th>成立时间</th>
+
+												<th>经营状态</th>
+											</tr>
+										</thead>
+										<tbody class="font_line">
+											<tr>
+												<td>1</td>
+												<td>宁波梅山保税港区佰兴投资管理有限公司</td>
+												<td>董事长</td>
+												<td>1000万人民币</td>
+												<td>2018-01-24</td>
+
+												<td>存续</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer_mid">
+				<div class="footer_top">
+					<div class="link_list">
+						<p>关于淮安</p>
+						<a href="#">公司简介</a>
+						<a href="#">联系我们</a>
+					</div>
+					<div class="link_list">
+						<p>产品服务</p>
+						<a href="#">服务协议</a>
+						<a href="#">隐私说明</a>
+						<a href="#">法律说明</a>
+					</div>
+					<div class="link_list">
+						<p>帮助中心</p>
+						<a href="#">常见问题</a>
+						<a href="#">平台公告</a>
+					</div>
+					<div class="link_list">
+						<p>下载中心</p>
+						<a href="#">安卓版本</a>
+						<a href="#">iOS版本</a>
+						<div class="code"></div>
+					</div>
+					<div class="link_list">
+						<p>联系方式</p>
+						<span>客服热线 （9:00-17:00）<br />400-6093-818</span>
+						<span>客服邮箱<br />admin@xzhicha.com</span>
+						<div class="icon_list">
+							<img src="/HRzhicha/public/images/webimg/icon_47.jpg" />
+							<img src="/HRzhicha/public/images/webimg/icon_49.jpg" />
+							<img src="/HRzhicha/public/images/webimg/icon_51.jpg" />
+						</div>
+					</div>
+				</div>
+				<div class="footer_bottom">
+					<ul>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+					</ul>
+					<p>©2019 山东准安互联网科技有限公司 版权所有.</p>
+				</div>
+			</div>
+		</div>
+		<div class="fade_po hide">
+			<div class="fade_boxss">
+				<h2>选择一种材料类型开始上传</h2>
+				<ul>
+					<li>身份证明<img src="/HRzhicha/public/images/webimg/updata_11.jpg"></li>
+					<li>劳动合同<img src="/HRzhicha/public/images/webimg/updata_11.jpg"></li>
+					<li>借贷合同</li>
+					<li>担保协议</li>
+					<li>购销合同</li>
+					<li>商务合同</li>
+					<li>结婚证</li>
+					<li>判决书</li>
+					<li>租房合同</li>
+					<li>押金条</li>
+					<li>收据</li>
+					<li>收据</li>
+					<li>照片</li>
+					<li>截图</li>
+					<li>其他</li>
+				</ul>
+				<div class="btn_grows">
+					<a href="#" class="fl">上传</a>
+					<a href="#" class="fr">取消</a>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar" style="z-index: 99;">
+
+			<ul>
+				<li>
+					<a href="">
+						<img src="/HRzhicha/public/images/webimg/actnavbar_101.jpg" alt="" class="icc">
+						<p>在线客服</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="/HRzhicha/public/images/webimg/actnavbar_103.jpg" alt="" class="icc">
+						<p>APP下载</p>
+						<div style="left:-167px;">
+							<em>安卓系统下载</em><img style="width:89px;height:89px;" src="/HRzhicha/public/images/webimg/yingyongbao.png" alt="">
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="/HRzhicha/public/images/webimg/actnavbar_10.jpg" alt="" class="icc">
+						<p>微信服务</p>
+						<div style="left: -167px;display: none;">
+							<em>关注微信公众号</em><img style="width:89px;height:89px;" src="/HRzhicha/public/images/webimg/zhichaWX.jpg" alt="">
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div class="downs_box">
+				<img src="/HRzhicha/public/images/webimg/actnavbar_14.jpg" alt="">
+				<p>TOP</p>
+			</div>
+		</div>
+
+		<!--[if !IE]><!-->
+		<!-- <script type="text/javascript" src="/HRzhicha/public/javascripts/webjs/jquery-2.1.1.min.js"></script>
+			<script type="text/javascript" src="/HRzhicha/public/javascripts/webjs/js.js"></script> -->
+		<!-- <![endif]-->
+
+		<!--[if lte IE 8]>
+        <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <![endif]-->
+
+		<!--[if gt IE 8]>
+        <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <![endif]-->
+		<script type="text/javascript" src="/HRzhicha/public/stylesheets/layui/layui.js"></script>
+
+		<script type="text/javascript">
+			/* 实现展开收起的逻辑 */
+			function init() {
+				var len = 136; //默认显示字数
+				var ctn = document.getElementsByClassName("text")[0]; //获取div对象
+				var content = ctn.innerHTML; //获取div里的内容
+
+				//alert(content);
+				var span = document.createElement("span"); //创建<span>元素
+				var a = document.createElement("a"); //创建<a>元素
+				span.innerHTML = content.substring(0, len) + "..."; //span里的内容为content的前len个字符
+
+				a.innerHTML = content.length > len ? " 展开" : ""; //判断显示的字数是否大于默认显示的字数    来设置a的显示
+				a.href = "javascript:void(0)";
+
+				a.onclick = function() {
+					if(a.innerHTML.indexOf("展开") > 0) { //如果a中含有"展开"则显示"收起"
+						a.innerHTML = "&nbsp;收起";
+						span.innerHTML = content;
+
+					} else {
+						a.innerHTML = " 展开";
+						span.innerHTML = content.substring(0, len) + "...";
+					}
+				}
+
+				// 设置div内容为空，span元素 a元素加入到div中
+				ctn.innerHTML = "";
+				ctn.appendChild(span);
+				ctn.appendChild(a);
+			}
+		</script>
+
+		<script type="text/javascript">
+			$('.checkbox').click(function() {
+				if($(this).hasClass('on')) {
+					$(this).removeClass('on');
+
+				} else {
+					$(this).addClass('on');
+
+				}
+			})
+		</script>
+
+		<script>
+			layui.use('element', function() {
+				var $ = layui.jquery,
+					element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+
+			});
+
+			layui.use('laydate', function() {
+				var laydate = layui.laydate;
+
+				laydate.render({
+					elem: '#test1' //指定元素
+				});
+				laydate.render({
+					elem: '#test2' //指定元素
+				});
+			});
+			$('.list_pages2 .list_pages2_r div').click(function() {
+				$(this).addClass('on').siblings().removeClass('on')
+			})
+		</script>
+
+		<script type="text/javascript">
+			$(window).scroll(function() {
+				var hei = $(document).scrollTop()
+				if(hei >= 180) {
+					$('.navigation').css({
+						'position': 'fixed',
+						'top': '160px',
+						'left': '0',
+						'right': '0',
+						'margin': 'auto',
+						'z-index': '9',
+
+					})
+					$('.11').css({
+						'position': 'fixed',
+						'top': '160px',
+						'left': '0',
+						'right': '0',
+						'margin': '-35px auto',
+						'z-index': '9',
+						'height': '100px',
+						'background': '#F7F7F7',
+
+					})
+
+					$('.layui-tab-content').css({
+						'margin-top': '0px',
+
+					})
+
+				} else {
+					$('.navigation').css({
+						'position': 'static',
+						'margin': 'auto',
+						'margin-bottom': '10px',
+
+					})
+					$('.11').css({
+						'position': 'static',
+						'margin': 'auto',
+						'z-index': '9999999',
+						'height': 'auto',
+						'background': 'none',
+					})
+					$('.layui-tab-content').css({
+						'margin-top': '0px',
+
+					})
+
+				}
+			});
+		</script>
+
+	</body>
+
+</html>

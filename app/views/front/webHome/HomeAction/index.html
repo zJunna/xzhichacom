@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>X职查-职场信用共享查询平台</title>
+		<meta name="keywords" content="职场信用，职信，员工征信，职场征信查询">
+		<meta name="description" content="X职查是一个职场信用共享与查询平台。在X职查平台企业可以把员工的守信和失信行为在系统里共享，也可以在雇佣前或雇佣中查询员工的职场征信。X职查是一个专业的区块链职业信用查询平台。">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<link href="/HRzhicha/public/stylesheets/webcss/public.css" rel="stylesheet" type="text/css" />
+		<link href="/HRzhicha/public/stylesheets/webcss/style.css" rel="stylesheet" type="text/css" />
+		<link href="/HRzhicha/public/stylesheets/webcss/index.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/layui/css/layui.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+		
+	</head>
+
+	<body>
+		<div class="banner">
+			<div class="banner_center">
+				<div class="banner_top">
+					<h1><img src="images/icon_03.png"/></h1>
+					<ul style="margin-left: 35px;">
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">查个人</a>
+						</li>
+						<li>
+							<a href="#">查企业</a>
+						</li>
+						<li>
+							<a href="#">上传信息</a>
+						</li>
+
+						<li>
+							<a href="#">VIP服务</a>
+						</li>
+						<li>
+							<a href="#">关于我们</a>
+						</li>
+
+					</ul>
+					<div class="land_user" style=""><img src="images/xs_03.jpg" />
+					<a href="account_switch.html">
+						<div class="esc_land" style="border-bottom-right-radius: 0;border-bottom-left-radius: 0;">
+							<img src="/HRzhicha/public/images/webimg/s_qh.png" />
+							<p>账户切换</p>
+						</div>
+					</a>
+						<div class="esc_land" style="top:100px;border-radius: 0;">
+							<img src="/HRzhicha/public/images/webimg/s_gr.png" />
+							<p>实名认证</p>
+						</div>
+						<div class="esc_land" style="top:140px;border-radius: 0;">
+							<img src="/HRzhicha/public/images/webimg/s_vip.png" />
+							<p>VIP服务&nbsp;&nbsp;</p>
+						</div>
+
+						<div class="esc_land" style="top:182px;border-top-right-radius: 0;border-top-left-radius: 0;z-index: 99;">
+							<img src="images/xs_07.jpg" />
+							<p>退出登录</p>
+						</div>
+
+					</div>
+
+					<!--<div class="btn">
+						<a href="#" class="fl dl_back1">登录</a>
+						<a href="#" class="fr zc_back2">注册</a>
+					</div>-->
+				</div>
+				<h2>查询职场信用 &nbsp;就上X职查</h2>
+
+				<div class="seach_tab">
+					<div class="layui-tab layuiTabStyle">
+						<ul class="layui-tab-title">
+							<li class="layui-this">查个人</li>
+							<li>查企业</li>
+
+						</ul>
+						<div class="layui-tab-content">
+							<div class="layui-tab-item layui-show">
+								<div class="search">
+									<div class="fl">
+										<div class="sea_inp ">
+											<input type="text" class="first_input" placeholder="姓名" name="" id="" value="" />
+											<input type="text" class="last_input" placeholder="身份证号" name="" id="" value="" />
+										</div>
+										<input type="submit" name="" id="" value="查询" />
+									</div>
+									<div class="fr">
+										<a href="my_updata.html">上传信息</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="layui-tab-item">
+								<div class="search">
+									<div class="fl">
+										<div class="sea_inp sea_inp1 sea_inp_after">
+											<input type="text" class="two_input" placeholder="企业" name="" id="" value="" />
+										</div>
+										<input type="submit" name="" id="" value="查询" />
+									</div>
+									<div class="fr">
+										<a href="my_updata.html">上传信息</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!--<div class="search">
+					<div class="fl">
+						<div class="sea_inp">
+							<input type="text" class="first_input" placeholder="姓名" name="" id="" value="" />
+							<input type="text" class="last_input" placeholder="身份证号" name="" id="" value="" />
+						</div>
+						<input type="submit" name="" id="" value="查询" />
+					</div>
+					<div class="fr">
+						<a href="my_updata.html">上传信息</a>
+					</div>
+				</div>-->
+				<ul class="nav">
+					<li>
+						<p>今日新增</p>
+						<span>682</span>
+					</li>
+					<li>
+						<p>今日查询</p>
+						<span>1384</span>
+					</li>
+					<li>
+						<p>总记录数</p>
+						<span>32384</span>
+					</li>
+					<li>
+						<p>加入HR人数</p>
+						<span>895</span>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="pic_info">
+			<div class="new_seach">
+				<p>最新查询</p>
+				<div class="fr">
+					<div class="txtMarquee-left">
+						<div class="bd">
+							<ul class="infoList">
+								<li><span>赵**</span>3702**********8326</li>
+								<li><span>赵**</span>3702**********8326</li>
+								<li><span>赵**</span>3702**********8326</li>
+								<li><span>赵**</span>3702**********8326</li>
+								<li><span>赵**</span>3702**********8326</li>
+								<li><span>赵**</span>3702**********8326</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h4>产品介绍</h4>
+			<ul>
+				<li>
+					<img src="images/icon_214.png" />
+					<p>实名共享</p>
+					<span>X职查用户全部需要实名认证才能够使用发布、查询、申诉等操作。</span>
+				</li>
+				<li>
+					<img src="images/icon_213.png" />
+					<p>可申诉机制</p>
+					<span>申诉与系统惩罚机制确保信息真实性、容错性、客观性。</span>
+				</li>
+				<li>
+					<img src="images/icon_211.png" />
+					<p>X币区块链支付</p>
+					<span>区块链数据技术  X职查在信息存储与加密上使用区块链技术，让信息更安全、更权威。</span>
+				</li>
+				<li>
+					<img src="images/icon_212.png" />
+					<p>VIP服务</p>
+					<span>VIP尊享服务，让企业查询服务放心用。</span>
+				</li>
+			</ul>
+		</div>
+		<div class="new_updata">
+			<h2>最新上传</h2>
+			<ul>
+				<li>
+					<div class="new_user">
+						<img src="images/icon_21.jpg" />
+						<div>
+							<p>张**</p>
+							<span>354813********1216</span>
+						</div>
+					</div>
+					<p class="font">员工在工作日常中存在虚假报销行为，实际花费费用和提交的发票无法吻合，离职后不能很...</p>
+					<div class="box_dress">
+						<p>上海******公司</p>
+						<p>青岛</p>
+					</div>
+					<div class="icon_text">虚假<br />简历</div>
+				</li>
+				<li class="on">
+					<div class="new_user">
+						<img src="images/icon_21.jpg" />
+						<div>
+							<p>张**</p>
+							<span>354813********1216</span>
+						</div>
+					</div>
+					<p class="font">员工在工作日常中存在虚假报销行为，实际花费费用和提交的发票无法吻合，离职后不能很...</p>
+					<div class="box_dress">
+						<p>上海******公司</p>
+						<p>青岛</p>
+					</div>
+					<div class="icon_text">虚假<br />简历</div>
+				</li>
+				<li class="on">
+					<div class="new_user">
+						<img src="images/icon_21.jpg" />
+						<div>
+							<p>张**</p>
+							<span>354813********1216</span>
+						</div>
+					</div>
+					<p class="font">员工在工作日常中存在虚假报销行为，实际花费费用和提交的发票无法吻合，离职后不能很...</p>
+					<div class="box_dress">
+						<p>上海******公司</p>
+						<p>青岛</p>
+					</div>
+					<div class="icon_text">虚假<br />简历</div>
+				</li>
+				<li>
+					<div class="new_user">
+						<img src="images/icon_21.jpg" />
+						<div>
+							<p>张**</p>
+							<span>354813********1216</span>
+						</div>
+					</div>
+					<p class="font">员工在工作日常中存在虚假报销行为，实际花费费用和提交的发票无法吻合，离职后不能很...</p>
+					<div class="box_dress">
+						<p>上海******公司</p>
+						<p>青岛</p>
+					</div>
+					<div class="icon_text">虚假<br />简历</div>
+				</li>
+				<li>
+					<div class="new_user">
+						<img src="images/icon_21.jpg" />
+						<div>
+							<p>张**</p>
+							<span>354813********1216</span>
+						</div>
+					</div>
+					<p class="font">员工在工作日常中存在虚假报销行为，实际花费费用和提交的发票无法吻合，离职后不能很...</p>
+					<div class="box_dress">
+						<p>上海******公司</p>
+						<p>青岛</p>
+					</div>
+					<div class="icon_text">虚假<br />简历</div>
+				</li>
+				<li>
+					<div class="new_user">
+						<img src="images/icon_21.jpg" />
+						<div>
+							<p>张**</p>
+							<span>354813********1216</span>
+						</div>
+					</div>
+					<p class="font">员工在工作日常中存在虚假报销行为，实际花费费用和提交的发票无法吻合，离职后不能很...</p>
+					<div class="box_dress">
+						<p>上海******公司</p>
+						<p>青岛</p>
+					</div>
+					<div class="icon_text">虚假<br />简历</div>
+				</li>
+			</ul>
+		</div>
+		<div class="next_gg">
+			<h2>平台公告</h2>
+			<ul>
+				<li>
+					<span>新闻</span>
+					<p>2019年全国两会社会信用热点</p>
+					<em>信用是市信用是市场经济的基石信用是市场经济的基石信用是市场经济的基石信用是市场经济的基石信用是市场经济的基石场经济的基石。去年5月中共中央办公厅、国务院办公厅印发的《关于深入推进审批服务便民化的指导意见》提出，加快建立以信用承诺、信息公示为特点的......</em>
+				</li>
+				<li class="on">
+					<span>新闻</span>
+					<p>2019年全国两会社会信用热点</p>
+					<em>信用是市场经济的基石。去年5月中共中央办公厅、国务院办公厅印发的《关于深入推进审批服务便民化的指导意见》提出，加快建立以信用承诺、信息公示为特点的......</em>
+				</li>
+				<li>
+					<span>新闻</span>
+					<p>2019年全国两会社会信用热点</p>
+					<em>信用是市场经济的基石。去年5月中共中央办公厅、国务院办公厅印发的《关于深入推进审批服务便民化的指导意见》提出，加快建立以信用承诺、信息公示为特点的......</em>
+				</li>
+			</ul>
+			<div style="clear: both;"></div>
+			<a href="#" class="bot_link">NEXT></a>
+		</div>
+		<div class="Consultation">
+			<h2>行业新闻资讯</h2>
+			<div class="consu_box">
+				<div class="fl">
+					<img src="images/icon_24.jpg" />
+					<p>HRoot中国人力资源服务展</p>
+				</div>
+				<div class="fr">
+					<ul>
+						<li>
+							<a href="#">
+								<p>2019年人力资源10大趋势,人永远是核心</p>
+								<p>2019-3-10</p>
+							</a>
+						</li>
+						<li class="on">
+							<a href="#">
+								<p>2019年人力资源10大趋势,人永远是核心</p>
+								<p>2019-3-10</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>2019年人力资源10大趋势,人永远是核心</p>
+								<p>2019-3-10</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>2019年人力资源10大趋势,人永远是核心</p>
+								<p>2019-3-10</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>2019年人力资源10大趋势,人永远是核心</p>
+								<p>2019-3-10</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>2019年人力资源10大趋势,人永远是核心</p>
+								<p>2019-3-10</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="Partner">
+			<h2>合作伙伴</h2>
+			<ul>
+				<li><img src="images/icon_34.jpg" /></li>
+				<li><img src="images/icon_37.jpg" /></li>
+				<li><img src="images/icon_28.jpg" /></li>
+				<li><img src="images/icon_31.jpg" /></li>
+				<li><img src="images/icon_40.jpg" /></li>
+			</ul>
+		</div>
+		<div class="footer">
+			<div class="footer_mid">
+				<div class="footer_top">
+					<div class="link_list">
+						<p>关于淮安</p>
+						<a href="#">公司简介</a>
+						<a href="#">联系我们</a>
+					</div>
+					<div class="link_list">
+						<p>产品服务</p>
+						<a href="#">服务协议</a>
+						<a href="#">隐私说明</a>
+						<a href="#">法律说明</a>
+					</div>
+					<div class="link_list">
+						<p>帮助中心</p>
+						<a href="#">常见问题</a>
+						<a href="#">平台公告</a>
+					</div>
+					<div class="link_list">
+						<p>下载中心</p>
+						<a href="#">安卓版本</a>
+						<a href="#">iOS版本</a>
+						<div class="code"></div>
+					</div>
+					<div class="link_list">
+						<p>联系方式</p>
+						<span>客服热线 （9:00-17:00）<br />400-6093-818</span>
+						<span>客服邮箱<br />admin@xzhicha.com</span>
+						<div class="icon_list">
+							<img src="images/icon_47.jpg" />
+							<img src="images/icon_49.jpg" />
+							<img src="images/icon_51.jpg" />
+						</div>
+					</div>
+				</div>
+				<div class="footer_bottom">
+					<ul>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+					</ul>
+					<p>©2019 山东准安互联网科技有限公司 版权所有.</p>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar">
+			<ul>
+				<li>
+					<a href="#">
+						<img src="images/actnavbar_101.jpg" class="icc" />
+						<p>在线客服</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/actnavbar_103.jpg" class="icc" />
+						<p>APP下载</p>
+						<div>
+							<em>安卓系统下载</em>
+							<img src="images/cxx_06.jpg" />
+							<em style="width: 112px;border-top: 1px dashed #e4e4e4;margin: 0 auto;margin-top: 16px;padding-top: 16px;margin-bottom: 12px;">苹果系统下载</em>
+							<img src="images/cxx_06.jpg" />
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/actnavbar_10.jpg" class="icc" />
+						<p>微信服务</p>
+						<div>
+							<em>关注微信公众号</em>
+							<img src="images/cxx_06.jpg" />
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div class="downs_box">
+				<img src="images/actnavbar_14.jpg" />
+				<p>TOP</p>
+			</div>
+		</div>
+
+		<!--[if !IE]><!-->
+
+		<script src="/HRzhicha/public/javascripts/webjs/jquery-2.1.1.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/jquery.SuperSlide.2.1.js"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js.js"></script>
+		<script type="text/javascript">
+			jQuery(".txtMarquee-left").slide({
+				mainCell: ".bd ul",
+				autoPlay: true,
+				effect: "leftMarquee",
+				vis: 1,
+				interTime: 15
+			});
+		</script>
+		<!-- <![endif]-->
+
+		<!--[if lte IE 8]>
+        <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <![endif]-->
+
+		<!--[if gt IE 8]>
+        <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <![endif]-->
+		<script type="text/javascript" src="layui/layui.js"></script>
+		<script type="text/javascript">
+			//注意：选项卡 依赖 element 模块，否则无法进行功能性操作
+			layui.use('element', function() {
+				var element = layui.element;
+			});
+		</script>
+		<script type="text/javascript">
+			$('.zc_back2').click(function() {
+				$('.dl_back1').css('background', 'none');
+				$('.zc_back2').css('background', '#FF7777');
+			})
+		</script>
+	</body>
+
+</html>

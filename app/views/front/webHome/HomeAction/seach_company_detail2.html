@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>员工职场信用查询-X职查</title>
+		<meta name="keywords" content="职场信用，职信，员工征信，职场征信查询">
+		<meta name="description" content="X职查是一个职场信用共享与查询平台。在X职查平台企业可以把员工的守信和失信行为在系统里共享，也可以在雇佣前或雇佣中查询员工的职场征信。X职查是一个专业的区块链职业信用查询平台。">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/layui/css/layui.css" />
+		<link href="/HRzhicha/public/stylesheets/webcss/public.css" rel="stylesheet" type="text/css" />
+		<link href="/HRzhicha/public/stylesheets/webcss/style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/webcss/header.css"/>
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/webcss/index.css"/>
+		<script src="/HRzhicha/public/javascripts/webjs/jquery-2.1.1.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="/HRzhicha/public/stylesheets/webcss/seach_not_person.css">
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/webjs/js.js"></script>
+	</head>
+	<body style="background: #F7F7F7;">
+		<div class="header">
+			<div class="header_mid">
+				<h1><img src="/HRzhicha/public/images/webimg/x-logo.png"/></h1>
+				<p>职场信息共享平台</p>
+					<ul class="margin22">
+					<li>
+						<a href="index1.html">首页</a>
+					</li>
+					<li>
+						<a href="seach_personal.html">查个人</a>
+					</li>
+					<li>
+						<a href="seach_not_company1.html">查企业</a>
+					</li>
+					<li>
+						<a href="my_pay1.html">VIP服务</a>
+					</li>
+					<li>
+						<a href="my_center.html">用户中心</a>
+					</li>
+
+					<li>
+						<a href="about.html">关于我们</a>
+					</li>
+
+
+				</ul>
+				<!--<img src="/HRzhicha/public/images/webimg/web/z_icon3.png" class="users" />-->
+				<div class="land_user" style=""><img src="/HRzhicha/public/images/webimg/xs_03.jpg" class="land_user_img" />
+					<a href="account_switch.html">
+						<div class="esc_land" style="border-bottom-right-radius: 0;border-bottom-left-radius: 0;">
+							<img src="/HRzhicha/public/images/webimg/s_qh.png" />
+							<p>账户切换</p>
+						</div>
+					</a>
+						<div class="esc_land" style="top:100px;border-radius: 0;">
+							<img src="/HRzhicha/public/images/webimg/s_gr.png" />
+							<p>实名认证</p>
+						</div>
+						<div class="esc_land" style="top:140px;border-radius: 0;">
+							<img src="/HRzhicha/public/images/webimg/s_vip.png" />
+							<p>VIP服务&nbsp;&nbsp;</p>
+						</div>
+
+						<div class="esc_land" style="top:182px;border-top-right-radius: 0;border-top-left-radius: 0;z-index: 99;">
+							<img src="/HRzhicha/public/images/webimg/xs_07.jpg" />
+							<p>退出登录</p>
+						</div>
+
+					</div>
+			</div>
+		</div>
+
+		<div class="company_detail">
+
+			<div class="company_basic_information">
+				<div class="company_basic_information_l fl">
+
+					<div class="company_logo fl">
+						<div class="imgbox">
+							<img src="/HRzhicha/public/images/webimg/center_16.jpg" />
+						</div>
+					</div>
+
+					<div class="company_information  fr">
+
+						<div class="company_information_title">
+							深圳市宝能投资集团有限公司
+						</div>
+
+						<div class="company_information_txt_list">
+							<div class="company_information_txt_list_l fl">
+								<span>
+									法定代表人：姚振华
+								</span>
+								<span style="margin-left: 64px;">
+									成立日期： 2000-03-23
+								</span>
+							</div>
+
+							<div class="company_information_txt_list_r fl" style="margin-top: 19px;">
+								<span>
+								注册成本：30000万
+								</span>
+								<span style="margin-left: 64px;">
+									网址： http://www.baoneng.com
+								</span>
+							</div>
+							<div class="clear">
+
+							</div>
+						</div>
+
+					</div>
+
+					<div class="clear"></div>
+
+				</div>
+
+				<div class="company_basic_information_r fr">
+
+					<div class="subsisting fr">
+						存续
+					</div>
+					<div class="time fr">
+						最近更新：2019-08
+					</div>
+					<div class="clear"></div>
+
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div class="">
+
+				<div class="company_bottom">
+					<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+						<div class="11">
+							
+						
+						<ul class="layui-tab-title navigation">
+							<li class="layui-this">基本信息</li>
+							<li>股权关系</li>
+							<li>知识产权</li>
+							<li>企业风险</li>
+							<li>经营信息</li>
+							<li>公司评价</li>
+							<li>全部</li>
+						</ul>
+						</div>
+						<!--<div class="">
+							
+						</div>-->
+						<div class="layui-tab-content">
+							<!-- 基本信息 -->
+							<div class="layui-tab-item layui-show">
+								<div class="">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">工商信息</span>
+										<div class="clear"></div>
+									</div>
+									<table class="layui-table layui-table_style ">
+										<colgroup>
+											<col width="170">
+											<col width="380">
+											<col width="115">
+											<col width="500">
+										</colgroup>
+										<thead>
+											<tr>
+												<th class="backgroune_bg">统一社会信用代码</th>
+												<th>91110108MA007R7P8D</th>
+												<th class="backgroune_bg cen">营业期限</th>
+												<th>2000-03-23至2020-03-23</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="backgroune_bg">注册资本</td>
+												<td> 30,000（万元）</td>
+												<td class="backgroune_bg cen">所属行业</td>
+												<td>租赁和商务服务业</td>
+											</tr>
+											<tr>
+												<td class="backgroune_bg">企业名称</td>
+												<td>深圳市宝能投资集团有限公司</td>
+												<td class="backgroune_bg cen">公司类型</td>
+												<td>有限责任公司（自然人独资）</td>
+											</tr>
+											<tr>
+												<td class="backgroune_bg">法人/负责人</td>
+												<td>姚振华</td>
+												<td class="backgroune_bg cen">核准日期</td>
+												<td>2018-10-15</td>
+											</tr>
+											<tr>
+												<td class="backgroune_bg">注册地址</td>
+												<td colspan="3">北京市海淀区知春路甲48号2号楼3层2-3B室</td>
+
+											</tr>
+											<tr>
+												<td class="backgroune_bg">经营范围</td>
+												<td colspan="3">技术开发、技术推广、技术转让、技术咨询、技术服务、计算机技术培训(不面向全国招生);计算机系统服务;数据处理(数据处理中的银行卡中心、PUE 值在 15 以上的云计算数据中心除外);基础软件服务;应用软件服务;设计、制作、代理、发布广告;组织文化艺术交流活动(不含营业性演出):影视策划;电脑动画设计;会议服务;企业策划;从事文化经纪业务;从事体育经纪业务;出租办公设备;销售计算机、软什及辅助设备、电子产品;演出经纪;文艺表演;业政策禁止和限制类项目的经营活动。)
+												</td>
+
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">变更记录</span>
+										<div class="clear"></div>
+									</div>
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+											<col width="120">
+											<col width="180">
+											<col width="200">
+											<col width="317">
+											<col width="318">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>变更日期</th>
+												<th>变更事项</th>
+												<th>变更前</th>
+												<th>变更后</th>
+											</tr>
+										</thead>
+										<tbody class="font_line">
+											<tr>
+												<td class="">1</td>
+												<td> 2018-10-15</td>
+												<td class="">监事</td>
+												<td><span class="txt_color txt_color_line"><i>监事</i>樊春翔</span><span class="txt_color1">[退出]</span></td>
+												<td><span class="txt_color">李俊峰</span><i class="txt_color1">监事[新增]</i></td>
+											</tr>
+											<tr>
+												<td class="">2</td>
+												<td> 2018-10-15</td>
+												<td class="">高管</td>
+												<td><span class="">监事：<i class="txt_color1">樊春翔</i></span></td>
+												<td><span class="">监事：<i class="txt_color1">樊春翔</i></span></td>
+											</tr>
+											<tr>
+												<td class="">2</td>
+												<td> 2018-10-15</td>
+												<td class="">高管</td>
+
+												<td><span class="">监事：<i class="txt_color1">樊春翔</i></span></td>
+												<td><span class="">监事：<i class="txt_color1">樊春翔[新增]</i></span></td>
+											</tr>
+											<tr>
+												<td class="">2</td>
+												<td> 2018-10-15</td>
+												<td class="">高管</td>
+
+												<td><span class="txt_color txt_color_line">樊春翔<i>监事</i></span><span class="txt_color1">[退出]</span></td>
+												<td><span class="">监事：<i class="txt_color1">樊春翔[新增]</i></span></td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div class="annual_report">
+
+										<div class="li_title">
+											<span class="li_title_line fl"></span>
+											<span class="li_title_txt fl">企业年报</span>
+											<div class="clear"></div>
+										</div>
+
+										<p>暂无数据</p>
+
+									</div>
+
+									<!--<div class="list_pages1">
+										
+											<p>共<span>2</span>页</p>
+											<p>当前第<span>1</span>页</p>
+											<div class="ttts">首页</div>
+											<div>下一页</div>
+											<div class="on">上一页</div>
+											<div>尾页</div>
+										</div>-->
+
+									<div class="list_pages2">
+
+										<div class="list_pages2_l fl">
+											<p>共<span>2</span>页</p>
+											<p>当前第<span>1</span>页</p>
+											<div class="clear"></div>
+										</div>
+
+										<div class="list_pages2_r fr">
+											<div class="ttts">首页</div>
+											<div class="on">上一页</div>
+											<div>下一页</div>
+											<div>尾页</div>
+											<i class="clear"></i>
+										</div>
+
+										<div class="clear"></div>
+
+									</div>
+
+								</div>
+
+							</div>
+							<!-- 股权关系 -->
+							<div class="layui-tab-item ">
+
+								<div class="">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">股东信息</span>
+										<div class="clear"></div>
+									</div>
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+											<col width="94">
+											<col width="387">
+											<col width="228">
+											<col width="196">
+											<col width="230">
+											
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>股东</th>
+												<th>认缴出资</th>
+												<th>持股比例</th>
+												<th>实际出资</th>
+												
+												
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>姚振华</td>
+												<td>30000万元人民币</td>
+												<td>70%</td>
+												<td>30000万元人民币</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- 对外投资 -->
+								<div class="">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">对外投资</span>
+										<div class="clear"></div>
+									</div>
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+											<col width="93">
+											<col width="422">
+											<col width="105">
+											<col width="169">
+											<col width="169">
+											<col width="169">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>被投资企业</th>
+												<th>法人</th>
+												<th>企业所在地</th>
+												<th>持股比例</th>
+												<th>投资日期</th>
+											</tr>
+										</thead>
+										<tbody class="font_line">
+											<tr>
+												<td>1</td>
+												<td>深圳鸿鹏新能源科技有限公司</td>
+												<td class="">孙莉</td>
+												<td>广东</td>
+												<td>99%</td>
+												<td>2018-11-19</td>
+											</tr>
+											<tr>
+												<td class="">2</td>
+												<td>海南宝能农旅投资集团有限公司</td>
+												<td class="">高虎</td>
+												<td>海南</td>
+												<td>99%</td>
+												<td>2018-11-19</td>
+											</tr>
+											<tr>
+												<td class="">3</td>
+												<td>三亚市宝能投置有限公司</td>
+												<td class="">高虎</td>
+												<td>海南</td>
+												<td>99%</td>
+												<td>2018-11-19</td>
+											</tr>
+											<tr>
+												<td class="">4</td>
+												<td>深圳宝能文旅有限公司</td>
+												<td class="">王茂亮</td>
+												<td>广东</td>
+												<td>99%</td>
+												<td>2018-11-19</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+								<!-- 分支机构 -->
+								<div class="annual_report">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">分支机构</span>
+										<div class="clear"></div>
+									</div>
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+											<col width="93">
+											<col width="422">
+											<col width="105">
+											<col width="169">
+											<col width="169">
+											<col width="169">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>企业名称</th>
+												<th>关系</th>
+												<th>法人</th>
+												<th>注册资本</th>
+												<th>成立日期</th>
+											</tr>
+										</thead>
+										<tbody class="font_line">
+											<tr>
+												<td>1</td>
+												<td>华为技术有限公司东莞分公司</td>
+												<td class="">分公司</td>
+												<td>李英涛</td>
+												<td>0</td>
+												<td>2018-11-19</td>
+											</tr>
+											<tr>
+												<td class="">2</td>
+												<td>华为技术有限公司哈尔滨分公司</td>
+												<td class="">分公司</td>
+												<td>刘高</td>
+												<td>0</td>
+												<td>2018-11-19</td>
+											</tr>
+											<tr>
+												<td class="">3</td>
+												<td>华为技术有限公司重庆分公司</td>
+												<td class="">分公司</td>
+												<td>童德刚</td>
+												<td>99%</td>
+												<td>2018-11-19</td>
+											</tr>
+											<tr>
+												<td class="">4</td>
+												<td>深圳宝能文旅有限公司</td>
+												<td class="">分公司</td>
+												<td>广东</td>
+												<td>99%</td>
+												<td>2018-11-19</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- <p>暂无数据</p> -->
+
+								</div>
+								<!--<div class="list_pages1">
+										
+											<p>共<span>2</span>页</p>
+											<p>当前第<span>1</span>页</p>
+											<div class="ttts">首页</div>
+											<div>下一页</div>
+											<div class="on">上一页</div>
+											<div>尾页</div>
+										</div>-->
+
+								<div class="list_pages2">
+
+									<div class="list_pages2_l fl">
+										<p>共<span>2</span>页</p>
+										<p>当前第<span>1</span>页</p>
+										<div class="clear"></div>
+									</div>
+
+									<div class="list_pages2_r fr">
+										<div class="ttts">首页</div>
+										<div class="on">上一页</div>
+										<div>下一页</div>
+										<div>尾页</div>
+										<i class="clear"></i>
+									</div>
+
+									<div class="clear"></div>
+
+								</div>
+
+							</div>
+							<!-- 知识产权 -->
+							<div class="layui-tab-item ">
+								<!-- 知识产权 -商标信息-->
+								<div class="">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">商标信息</span>
+										<div class="clear"></div>
+									</div>
+									<!-- 商标信息 -->
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+											<col width="82">
+											<col width="135">
+											<col width="370">
+											<col width="135">
+											<col width="135">
+											<col width="142">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>商标</th>
+												<th>商标名称</th>
+												<th>商标状态</th>
+												<th>注册号</th>
+												<th>商标类别</th>
+											</tr>
+										</thead>
+										<tbody class="font_line">
+											<tr>
+												<td>1</td>
+												<td><img style="width: 120px;height:60px;" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2802409799,1306440791&fm=26&gp=0.jpg" alt=""></td>
+												<td class="">宝能华佳公寓 BAONENG HUA JIA APARTMENT</td>
+												<td>受理通知书发文</td>
+												<td>2018-05-23</td>
+												<td>37</td>
+											</tr>
+											<tr>
+												<td class="">2</td>
+												<td style="display: flex;justify-content: center;"><img style="width:66px;height:66px;" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2802409799,1306440791&fm=26&gp=0.jpg" alt=""></td>
+												<td class="">宝能菁选</td>
+												<td>等待受理通知书发文</td>
+												<td>2018-05-02</td>
+												<td>42</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+								<!-- 专利信息 -->
+								<div class="">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">专利信息</span>
+										<div class="clear"></div>
+									</div>
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+											<col width="82">
+											<col width="642">
+											<col width="135">
+											<col width="135">
+											<col width="142">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>专利名称</th>
+												<th>专利类型</th>
+												<th>申请号</th>
+												<th>发布日期</th>
+											</tr>
+										</thead>
+										<tbody class="font_line">
+											<tr>
+												<td>1</td>
+												<td>201610164659X 一种面向软件演化的代码可替换性评估方法</td>
+												<td>发明授权</td>
+												<td>CN105867906B</td>
+												<td>2018-11-27</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>平板电脑（23）</td>
+												<td>外观设计</td>
+												<td>CN105867906B</td>
+												<td>2018-11-27</td>
+											</tr>
+
+										</tbody>
+									</table>
+									<div class="annual_report">
+
+										<div class="li_title">
+											<span class="li_title_line fl"></span>
+											<span class="li_title_txt fl">著作权</span>
+											<div class="clear"></div>
+										</div>
+
+										<p>暂无数据</p>
+
+									</div>
+									<div class="list_pages2">
+
+										<div class="list_pages2_l fl">
+											<p>共<span>2</span>页</p>
+											<p>当前第<span>1</span>页</p>
+											<div class="clear"></div>
+										</div>
+
+										<div class="list_pages2_r fr">
+											<div class="ttts">首页</div>
+											<div class="on">上一页</div>
+											<div>下一页</div>
+											<div>尾页</div>
+											<i class="clear"></i>
+										</div>
+
+										<div class="clear"></div>
+
+									</div>
+								</div>
+
+							</div>
+							<!-- 企业风险 -->
+							<div class="layui-tab-item ">
+								<div class="annual_report">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">工商信息</span>
+										<div class="clear"></div>
+									</div>
+
+									<p>暂无数据</p>
+
+								</div>
+								<div class="annual_report">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">工商信息</span>
+										<div class="clear"></div>
+									</div>
+
+									<p>暂无数据</p>
+
+								</div>
+								<div class="annual_report">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">被执行人</span>
+										<div class="clear"></div>
+									</div>
+
+									<p>暂无数据</p>
+
+								</div>
+								<div class="annual_report">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">裁判文书</span>
+										<div class="clear"></div>
+									</div>
+
+									<p>暂无数据</p>
+
+								</div>
+								<div class="annual_report">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">法院公告</span>
+										<div class="clear"></div>
+									</div>
+
+									<p>暂无数据</p>
+
+								</div>
+								<div class="annual_report">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">行政处罚</span>
+										<div class="clear"></div>
+									</div>
+
+									<p>暂无数据</p>
+
+								</div>
+								<div class="annual_report">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">经营异常</span>
+										<div class="clear"></div>
+									</div>
+
+									<p>暂无数据</p>
+
+								</div>
+								<div class="annual_report">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">免税公告</span>
+										<div class="clear"></div>
+									</div>
+
+									<p>暂无数据</p>
+
+								</div>
+								<div class="list_pages2">
+
+									<div class="list_pages2_l fl">
+										<p>共<span>2</span>页</p>
+										<p>当前第<span>1</span>页</p>
+										<div class="clear"></div>
+									</div>
+
+									<div class="list_pages2_r fr">
+										<div class="ttts">首页</div>
+										<div class="on">上一页</div>
+										<div>下一页</div>
+										<div>尾页</div>
+										<i class="clear"></i>
+									</div>
+
+									<div class="clear"></div>
+
+								</div>
+							</div>
+							<!-- 招聘信息 -->
+							<div class="layui-tab-item ">
+								<div class="">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">招聘信息</span>
+										<div class="clear"></div>
+									</div>
+									<!-- 招聘信息 -->
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+											<col width="91">
+											<col width="501">
+											<col width="134">
+											<col width="134">
+											<col width="134">
+											<col width="141">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>职位名称</th>
+												<th>薪资</th>
+												<th>工作地点</th>
+												<th>发布平台</th>
+												<th>发布日期</th>
+											</tr>
+										</thead>
+										<tbody class="font_line">
+											<tr>
+												<td>1</td>
+												<td>装配式建筑-投资经理主管（经济测算）（宝能投资集团）</td>
+												<td class="">12000-20000</td>
+												<td>深圳</td>
+												<td>百度招聘</td>
+												<td>2019-08-06</td>
+											</tr>
+											<tr>
+												<td class="">2</td>
+												<td>融资专员（宝能投资集团）</td>
+												<td>5000-8000</td>
+												<td>深圳</td>
+												<td>百度招聘</td>
+												<td class="">2019-08-06</td>
+											</tr>
+
+										</tbody>
+									</table>
+									<div class="annual_report">
+
+										<div class="li_title">
+											<span class="li_title_line fl"></span>
+											<span class="li_title_txt fl">新闻资讯</span>
+											<div class="clear"></div>
+										</div>
+
+										<div class="newsBox">
+											<p class="newsBoxP">应急通信产业联盟ECIA</p>
+											<div class="newsTitle">
+												<span>2018应急通信产业发展高峰论坛——华为技术有限公司演讲分享</span><span>2018-09-28</span>
+											</div>
+											<p class="newsMark">制造的车子质量虽然不错，无奈就是营销不好。观致虽然是没有倒闭，但是卖给了宝能集团之后，依然一幅烂泥扶不上墙。 第四凯翼，凯翼汽车自2014年成立，主打时尚年轻的汽车形象</p>
+
+										</div>
+										<div class="newsBox">
+											<p class="newsBoxP">应急通信产业联盟ECIA</p>
+											<div class="newsTitle">
+												<span>2018应急通信产业发展高峰论坛——华为技术有限公司演讲分享</span><span>2018-09-28</span>
+											</div>
+											<p class="newsMark">制造的车子质量虽然不错，无奈就是营销不好。观致虽然是没有倒闭，但是卖给了宝能集团之后，依然一幅烂泥扶不上墙。 第四凯翼，凯翼汽车自2014年成立，主打时尚年轻的汽车形象</p>
+
+										</div>
+									</div>
+									<!-- 招聘信息 -->
+									<div class="annual_report">
+
+										<div class="li_title">
+											<span class="li_title_line fl"></span>
+											<span class="li_title_txt fl">工商信息</span>
+											<div class="clear"></div>
+										</div>
+
+										<table class="layui-table layui-table_style change_log">
+											<colgroup>
+												<col width="72">
+												<col width="109">
+												<col width="160">
+												<col width="150">
+												<col width="265">
+												<col width="176">
+											</colgroup>
+											<thead>
+												<tr>
+													<th>序号</th>
+													<th>联系人</th>
+													<th>电话号码</th>
+													<th>QQ号码</th>
+													<th>邮箱</th>
+													<th>地址</th>
+													<th>来源</th>
+												</tr>
+											</thead>
+											<tbody class="font_line">
+												<tr>
+													<td>1</td>
+													<td>联**</td>
+													<td class="">075583845182</td>
+													<td>暂无</td>
+													<td>暂无</td>
+													<td>暂无</td>
+													<td>企业库 官方网站</td>
+												</tr>
+												<tr>
+													<td class="">2</td>
+													<td>联**</td>
+													<td class="">075583845182</td>
+													<td>暂无</td>
+													<td>暂无</td>
+													<td>暂无</td>
+													<td>华丰商务 1024商务网</td>
+												</tr>
+												<tr>
+													<td class="">3</td>
+													<td>联**</td>
+													<td class="">075583845182</td>
+													<td>暂无</td>
+													<td>法人</td>
+													<td>暂无</td>
+													<td>企业库 官方网站</td>
+												</tr>
+												<tr>
+													<td class="">4</td>
+													<td>联**</td>
+													<td class="">075583845182</td>
+													<td>暂无</td>
+													<td>83836666@totmail.com</td>
+													<td>法人</td>
+													<td>1024商务网</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="list_pages2">
+
+										<div class="list_pages2_l fl">
+											<p>共<span>2</span>页</p>
+											<p>当前第<span>1</span>页</p>
+											<div class="clear"></div>
+										</div>
+
+										<div class="list_pages2_r fr">
+											<div class="ttts">首页</div>
+											<div class="on">上一页</div>
+											<div>下一页</div>
+											<div>尾页</div>
+											<i class="clear"></i>
+										</div>
+
+										<div class="clear"></div>
+
+									</div>
+								</div>
+
+							</div>
+							<!-- 公司评价 -->
+							<div class="layui-tab-item ">
+
+								<!--公司评价-->
+								<div class="review_company">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">点评企业</span>
+										<div class="clear"></div>
+									</div>
+									<div class="review_company_problem">深圳市宝能投资管理有限公司怎么样？</div>
+
+									<textarea name="" rows="2" cols="" class="textarea">你觉得公司优点有哪些 ？薪资待遇、晋升制度如何？公司环境和团队氛围如何？</textarea>
+
+									<div class="review_company_bottom">
+
+										<div class="review_company_bottom_l fl">
+											<div class="checkbox fl "></div>
+											<p class="fl">匿名评论</p>
+											<div class="clear"></div>
+										</div>
+
+										<div class="review_company_bottom_r fr">
+
+											<div class="submit_btn fr">
+												提交评论
+											</div>
+											<div class="protocol fr">我已阅读并同意《X职查使用者协议承诺书》</div>
+											<div class="clear"></div>
+										</div>
+
+										<div class="clear"></div>
+									</div>
+
+								</div>
+
+								<div class="all_comments">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">点评企业</span>
+										<span class="li_title_num fl">6条</span>
+										<div class="clear"></div>
+									</div>
+
+									<ul class="all_comments_list">
+
+										<li class="li">
+
+											<div class="list_logo_text">
+												<img src="/HRzhicha/public/images/webimg/banner_seach_031.jpg" class="logo_img fl" />
+												<p class="fl">张恩特</p>
+												<div class="clear"></div>
+											</div>
+
+											<div class="content_text">
+												公司福利好，有年终奖，大概20万左右，一般年底发，不过自己要交相应的税，公司是不帮交税的，可以的公司，我们在这里有不象牙的工作环埸，中午有饭堂，每年都 有相关的培训及旅游，有交通补贴，有话费补贴，每个月有三天时间可以不来公司在家上班。
+											</div>
+
+											<div class="all_comments_bottom">
+												<div class="all_comments_bottom_l fl">
+													2018-07-15
+												</div>
+												<div class="all_comments_bottom_r fr">
+
+													<div class="like fr">
+														点赞 <span>2</span>
+													</div>
+													<div class="reply fr">
+														回复 <span>5</span>
+													</div>
+													<div class="clear"></div>
+
+												</div>
+												<div class="clear"></div>
+											</div>
+
+										</li>
+										<li class="li">
+
+											<div class="list_logo_text">
+												<img src="/HRzhicha/public/images/webimg/banner_seach_031.jpg" class="logo_img fl" />
+												<p class="fl">张恩特</p>
+												<div class="clear"></div>
+											</div>
+
+											<div class="content_text">
+												公司福利好，有年终奖，大概20万左右，一般年底发，不过自己要交相应的税，公司是不帮交税的，可以的公司，我们在这里有不象牙的工作环埸，中午有饭堂，每年都 有相关的培训及旅游，有交通补贴，有话费补贴，每个月有三天时间可以不来公司在家上班。
+											</div>
+
+											<div class="all_comments_bottom">
+												<div class="all_comments_bottom_l fl">
+													2018-07-15
+												</div>
+												<div class="all_comments_bottom_r fr">
+
+													<div class="like fr">
+														点赞 <span>2</span>
+													</div>
+													<div class="reply reply1 fr">
+														回复 <span>5</span>
+													</div>
+													<div class="clear"></div>
+
+												</div>
+												<div class="clear"></div>
+											</div>
+
+											<div class="reply_list">
+												<div class="reply_list1">
+													<div class="reply_input ">
+
+														<!--<input type="text" name="" class="inp" id="" value="回复  @匿名用户11：" />-->
+														<textarea name="" rows="1" cols="" class="textarea">1</textarea>
+														<div class="review_company_bottom">
+
+															<div class="review_company_bottom_l fl">
+																<div class="checkbox fl"></div>
+																<p class="fl">匿名评论</p>
+																<div class="clear"></div>
+															</div>
+
+															<div class="review_company_bottom_r fr">
+																<div class="submit_btn fr">
+																	提交评论
+																</div>
+																<div class="protocol fr">我已阅读并同意《X职查使用者协议承诺书》</div>
+																<div class="clear"></div>
+															</div>
+
+															<div class="clear"></div>
+														</div>
+													</div>
+
+												</div>
+
+												<div class="all_comments_list2 ">
+
+													<div class="li">
+
+														<div class="list_logo_text">
+															<img src="/HRzhicha/public/images/webimg/banner_seach_031.jpg" class="logo_img fl" />
+															<p class="fl">张恩特</p>
+															<div class="clear"></div>
+														</div>
+
+														<div class="content_text">
+															还算满意，半年一次调薪。薪资体系比较完善。
+														</div>
+
+														<div class="all_comments_bottom">
+															<div class="all_comments_bottom_l fl">
+																2018-07-15
+															</div>
+															<div class="all_comments_bottom_r fr">
+
+																<div class="like fr">
+																	点赞 <span>2</span>
+																</div>
+																<div class="reply fr">
+																	回复 <span>5</span>
+																</div>
+																<div class="clear"></div>
+
+															</div>
+															<div class="clear"></div>
+														</div>
+														<div class="reply_list1">
+															<div>
+
+																<input type="text" name="" class="inp" id="" value="回复  张恩特：" />
+																<div class="review_company_bottom">
+
+																	<div class="review_company_bottom_l fl">
+																		<div class="checkbox fl"></div>
+																		<p class="fl">匿名评论</p>
+																		<div class="clear"></div>
+																	</div>
+
+																	<div class="review_company_bottom_r fr">
+
+																		<div class="submit_btn fr">
+																			评论
+																		</div>
+																		<!--<div class="protocol fr">我已阅读并同意《X职查使用者协议承诺书》</div>-->
+																		<div class="clear"></div>
+																	</div>
+
+																	<div class="clear"></div>
+																</div>
+															</div>
+
+														</div>
+
+													</div>
+
+													<div/>
+													<div class="li">
+
+														<div class="list_logo_text">
+															<img src="/HRzhicha/public/images/webimg/banner_seach_031.jpg" class="logo_img fl" />
+															<p class="fl">张恩特</p>
+															<div class="clear"></div>
+														</div>
+
+														<div class="content_text">
+															还算满意，半年一次调薪。薪资体系比较完善。
+														</div>
+
+														<div class="all_comments_bottom">
+															<div class="all_comments_bottom_l fl">
+																2018-07-15
+															</div>
+															<div class="all_comments_bottom_r fr">
+
+																<div class="like fr">
+																	点赞 <span>2</span>
+																</div>
+																<div class="reply fr">
+																	回复 <span>5</span>
+																</div>
+																<div class="clear"></div>
+
+															</div>
+															<div class="clear"></div>
+														</div>
+														<div class="reply_list1 ">
+
+															<div class="">
+
+																<!--<input type="text" name="" class="inp" id="" value="回复  张恩特：" />-->
+																<textarea name="" rows="1" cols="" class="textarea">1</textarea>
+																<div class="review_company_bottom">
+
+																	<div class="review_company_bottom_l fl">
+																		<div class="checkbox fl"></div>
+																		<p class="fl">匿名评论</p>
+																		<div class="clear"></div>
+																	</div>
+
+																	<div class="review_company_bottom_r fr">
+
+																		<div class="submit_btn fr">
+																			评论
+																		</div>
+																		<!--<div class="protocol fr">我已阅读并同意《X职查使用者协议承诺书》</div>-->
+																		<div class="clear"></div>
+																	</div>
+
+																	<div class="clear"></div>
+																</div>
+															</div>
+
+														</div>
+
+													</div>
+													<p class="reply_num">共5条回复</p>
+
+												</div>
+
+										</li>
+
+									</ul>
+
+									</div>
+
+								</div>
+
+								<div class="layui-tab-item ">
+									777777777777777777
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="footer">
+				<div class="footer_mid">
+					<div class="footer_top">
+						<div class="link_list">
+							<p>关于淮安</p>
+							<a href="#">公司简介</a>
+							<a href="#">联系我们</a>
+						</div>
+						<div class="link_list">
+							<p>产品服务</p>
+							<a href="#">服务协议</a>
+							<a href="#">隐私说明</a>
+							<a href="#">法律说明</a>
+						</div>
+						<div class="link_list">
+							<p>帮助中心</p>
+							<a href="#">常见问题</a>
+							<a href="#">平台公告</a>
+						</div>
+						<div class="link_list">
+							<p>下载中心</p>
+							<a href="#">安卓版本</a>
+							<a href="#">iOS版本</a>
+							<div class="code"></div>
+						</div>
+						<div class="link_list">
+							<p>联系方式</p>
+							<span>客服热线 （9:00-17:00）<br />400-6093-818</span>
+							<span>客服邮箱<br />admin@xzhicha.com</span>
+							<div class="icon_list">
+								<img src="/HRzhicha/public/images/webimg/icon_47.jpg" />
+								<img src="/HRzhicha/public/images/webimg/icon_49.jpg" />
+								<img src="/HRzhicha/public/images/webimg/icon_51.jpg" />
+							</div>
+						</div>
+					</div>
+					<div class="footer_bottom">
+						<ul>
+							<li>
+								<a href="#">网贷运营</a>
+							</li>
+							<li>
+								<a href="#">网贷运营</a>
+							</li>
+							<li>
+								<a href="#">网贷运营</a>
+							</li>
+							<li>
+								<a href="#">网贷运营</a>
+							</li>
+							<li>
+								<a href="#">网贷运营</a>
+							</li>
+							<li>
+								<a href="#">网贷运营</a>
+							</li>
+							<li>
+								<a href="#">网贷运营</a>
+							</li>
+							<li>
+								<a href="#">网贷运营</a>
+							</li>
+							<li>
+								<a href="#">网贷运营</a>
+							</li>
+							<li>
+								<a href="#">网贷运营</a>
+							</li>
+							<li>
+								<a href="#">网贷运营</a>
+							</li>
+						</ul>
+						<p>©2019 山东准安互联网科技有限公司 版权所有.</p>
+					</div>
+				</div>
+			</div>
+			<div class="fade_po hide">
+				<div class="fade_boxss">
+					<h2>选择一种材料类型开始上传</h2>
+					<ul>
+						<li>身份证明<img src="/HRzhicha/public/images/webimg/updata_11.jpg"></li>
+						<li>劳动合同<img src="/HRzhicha/public/images/webimg/updata_11.jpg"></li>
+						<li>借贷合同</li>
+						<li>担保协议</li>
+						<li>购销合同</li>
+						<li>商务合同</li>
+						<li>结婚证</li>
+						<li>判决书</li>
+						<li>租房合同</li>
+						<li>押金条</li>
+						<li>收据</li>
+						<li>收据</li>
+						<li>照片</li>
+						<li>截图</li>
+						<li>其他</li>
+					</ul>
+					<div class="btn_grows">
+						<a href="#" class="fl">上传</a>
+						<a href="#" class="fr">取消</a>
+					</div>
+				</div>
+			</div>
+			<div class="sidebar">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="/HRzhicha/public/images/webimg/actnavbar_101.jpg" class="icc" />
+							<p>在线客服</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/HRzhicha/public/images/webimg/actnavbar_103.jpg" class="icc" />
+							<p>APP下载</p>
+							<div>
+								<em>安卓系统下载</em>
+								<img src="/HRzhicha/public/images/webimg/cxx_06.jpg" />
+								<em style="width: 112px;border-top: 1px dashed #e4e4e4;margin: 0 auto;margin-top: 16px;padding-top: 16px;margin-bottom: 12px;">苹果系统下载</em>
+								<img src="/HRzhicha/public/images/webimg/cxx_06.jpg" />
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/HRzhicha/public/images/webimg/actnavbar_10.jpg" class="icc" />
+							<p>微信服务</p>
+							<div>
+								<em>关注微信公众号</em>
+								<img src="/HRzhicha/public/images/webimg/cxx_06.jpg" />
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div class="downs_box">
+					<img src="/HRzhicha/public/images/webimg/actnavbar_14.jpg" />
+					<p>TOP</p>
+				</div>
+			</div>
+			
+			
+		
+			
+			
+			
+			<!--[if !IE]><!-->
+			<!-- <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+			<script type="text/javascript" src="js/js.js"></script> -->
+			<!-- <![endif]-->
+
+			<!--[if lte IE 8]>
+        <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <![endif]-->
+
+			<!--[if gt IE 8]>
+        <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <![endif]-->
+			<script type="text/javascript" src="/HRzhicha/public/stylesheets/layui/layui.js"></script>
+			<script type="text/javascript">
+				$('.checkbox').click(function() {
+					if($(this).hasClass('on')) {
+						$(this).removeClass('on');
+
+					} else {
+						$(this).addClass('on');
+
+					}
+				})
+			</script>
+
+			<script>
+				layui.use('element', function() {
+					var $ = layui.jquery,
+						element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+
+				});
+
+				layui.use('laydate', function() {
+					var laydate = layui.laydate;
+					laydate.render({
+						elem: '#test1' //指定元素
+					});
+					laydate.render({
+						elem: '#test2' //指定元素
+					});
+				});
+				$('.list_pages2 .list_pages2_r div').click(function() {
+					$(this).addClass('on').siblings().removeClass('on')
+				})
+			</script>
+
+			<script type="text/javascript">
+				$(window).scroll(function() {
+					var hei = $(document).scrollTop()
+					if(hei >= 280) {
+
+						$('.header').css({
+							'position': 'fixed',
+							'top': '0',
+							'z-index': '99',
+
+						})
+						$('.navigation').css({
+							'position': 'fixed',
+							'top': '160px',
+							'left': '0',
+							'right': '0',
+							'margin': 'auto',
+							'z-index': '9',
+
+						})
+						$('.11').css({
+							'position': 'fixed',
+							'top': '160px',
+							'left': '0',
+							'right': '0',
+							'margin': '-35px auto',
+							'z-index': '9',
+							'height':'100px',
+							'background':'#F7F7F7',
+						
+						})
+						$('.layui-tab-content').css({
+							'margin-top': '280px',
+
+						})
+					} else {
+
+						$('.header').css({
+							'position': 'static',
+						})
+						$('.navigation').css({
+							'position': 'static',
+							'margin': 'auto',
+							'margin-bottom': '10px',
+
+						})
+						$('.11').css({
+							'position': 'static',
+							'margin': 'auto',
+							'z-index': '9999999',
+							'height':'auto',
+							'background':'none',
+							
+						})
+						$('.layui-tab-content').css({
+							'margin-top': '0px',
+
+						})
+
+					}
+				});
+			</script>
+
+	</body>
+
+</html>

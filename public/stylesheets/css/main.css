@@ -1,0 +1,161 @@
+/* h5中的我的账户 */
+.clear {
+  clear: both;
+}
+
+footer div {
+  width: 25%;
+  margin: auto;
+}
+footer div img {
+  margin: auto;
+  margin-bottom: .08rem;
+}
+
+.mine_home {
+  width: 100%;
+  overflow: hidden;
+}
+.mine_home .mine_header {
+  position: relative;
+  padding: .4rem;
+  background: #6E3CFF;
+}
+.mine_home .mine_header .mine_header_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mine_home .mine_header .mine_header_top img {
+  width: .4rem;
+  height: .4rem;
+}
+.mine_home .mine_header .mine_header_content {
+  margin-top: .5rem;
+}
+.mine_home .mine_header .mine_header_content .logo {
+  width: 1rem;
+  display: block;
+  border-radius: 50%;
+  float: left;
+}
+.mine_home .mine_header .mine_header_content .mine_header_content_r {
+  float: left;
+  margin-left: .3rem;
+}
+.mine_home .mine_header .mine_header_content .mine_header_content_r p {
+  font-size: .36rem;
+  font-weight: 500;
+  color: white;
+  line-height: .36rem;
+  margin-bottom: .4rem;
+}
+.mine_home .mine_header .mine_header_content .mine_header_content_r div {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.mine_home .mine_header .mine_header_content .mine_header_content_r div span {
+  font-size: .28rem;
+  font-weight: 500;
+  color: white;
+  line-height: .3rem;
+}
+.mine_home .mine_header .mine_header_content .mine_header_content_r div img {
+  width: .34rem;
+  margin-left: .2rem;
+}
+.mine_home .mine_header .mine_header_bottom {
+  margin: .6rem 0 .5rem 0;
+}
+.mine_home .mine_header .mine_header_bottom ul {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mine_home .mine_header .mine_header_bottom ul li div {
+  width: .64rem;
+  height: .64rem;
+  margin: auto;
+}
+.mine_home .mine_header .mine_header_bottom ul li div img {
+  width: .64rem;
+  height: .64rem;
+}
+.mine_home .mine_header .mine_header_bottom ul li p {
+  font-size: .26rem;
+  font-weight: 500;
+  color: white;
+  line-height: .24rem;
+  margin-top: .2rem;
+}
+.mine_home .mine_header .mine_header_vip {
+  width: 100%;
+  height: 1.5rem;
+  background: linear-gradient(90deg, #1b1430, #242455);
+  border-radius: .5rem .5rem 0rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mine_home .mine_header .mine_header_vip .mine_header_vip_txt {
+  font-size: .32rem;
+  font-weight: bold;
+  color: #DDC19E;
+  line-height: .24rem;
+  margin-left: .5rem;
+}
+.mine_home .mine_header .mine_header_vip .mine_header_vip_btn {
+  width: 1.4rem;
+  height: .6rem;
+  background: linear-gradient(0deg, rgba(209, 145, 60, 0.9), rgba(255, 209, 148, 0.9));
+  border-radius: .3rem;
+  font-size: .24rem;
+  font-weight: bold;
+  color: #383552;
+  line-height: .6rem;
+  text-align: center;
+  margin-right: .4rem;
+}
+.mine_home .mine_bottom {
+  padding: 0 .4rem .4rem .4rem;
+  background: #FFFFFF;
+  border-radius: .5rem .5rem 0 0;
+  position: relative;
+  top: -.4rem;
+  left: 0;
+}
+.mine_home .mine_bottom .mine_bottom_list h2 {
+  font-size: .34rem;
+  font-weight: bold;
+  color: #333333;
+  line-height: .24rem;
+  padding-top: .7rem;
+  margin-bottom: .5rem;
+}
+.mine_home .mine_bottom .mine_bottom_list ul {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 0.6rem;
+}
+.mine_home .mine_bottom .mine_bottom_list ul li div {
+  width: .64rem;
+  height: .64rem;
+  margin: auto;
+}
+.mine_home .mine_bottom .mine_bottom_list ul li div img {
+  width: .64rem;
+  height: .64rem;
+}
+.mine_home .mine_bottom .mine_bottom_list ul li p {
+  font-size: .26rem;
+  font-weight: 500;
+  color: #333333;
+  line-height: .24rem;
+  margin-top: .2rem;
+}
+
+/*# sourceMappingURL=main.css.map */

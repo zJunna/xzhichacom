@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>我的账户</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.ico'}" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/main.css" />
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/jquery.1.9.1.js"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/js.js"></script>
+		<script charset="utf-8" src="/HRzhicha/public/javascripts/ajaxfileupload.js"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/jquery.json-2.4.min.js"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/common.js"></script>
+		<style type="text/css">
+
+		</style>
+	</head>
+
+	<body class="">
+
+		<div class="mine_home">
+
+			<div class="mine_header">
+
+				<div class="mine_header_top">
+					<div class="mine_header_top_l">
+						<img src="/HRzhicha/public/images/img/icon14.png" />
+					</div>
+
+					<div class="mine_header_top_r">
+						<img src="/HRzhicha/public/images/img/shezhi.png" />
+					</div>
+				</div>
+
+				<div class="mine_header_content">
+					<img src="/HRzhicha/public/images/img/qiye_28.png" class="logo" id="image" style="height: 1rem" />
+					<div class="mine_header_content_r">
+						<p>个人未实名认证</p>
+						<div class="">
+							<span>136****5665</span>
+							<img src="/HRzhicha/public/images/img/icon2.png" />
+						</div>
+					</div>
+					<div class="clear"></div>
+
+				</div>
+
+				<div class="mine_header_bottom">
+
+					<ul>
+						<li>
+							<div><img src="/HRzhicha/public/images/img/icon13.png" /></div>
+							<p>
+								我的简历
+							</p>
+						</li>
+						<li>
+							<div><img src="/HRzhicha/public/images/img/icon12.png" /></div>
+							<p>
+								我的点评
+							</p>
+						</li>
+						<li>
+							<div><img src="/HRzhicha/public/images/img/icon11.png" /></div>
+							<p>
+								我的查询
+							</p>
+						</li>
+						<li>
+							<div><img src="/HRzhicha/public/images/img/icon10.png" /></div>
+							<p>
+								授权记录
+							</p>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="mine_header_vip">
+
+					<div class="mine_header_vip_txt">
+						VIP会员专享
+					</div>
+
+					<div class="mine_header_vip_btn">
+						开通会员
+					</div>
+
+				</div>
+
+			</div>
+			<div class="mine_bottom">
+				<div class="mine_bottom_list">
+					<h2>我的服务</h2>
+					<ul>
+						<li>
+							<div><img src="/HRzhicha/public/images/img/icon8.png" /></div>
+							<p>
+								实名认证
+							</p>
+						</li>
+						<li>
+							<div><img src="/HRzhicha/public/images/img/icon7.png" /></div>
+							<p>
+								账户切换
+							</p>
+						</li>
+						<li>
+							<div><img src="/HRzhicha/public/images/img/icon9.png" /></div>
+							<p>
+								联系客服
+							</p>
+						</li>
+						<!-- <li style="width: 15.52%;">
+							<div></div>
+							<p>
+
+							</p>
+						</li> -->
+					</ul>
+				</div>
+				<div class="mine_bottom_list">
+					<h2>我的工具</h2>
+					<ul>
+						<li>
+							<div><img src="/HRzhicha/public/images/img/icon6.png" /></div>
+							<p>
+								信用评估
+							</p>
+						</li>
+						<li>
+							<div><img src="/HRzhicha/public/images/img/icon5.png" /></div>
+							<p>
+								风险测试
+							</p>
+						</li>
+						<li>
+							<div><img src="/HRzhicha/public/images/img/icon4.png" /></div>
+							<p>
+								信用管理
+							</p>
+						</li>
+						<!-- <li style="width: 15.52%;">
+							<div></div>
+							<p>
+							</p>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		
+		<div style="height: .98rem;"></div>
+		<footer>
+			<div>
+				<a href="@{front.home.HomeAction.home()}">
+					<img src="/HRzhicha/public/images/img/chageren1.png" />
+					<p>查个人</p>
+				</a>
+			</div>
+			<div>
+				<a href="@{front.home.HomeAction.home()}">
+					<img src="/HRzhicha/public/images/img/chaqiye1.png" />
+					<p>查企业</p>
+				</a>
+			</div>
+			<div>
+				<a href="@{front.home.UploadInformation.upload()}">
+					<img src="/HRzhicha/public/images/img/qudianping1.png" />
+					<p>去点评</p>
+				</a>
+			</div>
+			<div>
+				<a href="@{front.account.AccountHome.home()}" id="home">
+					<img src="/HRzhicha/public/images/img/wode.png" />
+					<p class="txtcloar">我的</p>
+				</a>
+			</div>
+		</footer>
+
+
+		<div class="fadeins s hide">
+			<div class="fadeins_top">
+			</div>
+			<div class="fadins_footer">
+				<ul>
+					<input type="file" class="upload_file" name="imgFile" id="imagefile" mark="image" mark2="1" accept="image/*" capture='camera' style="height: .88rem;width: 100%;opacity: 0;position: absolute;" onchange="uploadImages(this);" />
+					<li>拍照</li>
+					<input type="file" class="upload_file" name="imgFile" id="imagefile1" mark="image" mark2="1" accept="image/*" style="height: .88rem;width: 100%;opacity: 0;position: absolute;" onchange="uploadImages(this);" />
+					<li>从手机相册选择</li>
+					<li onclick="closer()">取消</li>
+				</ul>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+		/* 	$(function() {
+				isWeixinBrowser();
+			})
+			//判断是否微信浏览器
+			function isWeixinBrowser() {
+				var ua = navigator.userAgent.toLowerCase();
+				var result = (/micromessenger/.test(ua)) ? true : false;
+				if(result) {
+					console.log('你正在访问微信浏览器');
+					var openid = localStorage.getItem("openID");
+					var time = new Date();
+					$("#update").attr("href", "@{front.home.UploadInformation.upload()}?time=" + time);
+				} else {
+					console.log('你访问的不是微信浏览器');
+				}
+				return result;
+			}
+			$(".sz").click(function() {
+				location.href = "@{front.account.AccountHome.system()}";
+			})
+			$("#VIPBuyer").click(function() {
+				location.href = "@{front.account.AccountHome.vipBuyer()}";
+			}) */
+		</script>
+	
+		<script type="text/javascript">
+			function uploadImages(element) {
+				var mobileType = getIos();
+				if(mobileType) {
+					element.removeAttribute("capture");
+				}
+				var fileElementId = element.id;
+				var path = $(element).val();
+				var imageElementId = $(element).attr("mark");
+				var num = $(element).attr("mark2");
+				if(path == "") {
+					$("#shuru").show();
+					$("#shuru_box").children("div").html("确定");
+					$("#P").html("请选择上传的图片");
+					return false;
+				}
+				$.ajaxFileUpload({
+					url: http_path + "/FileUpload/uploadImageByPer",
+					secureuri: false,
+					fileElementId: fileElementId,
+					dataType: 'text',
+					success: function(data) {
+						data = $.evalJSON(data);
+						if(data.code < 0) {
+							return;
+						}
+	
+						$("#" + imageElementId).attr("src", data.filename);
+						closer();
+	
+					},
+					error: function(data, status, e) {
+						$("#shuru").show();
+						$("#shuru_box").children("div").html("确定");
+						$("#P").html("上传图片失败");
+						return false;
+					}
+				})
+			}
+			$("#image").click(function() {
+				$('.s').show();
+				$('.s .fadins_footer').animate({
+					'bottom': 0
+				})
+			});
+	
+			function closer() {
+				$('.s').fadeOut();
+				$('.s .fadins_footer').animate({
+					'bottom': '-3.99rem'
+				})
+			}
+	
+			function getIos() { //判断是否是ios设备  true 是  false 否
+				var ua = navigator.userAgent.toLowerCase();
+				if(ua.match(/iPhone\sOS/i) == "iphone os") {
+					return true;
+				} else {
+					return false;
+				}
+			}
+		</script>
+	</body>
+
+</html>

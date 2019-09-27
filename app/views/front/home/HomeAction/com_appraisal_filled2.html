@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>点评企业</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="shortcut icon" type="image/png" href="/HRzhicha/public/images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/refactorStyle.css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/autocomplete.css" />
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/jquery.1.9.1.js"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/js.js"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/autocomplete.js"></script>
+
+
+	</head>
+
+	<body class="ggg">
+		<div class="pay_tits bgNone">
+			<p>点评企业</p>
+		</div>
+		<div class="infoa">
+			<div class="com_appraisal_nex1">
+				<div class="appraisal_notxt_center">
+					<div class="appraisal_notxt_center_inp">
+						<p>企业信息</p>
+						<div class="inpBox">
+							<input type="text" name="name" id="name" class="inptxt" value="" placeholder="请输入需要点评的公司" oninput="companySearch(this)"/>
+						</div>
+
+						<div class="inpBox inpdisp" style="display: none;" id="companyCode">
+							<input type="text"  name="code" id="code" class="inptxt" value="" placeholder="企业代码" />
+
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="textareaDiv">
+						<p>写下你的点评</p>
+						<div class="com_app_center_text">
+							<textarea class="textarea" placeholder="1、你觉得公司优点有哪些?
+2、你从事哪类岗位?
+3、薪资待遇、晋升制度如何?
+4、公司环境和团队氛围如何?
+						" id="comments"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="com_appraisal_protocol">
+					<div id="checbox" class="checkbox on">
+					</div>
+					<p class="protocol_txt ">
+						我已阅读并同意<span class="xieyi">《x职查使用者协议承诺书》</span>
+					</p>
+				</div>
+				<div class="comAppraisalBtn">
+
+					<div class="com_appraisal_btn_top fl" id="nameHide">
+						<span>匿名</span>
+					</div>
+					<div class="com_appraisal_btn fr" style="margin-top: 0">
+
+						<div class="com_appraisal_nm1" name="submit">
+							提交点评
+						</div>
+						<div class="com_appraisal_nm2 hide" name="submit">
+							匿名提交点评
+						</div>
+					</div>
+				</div>
+				<div class=" protocol_appeal" style="background: #4C4C4C;display:none ;">
+					<div class="pro_appeal_mid">
+
+						<div class="protocol_detail">
+
+							<div class="protocol_detail_txt">
+								用户服务协议及隐私政策
+							</div>
+							<div class="" style="height: 7.8rem;overflow-y:auto;">
+
+								<div class="protocol_text1">
+									<p>如果您同意该项协议，则默认您承诺不做以下行为：</p>
+									<p>1)上载、展示、张贴、传播或以其它方式传送含有下列内容之一的信息（包括但不限于图片、文字、视频、链接、音乐等）：</p>
+									<p>a)反对宪法所确定的基本原则的；</p>
+									<p>b)危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；</p>
+									<p>c)损害国家荣誉和利益的；</p>
+									<p>d)煽动民族仇恨、民族歧视、破坏民族团结的；</p>
+									<p>e)破坏国家宗教政策，宣扬邪教和封建迷信的；</p>
+									<p>f)散布谣言，扰乱社会秩序，破坏社会稳定的；</p>
+									
+									<p>g)散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；</p>
+									<p>h)侮辱或者诽谤他人，侵害他人合法权利的；</p>
+									<p>i)含有虚假、欺诈、有害、胁迫、侵害他人隐私、骚扰、侵害、中伤、粗俗、猥亵、与公序良俗不符或其它道德上令人反感的内容；</p>
+									<p>j)含有中国法律、法规、规章、条例以及任何具有法律效力之规范所限制或禁止的其它内容的。</p>
+									<p>2)为任何非法目的而使用X职查网络服务系统；</p>
+									<p>3)利用X职查从事以下活动:</p>
+									<p>a)未经书面允许，进入计算机信息网络或者使用计算机信息网络资源的；</p>
+									<p>b)未经书面允许，对计算机信息网络功能进行删除、修改或者增加的;</p>
+									<p>c)未经书面允许，进入计算机信息网络中对存储、处理或者传输的数据和应用程序进行删除、修改或者增加的；</p>
+									<p>d)故意制作、传播计算机病毒（包括木马）等破坏性程序；</p>
+									<p>e)其他危害计算机信息网络安全的行为。</p>
+									<p>4)对X职查相关服务任何部分或本服务之使用或获得，进行复制、出售、转售或用于任何其它商业目的。</p>
+									<p style="padding-bottom:2rem;">用户需对其在使用X职查提供数据信息服务过程中的行为承担完全的法律责任。如果X职查发现其网站传输的信息明显属于本条规定的内容之一，或X职查合理地认为用户的行为可能违反相关法律法规或本协议的规定，X职查可以在任何时候、不经事先通知终止本协议，禁止相关用户访问X职查提供数据信息，保存有关记录，向有权机关报告，并且删除含有该内容的地址、目录或关闭服务器。用户使用X职查提供的其他数据信息的电子服务，也须遵守本协议的规定。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+						<img src="/HRzhicha/public/images/img/111qq.png" class="del_img"/>
+				</div>
+                  <div class="seach_appraisal_sc" style=" display: none; ">
+
+				<div class="seach_appraisal" >
+					<ul id="companyLikeName">
+
+					</ul>
+				</div>
+			</div>
+				<footer id="footerNone">
+				 
+			 <div style="width:25%;">
+				<a href="/front/home/home">
+					<img src="/HRzhicha/public/images/img/chageren1.png" />
+					<p>查个人</p>
+				</a>
+			</div> 
+			<div style="width:25%;">
+				<a href="/front/home/webhome">
+					<img src="/HRzhicha/public/images/img/chaqiye1.png" />
+					<p>查企业</p>
+				</a>
+			</div>
+			<div style="width:25%;">
+				<a href="/front/home/HomeAction/comments" >
+					<img src="/HRzhicha/public/images/img/qudianping.png" />
+					<p class="txtcloar">去点评</p>
+				</a>
+			</div>
+			<div style="width:25%;">
+			<a href="/front/account/AccountHome/home" >
+				<img src="/HRzhicha/public/images/img/wode1.png"/>
+				<p>我的</p>
+			</a>
+			</div>
+			
+			 
+				</footer>
+		<input type="text" value="" id="companyId" name="companyId" style="display: none"/>
+		<div class="shuru" id="shuru">
+			<div class="shuru_box" id="shuru_box" >
+			<!-- 	<p>您的输入有误或不完善，请修改后再提交！</p> -->
+				<p id="P"></p>
+				<div style="color: #6e3cff" id="sure">确定</div>
+			</div>
+		</div>
+		<div class="shuru" id="success">
+			<div class="shuru_box" id="shuru_box" >
+			<!-- 	<p>您的输入有误或不完善，请修改后再提交！</p> -->
+				<p id="msg"></p>
+				<div style="color: #6e3cff" id="goComment">去我的点评</div>
+			</div>
+		</div>
+		<div class="pro_fade" style="display: none">
+					<div class="fade_mid" >
+						<p id="errorauthentication"></p>
+						<p id="uploads"></p>
+						<div class="img_cet">
+							<img src="/HRzhicha/public/images/img/tost6.png" id="ejectImg"/>
+						</div>
+						<div class="btn_grow">
+							<div class="fl"><a href="/front/home/webhome">返回首页</a></div>
+						
+						</div>
+					</div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		var authentication_status=2;
+		var identity_status=1;
+		 if(identity_status==0){
+		   if(authentication_status!=1&&authentication_status!=7){
+				$("#errorauthentication").text("完成实名认证,即可点评");
+				$("#ejectImg").attr("src","/HRzhicha/public/images/img/tost3.png")
+			 	$(".pro_fade").css("display","flex"); 
+			}
+		 }
+		  if(identity_status==1){
+		 	 if(authentication_status!=2&&authentication_status!=7){
+				$("#errorauthentication").text("完成实名认证,即可点评");
+				$("#ejectImg").attr("src","/HRzhicha/public/images/img/tost3.png")
+			 	$(".pro_fade").css("display","flex"); 
+			}
+		 }
+		});
+			var last;
+		   function companySearch(company){
+		   last = company.timeStamp;
+		   setTimeout(function(){
+                 //如果停止输入1s内没其他keyup事件发生，则弹窗提示
+    		 if(last==company.timeStamp){
+					 $.ajax({
+			        url : "/front/home/HomeAction/searchCompanyName",
+			        type : "POST",
+			        data : {
+			        companyName:company.value
+			        },
+			          success : function(data) {
+						$("#companyLikeName").html("");
+						for(var a in data){
+							$("#companyLikeName").append("<li onclick='fillName(this)' id='"+data[a].id+"' value='"+data[a].value+"'>"+data[a].value+"</li>");
+						}
+						
+				 },
+				   error : function() {
+					$("#shuru").show();
+					$("#shuru_box").children("div").html("确定");
+				 	$("#P").html("对不起，出现错误");
+					return false;
+				}
+				    })
+    	         }
+            
+		    },100);
+		}  
+	
+		function fillName(company){
+  	var id=company.id;
+  	var companyName=company.getAttribute("value");
+  	$("#name").val(companyName);
+  	$.ajax({
+	        url : "/front/home/HomeAction/searchCompanyCode",
+	        type : "POST",
+	        data : {
+	        id:id,
+	        companyName:companyName
+	        },
+	          success : function(data) {
+				var companyId=data[0];
+				var companyCode=data[1];
+				if(companyCode==""){
+				$("#code").val("无企业信用代码");
+				}else{
+				$("#code").val(companyCode);
+				}
+				$("#companyId").val(companyId);
+				$("#companyCode").css("display","block");
+				$('.seach_appraisal_sc').css('display', 'none');
+				
+		 },
+		   error : function() {
+			$("#shuru").show();
+			$("#shuru_box").children("div").html("确定");
+		 	$("#P").html("对不起，出现错误");
+			return false;
+		}
+		    }) 
+ 
+  }
+  
+  $("div[name='submit']").click(function(){
+ 		 var comment_name=$("#name").val();
+ 		 var comment_number=$("#code").val();
+ 		 if(comment_name==""){
+ 		 	$("#shuru").show();
+			$("#shuru_box").children("div").html("确定");
+		 	$("#P").html("请输入并选择准确公司名称");
+		 	return false;
+ 		 }
+ 		  if(comment_number==""){
+ 		 	$("#shuru").show();
+			$("#shuru_box").children("div").html("确定");
+		 	$("#P").html("请输入并选择准确公司名称");
+		 	return false;
+ 		 }
+ 		 var comment_id=$("#companyId").val();
+ 		 var comment_content=$("#comments").val();
+ 		 
+ 		 if(comment_content==""){
+ 		 	$("#shuru").show();
+			$("#shuru_box").children("div").html("确定");
+		 	$("#P").html("请输入评价内容");
+		 	return false;
+ 		 }
+ 		 if(!$("#checbox").hasClass("on")){
+ 			$("#shuru").show();
+			$("#shuru_box").children("div").html("确定");
+		 	$("#P").html("请阅读并同意X职查承诺书");
+		 	return false;
+ 		 }
+ 		 var nameHideStatus=0;
+ 		 if($("#nameHide").hasClass("on")){
+ 		 	nameHideStatus=1;//匿名
+ 		 }
+ 		 
+ 		  $.ajax({
+	        url : "/front/home/HomeAction/commentsSubmit",
+	        type : "POST",
+	        data : {
+	        comment_name:comment_name,
+	        comment_number:comment_number,
+	        comment_id:comment_id,
+	        nameHideStatus:nameHideStatus,
+	        comment_content:comment_content
+	        },
+	          success : function(data) {
+				if(data.code<0){
+				$("#msg").html(data.msg);
+				}else{
+				$("#msg").html("评论成功,等待审核");
+				}
+				$("#success").show();
+		 },
+		   error : function() {
+			$("#shuru").show();
+			$("#shuru_box").children("div").html("确定");
+		 	$("#P").html("对不起，出现错误");
+			return false;
+		}
+		    })  
+ 	});
+ 	
+  	$("#sure").click(function(){
+ 	$("#shuru").hide();
+ 	});
+ 	 $("#goComment").click(function(){
+ 	location.href="/front/account/AccountHome/myComment";
+ 	}); 
+	</script>
+	<script type="text/javascript">
+		$(".wrapper #search-form").click(function() {
+			$('.appraisal_notxt_center .appraisal_notxt_center_inp .inpdisp').css('display', 'block')
+		})
+	</script>
+	<script type="text/javascript">
+		$('.proposal-list li').click(function() {
+			$('.proposal-box ul').css('display', 'none');
+		})
+		$('.com_appraisal_protocol .checkbox').click(function() {
+			if($(this).hasClass('on')) {
+				$(this).removeClass('on');
+			} else {
+				$(this).addClass('on');
+			}
+		})
+
+		$('.com_appraisal_protocol .xieyi').click(function() {
+			$('.protocol_appeal').css('display', 'flex')
+			$('.pay_tits').css('display', 'none')
+			$('#footerNone').css('display', 'none')
+
+		})
+		
+		$('.del_img').click(function(){
+			$('.protocol_appeal').css('display','none')
+			$('.pay_tits').css('display','block')
+			$('#footerNone').css('display','block')
+		})
+		
+		$(".inpBox .inptxt").click(function() {
+			$('.seach_appraisal_sc').css('display', 'block')
+		})
+		$('.com_appraisal_btn_top').click(function() {
+			if($(this).hasClass('on')) {
+				$(this).removeClass('on');
+				$('.com_appraisal_btn_top span').css('margin-left','0');
+				$('.com_appraisal_btn .com_appraisal_nm1').show();
+			} else {
+				$(this).addClass('on');
+				$('.com_appraisal_btn_top span').css('margin-left','-.5rem');
+				$('.com_appraisal_btn .com_appraisal_nm2').show();
+				$('.com_appraisal_btn .com_appraisal_nm1').hide();
+			}
+		
+})
+	</script>
+	<script type="text/javascript">
+  jQuery.fn.extend({
+   autoHeight: function() {
+    return this.each(function() {
+     var $this = jQuery(this);
+     if(!$this.attr('_initAdjustHeight')) {
+      $this.attr('_initAdjustHeight', $this.outerHeight());
+     }
+     _adjustH(this).on('input', function() {
+      _adjustH(this);
+     });
+    });
+    /**
+     * 重置高度 
+     * @param {Object} elem
+     */
+    function _adjustH(elem) {
+     var $obj = jQuery(elem);
+     return $obj.css({
+       height: $obj.attr('_initAdjustHeight'),
+       'overflow-y': 'hidden'
+      })
+      .height(elem.scrollHeight);
+    }
+   }
+  });
+  // 使用
+  $(function() {
+   $('textarea').autoHeight();
+  });
+ </script>
+
+</html>

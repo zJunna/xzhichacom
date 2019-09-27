@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>我的账户</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.ico'}" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/style.css" />
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/jquery.1.9.1.js"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/js.js"></script>
+		<script charset="utf-8" src="@{'/HRzhicha/public/javascripts/ajaxfileupload.js'}"></script>
+		<script type="text/javascript" src="@{'/HRzhicha/public/javascripts/jquery.json-2.4.min.js'}"></script>
+		<script type="text/javascript" src="@{'/HRzhicha/public/javascripts/common.js'}"></script>
+		<style type="text/css">
+			
+			footer div{
+				width: 25%;
+			}
+		</style>
+	</head>
+
+	<body class="bgf">
+		<div class="main_header">
+			<p class="tot">我的账户</p>
+			<div class="user_info">
+				<img src="/HRzhicha/public/images/default.png" class="logo" id="image" style="height: 1rem" />
+				<!--  <input type="file" name="imgFile" id="imgFile" onchange="upload('imgFile','image');" style="width: 1rem;height: 1rem;position: absolute;opacity:0;left:4%;border-radius: 100px"/> -->
+				<!--	#{if users?.sex==1} <img src="/public/images/img/index_19.jpg" class="logo"/> #{/if}
+				#{if users?.sex==2} <img src="/public/images/img/index_21.jpg" class="logo"/> #{/if} -->
+				<div class="infos">
+					<p>15550649773</p>
+					<div id="VIPBuyer">
+						<!--<img src="/HRzhicha/public/images/img/center_10.png"/>
+						<span>开通VIP会员</span>
+					-->
+						<img src="/HRzhicha/public/images/img/VIP.png" />
+						<span>VIP会员</span>
+					</div>
+				</div>
+				<img src="/HRzhicha/public/images/img/center_06.jpg" class="sz" />
+			</div>
+		</div>
+
+		<div class="user_rz">
+			<img src="/HRzhicha/public/images/img/center_15.jpg" />
+			<p>成为企业/个人认证用户，获取查询/上传权限</p>
+			<a href="@{front.account.AccountHome.authenticationPage()}">立即认证</a>
+		</div>
+
+		<!--<div class="pay_x">
+			<div class="fl">
+				<p>11</p>
+				<span>可用X币</span>
+			</div>
+			<div class="fll">
+				<p>已用10X币</p>
+				<a href="@{front.account.AccountHome.xUserDetail()}">X币明细 >></a>
+			</div>
+			<a href="@{front.account.AccountHome.xCharge()}" class="link_pay">购买X币</a>
+		</div>-->
+		<div class="list_tab">
+			<ul>
+				<li>
+					<a href="@{front.home.UploadInformation.upload()}">
+						<div class="fl">
+							<img src="/HRzhicha/public/images/img/center_101.jpg" class="fl_icon" />
+						</div>
+						<div class="fr">
+							<p>我的点评</p>
+							<img src="/HRzhicha/public/images/img/center_36.jpg" />
+							<span>管理我点评的信息（10）</span>
+						</div>
+					</a>
+				</li>
+
+				<li>
+					<a href="@{front.account.AccountHome.myQueryRecord()}">
+						<div class="fl">
+							<img src="/HRzhicha/public/images/img/center_103.jpg" class="fl_icon" />
+						</div>
+						<div class="fr">
+							<p>查询记录</p>
+							<img src="/HRzhicha/public/images/img/center_36.jpg" />
+							<span>查过的信息可免费再查（49）</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul>
+
+				<li>
+					<a href="@{front.account.AccountHome.authenticationPage()}">
+						<div class="fl">
+							<img src="/public/images/img/center_105.jpg" class="fl_icon" />
+						</div>
+						<div class="fr">
+							<p>实名认证</p>
+							<img src="/HRzhicha/public/images/img/center_36.jpg" />
+							<!--#{if users?.authentication_status==0}
+					    	<i>未认证 ！</i>
+					    #{/if}
+					    #{if users?.authentication_status==1}
+					    	<i>已个人认证！</i>
+					    #{/if}
+					     #{if users?.authentication_status==2}-->
+							<i>已企业认证！</i>
+							<!--#{/if}
+					    #{if users?.authentication_status==3}
+					    	<i>企业认证审核中！</i>
+					    #{/if}
+					    #{if users?.authentication_status==4}
+					    	<i>企业认证失败！</i>
+					    #{/if}-->
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="@{front.account.AccountHome.vipBuyer()}">
+						<div class="fl">
+							<img src="/HRzhicha/public/images/img/center_106.jpg" class="fl_icon" />
+						</div>
+						<div class="fr">
+							<p>VIP服务</p>
+							<img src="/HRzhicha/public/images/img/center_36.jpg" />
+							<span>购买VIP服务，每天20次免费查询</span>
+						</div>
+					</a>
+				</li>
+
+				<li>
+					<a href="@{front.account.AccountHome.resumeRecommendation()}">
+						<div class="fl">
+							<img src="/HRzhicha/public/images/img/center_106.jpg" class="fl_icon" />
+						</div>
+						<div class="fr">
+							<p>我的简历</p>
+							<img src="/HRzhicha/public/images/img/center_36.jpg" />
+						</div>
+					</a>
+				</li>
+
+			</ul>
+			<ul>
+
+				<li>
+					<a href="@{front.account.AccountHome.vipBuyer()}">
+						<div class="fl">
+							<img src="/HRzhicha/public/images/img/sel.png" class="fl_icon" />
+						</div>
+						<div class="fr">
+							<p>账户切换</p>
+							<img src="/HRzhicha/public/images/img/center_36.jpg" />
+							<span>个人账户</span>
+						</div>
+					</a>
+				</li>
+
+				
+			</ul>
+			<ul style="margin-bottom: 0.3rem;">
+				<li>
+					<a href="#">
+						<div class="fl">
+							<img src="/HRzhicha/public/images/img/center_109.jpg" class="fl_icon" />
+						</div>
+						<div class="fr">
+							<p>客服电话</p>
+							<img src="/HRzhicha/public/images/img/center_36.jpg" />
+							<span><a href="tel:400 613 1619" style="font-size: 0.24rem;float: right;margin-right: 0.23rem;color: #9a9a9a;line-height: 0.88rem;">400 613 1619</a></span>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div style="height: .98rem;"></div>
+		<footer >
+				<div>
+					<a href="@{front.home.HomeAction.home()}">
+						<img src="/HRzhicha/public/images/img/chageren1.png" />
+						<p >查个人</p>
+					</a>
+				</div>
+				<div>
+					<a href="@{front.home.HomeAction.home()}">
+						<img src="/HRzhicha/public/images/img/chaqiye1.png" />
+						<p>查企业</p>
+					</a>
+				</div>
+				<div>
+					<a href="@{front.home.UploadInformation.upload()}">
+						<img src="/HRzhicha/public/images/img/qudianping1.png" />
+						<p>去点评</p>
+					</a>
+				</div>
+				<div>
+					<a href="@{front.account.AccountHome.home()}" id="home">
+						<img src="/HRzhicha/public/images/img/wode.png" />
+						<p  class="txtcloar">我的</p>
+					</a>
+				</div>
+			</footer>
+		<div class="fadeins s hide">
+			<div class="fadeins_top">
+			</div>
+			<div class="fadins_footer">
+				<ul>
+					<input type="file" class="upload_file" name="imgFile" id="imagefile" mark="image" mark2="1" accept="image/*" capture='camera' style="height: .88rem;width: 100%;opacity: 0;position: absolute;" onchange="uploadImages(this);" />
+					<li>拍照</li>
+					<input type="file" class="upload_file" name="imgFile" id="imagefile1" mark="image" mark2="1" accept="image/*" style="height: .88rem;width: 100%;opacity: 0;position: absolute;" onchange="uploadImages(this);" />
+					<li>从手机相册选择</li>
+					<li onclick="closer()">取消</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			isWeixinBrowser();
+		})
+		//判断是否微信浏览器
+		function isWeixinBrowser() {
+			var ua = navigator.userAgent.toLowerCase();
+			var result = (/micromessenger/.test(ua)) ? true : false;
+			if(result) {
+				console.log('你正在访问微信浏览器');
+				var openid = localStorage.getItem("openID");
+				var time = new Date();
+				$("#update").attr("href", "@{front.home.UploadInformation.upload()}?time=" + time);
+			} else {
+				console.log('你访问的不是微信浏览器');
+			}
+			return result;
+		}
+		$(".sz").click(function() {
+			location.href = "@{front.account.AccountHome.system()}";
+		})
+		$("#VIPBuyer").click(function() {
+			location.href = "@{front.account.AccountHome.vipBuyer()}";
+		})
+	</script>
+
+	<script type="text/javascript">
+		function uploadImages(element) {
+			var mobileType = getIos();
+			if(mobileType) {
+				element.removeAttribute("capture");
+			}
+			var fileElementId = element.id;
+			var path = $(element).val();
+			var imageElementId = $(element).attr("mark");
+			var num = $(element).attr("mark2");
+			if(path == "") {
+				$("#shuru").show();
+				$("#shuru_box").children("div").html("确定");
+				$("#P").html("请选择上传的图片");
+				return false;
+			}
+			$.ajaxFileUpload({
+				url: http_path + "/FileUpload/uploadImageByPer",
+				secureuri: false,
+				fileElementId: fileElementId,
+				dataType: 'text',
+				success: function(data) {
+					data = $.evalJSON(data);
+					if(data.code < 0) {
+						return;
+					}
+
+					$("#" + imageElementId).attr("src", data.filename);
+					closer();
+
+				},
+				error: function(data, status, e) {
+					$("#shuru").show();
+					$("#shuru_box").children("div").html("确定");
+					$("#P").html("上传图片失败");
+					return false;
+				}
+			})
+		}
+		$("#image").click(function() {
+			$('.s').show();
+			$('.s .fadins_footer').animate({
+				'bottom': 0
+			})
+		});
+
+		function closer() {
+			$('.s').fadeOut();
+			$('.s .fadins_footer').animate({
+				'bottom': '-3.99rem'
+			})
+		}
+
+		function getIos() { //判断是否是ios设备  true 是  false 否
+			var ua = navigator.userAgent.toLowerCase();
+			if(ua.match(/iPhone\sOS/i) == "iphone os") {
+				return true;
+			} else {
+				return false;
+			}
+		}
+	</script>
+
+</html>

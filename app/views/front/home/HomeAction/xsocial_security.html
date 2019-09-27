@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>社保查询</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no" />
+
+		<link rel="shortcut icon" type="image/png" href="@{'/HRzhicha/public/images/favicon.ico'}" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/reset.css" />
+		<!--<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/style.css" />-->
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/xstyle.css" />
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/jquery.1.9.1.js"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/js.js"></script>
+
+		<style type="text/css">
+
+		</style>
+	</head>
+
+	<body class="ggg" style="">
+		<div class="pay_tits1">
+			<img src="/HRzhicha/public/images/img/land_icon_03.png" onclick="javascript:history.back(-1);" />
+			<p>社保查询</p>
+		</div>
+		<div class="education_banner">
+			<img src="/HRzhicha/public/images/img/plate2.png" />
+		</div>
+		<div class="education_seach">
+			<h2>请输入被查询对象信息</h2>
+			<div class="education_seach_inp">
+				<input type="text" name="" class="esinp esinp1 txt_RealName" placeholder="请输入姓名" />
+				<img src="/HRzhicha/public/images/img/name.png" class="img" />
+				<img src="/HRzhicha/public/images/img/xx.png" class="xsimg2 xsimg21" style="display: none;" />
+			</div>
+			<div class="education_seach_inp">
+				<input type="text" name="" class="esinp esinp1 txt_CardNo" placeholder="请输入身份证号" />
+				<img src="/HRzhicha/public/images/img/IDcard.png" class="img" />
+				<img src="/HRzhicha/public/images/img/xx.png" class="xsimg2 xsimg22" style="display: none;" />
+
+			</div>
+			<div class="education_seach_inp">
+				<input type="text" name="" class="esinp esinp1 txt_Phone" placeholder="请输入手机号码" />
+				<img src="/HRzhicha/public/images/img/phone.png" class="img" />
+				<img src="/HRzhicha/public/images/img/xx.png" class="xsimg2 xsimg23" style="display: none;" />
+			</div>
+
+			<div class="clear"></div>
+			<div class="errorFormat" style="">
+				信息填写格式错误 ！
+			</div>
+			<div class="education_seach_ss">
+				立即查询
+			</div>
+
+			<p>已帮助3698位用户查询信息</p>
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		/*style="display: none;"*/
+		$('.txt_RealName').bind('input propertychange', function() {
+			if($(this).val()) {
+				$('.xsimg21').show();
+			} else {
+				$('.xsimg21').hide();
+			}
+		})
+
+		$('.txt_CardNo').bind('input propertychange', function() {
+			if($(this).val()) {
+				$('.xsimg22').show();
+			} else {
+				$('.xsimg22').hide();
+			}
+		})
+
+		$('.txt_Phone').bind('input propertychange', function() {
+			if($(this).val()) {
+				$('.xsimg23').show();
+			} else {
+				$('.xsimg23').hide();
+			}
+		})
+
+		/*$(".txt_RealName").click(function() {
+
+			$(".xsimg21").css("display","block");
+		})
+		
+		$(".txt_CardNo").click(function() {
+
+			$(".xsimg22").css("display","block");
+		})
+		$(".txt_Phone").click(function() {
+
+			$(".xsimg23").css("display","block");
+		})*/
+
+		$(".xsimg21").click(function() {
+
+			$(".txt_RealName").val("");
+			$(this).hide()
+		})
+		$(".xsimg22").click(function() {
+
+			$(".txt_CardNo").val("");
+			$(this).hide()
+
+		})
+		$(".xsimg23").click(function() {
+			$(".txt_Phone").val("");
+			$(this).hide()
+
+		})
+	</script>
+	<script type="text/javascript">
+	</script>
+	<script type="text/javascript">
+	</script>
+
+</html>

@@ -1,0 +1,130 @@
+/*信用评估页面的灌水效果*/
+
+
+/*链接地址
+ * https://www.cnblogs.com/coco1s/archive/2017/07/18/7197662.html
+*/
+
+.num_text_round {
+	width: .34rem;
+	height: .34rem;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	top: 2.1rem;
+	right: 1.1rem;
+	opacity: .4;
+}
+
+.num_text_round1 {
+	width: .21rem;
+	height: .21rem;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	top: 3.1rem;
+	left: 1.6rem;
+	opacity: .4;
+}
+
+.container_p {
+	height: 4rem;
+}
+
+.container {
+	margin-top: 1.5rem;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	/*padding: 5px;*/
+	border: 5px solid #15C2F5;
+	top: 30%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.wave {
+	position: relative;
+	width: 196px;
+	height: 196px;
+	margin-left: 2px;
+	margin-top: 2px;
+	background-color: #15C2F5;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.wave::before,
+.wave::after {
+	content: "";
+	position: absolute;
+	width: 340px;
+	height: 330px;
+	top: 0;
+	left: 50%;
+	background-color: rgba(130, 54, 225, 0.4);
+	border-radius: 45%;
+	-webkit-transform: translate(-50%, -70%) rotate(0);
+	transform: translate(-50%, -70%) rotate(0);
+	-webkit-animation: rotate 6s linear infinite;
+	animation: rotate 6s linear infinite;
+	z-index: 10;
+}
+
+.wave::after {
+	border-radius: 47%;
+	background-color: rgba(130, 54, 225, 0.9);
+	-webkit-transform: translate(-50%, -70%) rotate(0);
+	transform: translate(-50%, -70%) rotate(0);
+	-webkit-animation: rotate 10s linear -5s infinite;
+	animation: rotate 10s linear -5s infinite;
+	z-index: 20;
+}
+
+@-webkit-keyframes rotate {
+	50% {
+		-webkit-transform: translate(-50%, -73%) rotate(180deg);
+		transform: translate(-50%, -73%) rotate(180deg);
+	}
+	100% {
+		-webkit-transform: translate(-50%, -70%) rotate(360deg);
+		transform: translate(-50%, -70%) rotate(360deg);
+	}
+}
+
+@keyframes rotate {
+	50% {
+		-webkit-transform: translate(-50%, -73%) rotate(180deg);
+		transform: translate(-50%, -73%) rotate(180deg);
+	}
+	100% {
+		-webkit-transform: translate(-50%, -70%) rotate(360deg);
+		transform: translate(-50%, -70%) rotate(360deg);
+	}
+}
+
+.number {
+	color: #fff;
+	position: absolute;
+	top: 40px;
+	left: 77px;
+	z-index: 99;
+	font-size: .74rem;
+	font-weight: bold;
+	/*color:rgba(255,255,255,1);*/
+	line-height: 63px;
+}
+
+.num_text {
+	position: absolute;
+	top: 90px;
+	left: 50px;
+	z-index: 99;
+	font-size: .3rem;
+	font-family: PingFang-SC-Bold;
+	color: rgba(255, 255, 255, 1);
+	line-height: 36px;
+}

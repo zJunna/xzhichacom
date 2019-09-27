@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>注销账号</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="shortcut icon" type="image/png" href="@{' /HRzhicha/public/images/favicon.ico'}" />
+		<link rel="stylesheet" type="text/css" href=" /HRzhicha/public/stylesheets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href=" /HRzhicha/public/stylesheets/css/style.css" />
+		<link rel="stylesheet" type="text/css" href=" /HRzhicha/public/stylesheets/css/xstyle.css" />
+		<script type="text/javascript" src=" /HRzhicha/public/javascripts/js/jquery.1.9.1.js"></script>
+		<script type="text/javascript" src=" /HRzhicha/public/javascripts/js/js.js"></script>
+	</head>
+
+	<body class="ggg" style="background: #FFFFFF;">
+		<div class="pay_tits1" style="box-shadow:0 .04rem .17rem .03rem rgba(234, 234, 234, 0.35);">
+			<img src="/HRzhicha/public/images/img/land_icon_03.png" onclick="javascript:history.back(-1);" />
+			<p>注销账号</p>
+		</div>
+		<div class="xaccount_cancellation xaccount_cancellation2">
+
+			<h3>注销账户后无法恢复信息，</h3>
+			<h3> 是否继续注销？</h3>
+
+			<div class="xaccount_cancellation_btn x_c_btn2">
+				取消注销
+			</div>
+
+			<div class="xaccount_cancellation_btn x_c_btn1">
+				确认注销
+			</div>
+		</div>
+		<script type="text/javascript">
+			$('.x_c_btn1').click(function() {
+				$('.x_c_btn1').css('background', '#6E3CFF')
+				$('.x_c_btn2').css('background', '#B69DFF')
+			})
+			$('.x_c_btn2').click(function() {
+				$('.x_c_btn1').css('background', '#B69DFF')
+				$('.x_c_btn2').css('background', '#6E3CFF')
+			})
+		</script>
+	</body>
+
+</html>

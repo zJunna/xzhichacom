@@ -1,0 +1,120 @@
+/*信用评估页面的灌水效果*/
+
+
+/*链接地址
+ * https://www.cnblogs.com/coco1s/archive/2017/07/18/7197662.html
+*/
+
+.container_p {
+	height: 200px;
+}
+
+.container {
+	margin-top: 15px;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	/*padding: 5px;*/
+	border: 5px solid #15C2F5;
+	top: 30%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.wave {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	margin-left: -6px;
+	margin-top: -2px;
+	background-color: #15C2F5;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.wave::before,
+.wave::after {
+	content: "";
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	top: 0;
+	left: 50%;
+	background-color: #FFFFFF;
+	border-radius: 45%;
+	-webkit-transform: translate(-50%, -70%) rotate(0);
+	transform: translate(-50%, -70%) rotate(0);
+	-webkit-animation: rotate 6s linear infinite;
+	animation: rotate 6s linear infinite;
+	z-index: 10;
+}
+
+.wave::after {
+	border-radius: 47%;
+	background-color: #FFFFFF;
+	-webkit-transform: translate(-50%, -70%) rotate(0);
+	transform: translate(-50%, -70%) rotate(0);
+	-webkit-animation: rotate 10s linear -5s infinite;
+	animation: rotate 10s linear -5s infinite;
+	z-index: 20;
+}
+
+@-webkit-keyframes rotate {
+	50% {
+		-webkit-transform: translate(-50%, -73%) rotate(180deg);
+		transform: translate(-50%, -73%) rotate(180deg);
+	}
+	100% {
+		-webkit-transform: translate(-50%, -70%) rotate(360deg);
+		transform: translate(-50%, -70%) rotate(360deg);
+	}
+}
+
+@keyframes rotate {
+	50% {
+		-webkit-transform: translate(-50%, -73%) rotate(180deg);
+		transform: translate(-50%, -73%) rotate(180deg);
+	}
+	100% {
+		-webkit-transform: translate(-50%, -70%) rotate(360deg);
+		transform: translate(-50%, -70%) rotate(360deg);
+	}
+}
+
+.number {
+	color: #fff;
+	position: absolute;
+	top: 40px;
+	left: 77px;
+	z-index: 99;
+	font-size: 74px;
+	font-weight: bold;
+	/*color:rgba(255,255,255,1);*/
+	line-height: 63px;
+}
+
+.num {
+	color: #000000;
+	position: absolute;
+	top: 40px;
+	left: 70px;
+	z-index: 99;
+	font-size: 74px;
+	font-weight: bold;
+	/*color:rgba(255,255,255,1);*/
+	line-height: 63px;
+}
+
+.num_text {
+	position: absolute;
+	top: 90px;
+	left: 50px;
+	z-index: 99;
+	font-size: 30px;
+	font-family: PingFang-SC-Bold;
+	color: #333333;
+	line-height: 36px;
+}

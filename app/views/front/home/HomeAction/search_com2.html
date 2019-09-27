@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>信息查询</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="renderer" content="webkit">
+		<link rel="shortcut icon" type="image/png" href="@{'/HRzhicha/public/images/favicon.ico'}" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/refactorStyle.css" />
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/jquery.1.9.1.js"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/js.js"></script>
+		<link rel="stylesheet" href="/HRzhicha/public/stylesheets/css/weui.min.css">
+<link rel="stylesheet" href="/HRzhicha/public/stylesheets/css/jquery-weui.min.css">
+		<style type="text/css">
+			.main_seach .fl div {
+				width: 4.8rem;
+			}
+			
+			.main_seach .fl {
+				width: 6.9rem;
+			}
+			
+			.main_seach .fl .in1 {
+				width: 6.9rem;
+				padding-left: .76rem;
+				font-size: .28rem;
+				font-weight: 500;
+				color: rgba(88, 88, 88, 1);
+				line-height: .4rem;
+			}
+			
+			.main_seach #xImg1 {
+				position: absolute;
+				left: .3rem;
+				top: 50%;
+			}
+			
+			input[type=search] {
+				-webkit-appearance: textfield;
+				-webkit-box-sizing: content-box;
+				font-family: inherit;
+				font-size: 100%;
+			}
+			
+			input::-webkit-search-decoration,
+			input::-webkit-search-cancel-button {
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body class="ggg">
+		<div class="pay_tits">
+			<img src="/HRzhicha/public/images/img/reach_03.jpg" onclick="out()" />
+			<p>信息查询</p>
+		</div>
+		<ul class="home_com home_com2 home_com3" id="home_com" style="display:none;">
+			<i style="display:none;"></i>
+			<li>今日头条</li>
+			<li>百度一下3</li>
+			<li>今日头条</li>
+			<li>百度一下3</li>
+
+		</ul>
+		<ul class="home_com1 home_com2 home_com3" id="home_com1" style="display:none;">
+			<i style="display:none;"></i>
+			<li>2222</li>
+			<li>百度44</li>
+
+		</ul>
+		
+		<div class="top_header" style="margin: 0 auto;top: .9rem;background: #FFFFFF;">
+		<!--	<img src="/HRzhicha/public/images/img/index_03.png" class="main_logo" />-->
+
+			<div class="main_seach ">
+				<div class="fl seachCom">
+					<div class="line_none">
+						<form action="#" onsubmit="return false;">
+							<input type="search" class="in1" placeholder="企业名称" name="name" id="name" value="" />
+						</form>
+					</div>
+					<img src="/HRzhicha/public/images/img/index_07.png" id="xImg" style="display: none;" />
+					<img src="/HRzhicha/public/images/img/ss.png" id="xImg1" />
+				</div>
+			</div>
+		</div>
+
+		<div class="main_content" style="margin-top:1.7rem;" id="div">
+			<div class="com_main_listr com_main_listr_two refreBox">
+					<div class="weui-pull-to-refresh__layer">
+				<div class='weui-pull-to-refresh__preloader'></div>
+				<div class="up">释放刷新</div>
+				<div class="refresh">正在刷新</div>
+			</div>
+
+				<ul>
+
+					<li>
+						<div class="business_top">
+							<div class="business_top_img fl">
+								<img src="/HRzhicha/public/images/img/com_01.png" />
+							</div>
+
+							<div class="business_top_title fl">
+								<p>小米科技有限责任公司小米科技有限责任公司小米科技有限责任公司</p>
+								<span>开业</span>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+						<div class="business_bottom">
+
+							<div class="business_bottom_txt">
+								<p>法定代表人</p>
+								<span>雷军</span>
+
+							</div>
+							<i></i>
+							<div class="business_bottom_txt">
+								<p>注册资本</p>
+								<span>185000万</span>
+							</div>
+							<i></i>
+							<div class="business_bottom_txt">
+								<p>成立日期</p>
+								<span>2006-11-06</span>
+							</div>
+
+						</div>
+
+					</li>
+					<li>
+						<div class="business_top">
+							<div class="business_top_img fl">
+								<img src="/HRzhicha/public/images/img/com_01.png" />
+							</div>
+
+							<div class="business_top_title fl">
+								<p>小米科技有限责任公司</p>
+								<span>开业</span>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+						<div class="business_bottom">
+
+							<div class="business_bottom_txt">
+								<p>法定代表人</p>
+								<span>雷军</span>
+
+							</div>
+							<i></i>
+							<div class="business_bottom_txt">
+								<p>注册资本</p>
+								<span>185000万</span>
+							</div>
+							<i></i>
+							<div class="business_bottom_txt">
+								<p>成立日期</p>
+								<span>2006-11-06</span>
+							</div>
+
+						</div>
+
+					</li>
+
+					<li>
+						<div class="business_top">
+							<div class="business_top_img fl">
+								<img src="/HRzhicha/public/images/img/com_01.png" />
+							</div>
+
+							<div class="business_top_title fl">
+								<p>小米科技有限责任公司</p>
+								<span>开业</span>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+						<div class="business_bottom">
+
+							<div class="business_bottom_txt">
+								<p>法定代表人</p>
+								<span>雷军</span>
+
+							</div>
+							<i></i>
+							<div class="business_bottom_txt">
+								<p>注册资本</p>
+								<span>185000万</span>
+							</div>
+							<i></i>
+							<div class="business_bottom_txt">
+								<p>成立日期</p>
+								<span>2006-11-06</span>
+							</div>
+
+						</div>
+
+					</li>
+
+				</ul>
+
+			</div>
+		</div>
+		<div style="height: .98rem;"></div>
+		<footer>
+				<div>
+					<a href="@{front.home.HomeAction.home()}">
+						<img src="/HRzhicha/public/images/img/chageren1.png" />
+						<p >查个人</p>
+					</a>
+				</div>
+				<div>
+					<a href="@{front.home.HomeAction.home()}">
+						<img src="/HRzhicha/public/images/img/chaqiye.png" />
+						<p  class="txtcloar">查企业</p>
+					</a>
+				</div>
+				<div>
+					<a href="@{front.home.UploadInformation.upload()}">
+						<img src="/HRzhicha/public/images/img/qudianping1.png" />
+						<p>去点评</p>
+					</a>
+				</div>
+				<div>
+					<a href="@{front.account.AccountHome.home()}" id="home">
+						<img src="/HRzhicha/public/images/img/wode1.png" />
+						<p>我的</p>
+					</a>
+				</div>
+			</footer>
+		<div class="shuru" id="shuru">
+			<div class="shuru_box" id="shuru_box">
+				<!-- 	<p>您的输入有误或不完善，请修改后再提交！</p> -->
+				<p id="P"></p>
+				<div style="color: #6e3cff" id="sure">（<span class="gs">3</span>S）</div>
+			</div>
+		</div>
+
+		<div class="shuru" id="searchSure">
+			<div class="shuru_box" id="searchSure_box">
+				<p>操作将扣除1X币,确定要继续吗?</p>
+				<div style="color: #6e3cff " id="sure ">
+					<div style="color: #6e3cff;width: 50%;height: 1.19rem;font-size: .28rem;background: #eeeeee;margin-top: .02rem;text-align: center;line-height: .8rem;float: left; " onclick="sure() ">确定</div>
+					<div style="color: #6e3cff;width: 49.6%;height: 1.19rem;font-size: .28rem;background: #eeeeee;margin-top: .02rem;text-align: center;line-height: .8rem;float: left;color: #585858;border-left:1px solid rgba(0, 0, 0, 0.5); " onclick="cancel() ">再看看</div>
+				</div>
+			</div>
+		</div>
+		<div class="pro_fade" style="display: none">
+			<div class="fade_mid ">
+				<p id="error ">完成认证，即可查询</p>
+				<div class="img_cet ">
+					<img src="/HRzhicha/public/images/img/tost3.png " id="ejectImg " />
+				</div>
+				<div class="btn_grow ">
+					<div class="fl ">
+						<a href="@{front.home.HomeAction.home()} ">返回首页</a>
+					</div>
+					<div class="fr ">
+						<a href="@{front.account.AccountHome.authenticationPage()} ">去认证</a>
+					</div>
+				</div>
+			</div>
+		</div>
+<script src="/HRzhicha/public/javascripts/js/jquery-weui.min.js"></script>
+<script src="/HRzhicha/public/javascripts/js/refresh1.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#name").bind('search', function() {
+
+					alert(1);
+					 $('#name').blur();
+				})
+			});
+		</script>
+		<script type="text/javascript">
+			$(".in1 ").focus(function() {
+				$(".home_com ").show()
+			});
+
+			$('body').click(function(e) {
+				var target = $(e.target);
+				// 如果#overlay或者#btn下面还有子元素，可使用
+				// !target.is('#btn *') && !target.is('#overlay *')
+				if(!target.is('.in1') && !target.is('.home_com2')) {
+					if($('.home_com2').is(':visible')) {
+						$('.home_com2').hide();
+					}
+				}
+			});
+
+			function homeClick(element) {
+				$("input ").val($(element).html());
+
+			}
+			$(".home_com li ").click(function() {
+				$('.home_com').css('display', 'none');
+				var text = $(this).text();
+
+				$("input ").val(text);
+			});
+
+			$('.in1').on('input', function() {
+				$('.home_com1').show();
+				$('.home_com').hide();
+			})
+
+			$('.in1').click(function() {
+				if($(".in1 ").val() == " ") {
+					$('.home_com').show();
+					$('.home_com1').hide();
+				} else {
+					$('.home_com1').show();
+					$('.home_com').hide();
+
+				}
+
+			})
+
+			$('.in1').bind('input propertychange', function() {
+				if($(this).val()) {
+					$('.home_com1').show();
+					$('.home_com').hide();
+					$('#xImg').show();
+
+				} else {
+					$('.home_com').show();
+					$('.home_com1').hide();
+					$('#xImg').hide();
+				}
+			});
+		</script>
+
+		<script>
+			$(function() {
+				$('.pay_tits').removeClass('on')
+				$('.top_header').css({
+					'width': '100%',
+					'border-radius': 0,
+					'background': '#9875fe'
+				})
+				$('.pay_tits').css('position', 'fixed')
+				$('.top_header').css('position', 'fixed')
+				$('.main_seach .fl').css('width', '6.9rem')
+				/*$('.main_seach .fr').css('width', '1.44rem')*/
+				$('.main_logo').hide();
+				$('.uks').hide();
+				$('.top_header').css('padding', '.08rem')
+				$('.main_seach').css('width', '6.9rem')
+			})
+
+			$('.main_seach img').click(function() {
+				$('.main_seach .fl').find('input').val('')
+			})
+		</script>
+
+	</body>
+
+</html>

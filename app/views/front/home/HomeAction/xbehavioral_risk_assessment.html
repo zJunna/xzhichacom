@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>行为风险测评</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="renderer" content="webkit">
+		<link rel="shortcut icon" type="image/png" href="@{'/HRzhicha/public/images/favicon.ico'}" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/css/xstyle.css" />
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/jquery.1.9.1.js"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/js.js"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/js/echarts.min.js"></script>
+		<style type="text/css">
+
+		</style>
+	</head>
+
+	<body class="ggg">
+		<div class="pay_tits1">
+			<img src="/HRzhicha/public/images/img/land_icon_03.png" onclick="javascript:history.back(-1);" />
+			<p class="txtl">行为风险测评</p>
+			<span style="font-size:.3rem;font-weight: bold ;color:#15C2F5;line-height: .36rem;position: absolute;top: .2rem;right: .3rem;">重新测评</span>
+		</div>
+		<div class="behavioralRiskAssessment">
+			<div class="behavioralRisk_pad">
+				<div class="behavioralRisk_title">
+					<div class="behavioralRisk_title_img fl">
+						<img src="/HRzhicha/public/images/img/xau14.png" />
+					</div>
+					<span class="fl">风险测评报告样本</span>
+					<div class="clear"></div>
+				</div>
+
+				<div class="degree_risk">
+					<h4>风险程度低</h4>
+					<div class="sp">您的风险</div>
+					<div class="degree_risk_img">
+						<!--<img src="/HRzhicha/public/images/img/xau12.png" />-->
+						
+					</div>
+					<p>整体风险程度低，建议继续保持良好的生活习惯，适 当增加信用保障。</p>
+
+				</div>
+
+				<div class="suggestion_risk">
+
+					<div class="suggestion_risk_title">
+						<span class="vertical_line fl"></span>
+						<span class="suggestion_txt fl">提升建议</span>
+						<div class="clear"></div>
+					</div>
+					<div class="risk_digital">
+
+						<div class="risk_digital_l fl" id="main" style="width: 3rem;height: 3rem;">
+							<!--<img src="/HRzhicha/public/images/img/xau20.png" />-->
+
+						</div>
+
+						<div class="risk_digital_r fr">
+							<div class="risk_digital_list">
+								<span class="digital_Piece blue fl"></span>
+								<span class="digital_txt fl">偿还大额债务</span>
+								<span class="digital_num"></br>62%</span>
+								<div class="clear"></div>
+							</div>
+							<div class="risk_digital_list">
+								<span class="digital_Piece red  fl"></span>
+								<span class="digital_txt fl">及时处理逾期</span>
+								<span class="digital_num"></br>30%</span>
+								<div class="clear"></div>
+							</div>
+							<div class="risk_digital_list">
+								<span class="digital_Piece yellow fl"></span>
+								<span class="digital_txt fl">申请信用生成贷款</span>
+								<span class="digital_num"></br>8%</span>
+								<div class="clear"></div>
+							</div>
+							<div class="risk_digital_list">
+								<span class="digital_Piece zise fl"></span>
+								<span class="digital_txt fl">生成贷款</span>
+								<span class="digital_num"></br>8%</span>
+								<div class="clear"></div>
+							</div>
+
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="summary">
+							*以上数据仅供您参考
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		<script type="text/javascript">
+			// 基于准备好的dom，初始化echarts实例
+			var myChart = echarts.init(document.getElementById('main'));
+
+			var option = {
+
+				tooltip: {
+					trigger: 'item',
+					formatter: "{a} <br/>{b}: {c} ({d}%)"
+				},
+				color: ['#958BFF','#FF688D',  '#FED100', 'red'],
+				/* legend: {
+				     orient: 'vertical',
+				     x: 'left',
+				     data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
+				 },*/
+				series: [{
+					name: '访问来源',
+					type: 'pie',
+					radius: ['50%', '70%'],
+					avoidLabelOverlap: false,
+					label: {
+						normal: {
+							show: false,
+							position: 'center'
+						},
+						emphasis: {
+							show: true,
+							textStyle: {
+								fontSize: '30',
+								fontWeight: 'bold'
+							}
+						}
+					},
+					labelLine: {
+						normal: {
+							show: false
+						}
+					},
+					data: [{
+							value: 55,
+							name: '及时处理逾期'
+						},
+						{
+							value: 30,
+							name: '偿还大额债务'
+						},
+						{
+							value: 20,
+							name: '申请信用生成贷款'
+						},
+						{
+							value: 10,
+							name: '生成贷款'
+						},
+
+					]
+				}]
+			};
+
+			// 使用刚指定的配置项和数据显示图表。
+			myChart.setOption(option);
+		</script>
+
+	</body>
+
+</html>

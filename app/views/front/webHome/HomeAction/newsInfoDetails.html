@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>${newsDetail?.get(1)?.title}-新闻资讯-X职查</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<!--<link href="@{'/public/stylesheets/webcss/public.css'}" rel="stylesheet" type="text/css" />
+		<link href="@{'/public/stylesheets/webcss/style.css'}" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.ico'}" />
+		<script type="text/javascript" src="/public/javascripts/js/jquery.1.9.1.js"></script>-->
+		
+		
+		
+		<link href="/HRzhicha/public/stylesheets/webcss/public.css" rel="stylesheet" type="text/css" />
+		<link href="/HRzhicha/public/stylesheets/webcss/style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/webcss/header.css"/>
+		<link rel="shortcut icon" type="image/png" href="/HRzhicha/public/images/webimg/favicon.ico" />
+		<script src="/HRzhicha/public/javascripts/webjs/jquery-2.1.1.min.js" type="text/javascript"></script>
+	</head>
+
+	<body class="bgf">
+
+		<div class="about_content">
+			<div class="fr">
+				<div class="qz_title">
+				<a href="@{front.webHome.HomeAction.newsInformation()}">新闻资讯</a>—>详情
+				</div>
+				<div class="list_Notice">
+				   <div style="width:100%;height:47px;font-size:24px;margin-top:50px;border-bottom:1px solid #f2f2f2;padding-bottom:15px;text-align: center;">
+				   标题
+				   </div>
+					内容
+				</div>
+			</div>
+		</div>
+	
+		<!--[if !IE]><!-->
+		<script src="@{'/public/javascripts/js/jquery-2.1.1.min.js'}" type="text/javascript"></script>
+
+	</body>
+	<script type="text/javascript">
+		  $(document).ready(function(){
+		  	$("li[name='leftLi6']").addClass("on");
+		  });
+		   function showPage(currPage, pageSize){
+		    $("#currPage").val(currPage);
+		    $("#pageSize").val(pageSize);
+		    $("#submit").submit();
+		  }
+	</script>
+</html>

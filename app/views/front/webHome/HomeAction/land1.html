@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>查找账号-X职查</title>
+		<meta name="keywords" content="职场信用，职信，员工征信，职场征信查询">
+		<meta name="description" content="X职查是一个职场信用共享与查询平台。在X职查平台企业可以把员工的守信和失信行为在系统里共享，也可以在雇佣前或雇佣中查询员工的职场征信。X职查是一个专业的区块链职业信用查询平台。">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/layui/css/layui.css" />
+		<link href="/HRzhicha/public/stylesheets/webcss/public.css" rel="stylesheet" type="text/css" />
+		<link href="/HRzhicha/public/stylesheets/webcss/style.css" rel="stylesheet" type="text/css" />
+		<script src="/HRzhicha/public/javascripts/webjs/jquery-2.1.1.min.js" type="text/javascript"></script>
+	</head>
+
+	<body style="background: rgba(0,0,0,0.5);display: flex;align-items: center;justify-content: center;height: 100vh;">
+		<div class="land_box" style="padding-top: 50px;">
+			<h5 style="margin-bottom: 80px;">查找账号</h5>
+			<div class="land_lable">
+				<input type="text" placeholder="请输入注册手机号/邮箱" name="" id="" value="" />
+			</div>
+			<div class="land_lable">
+				<input type="text" placeholder="输入图形验证码" name="" id="" value="" />
+				<p class="sends1">KSURDSF</p>
+			</div>
+			<div class="land_lable">
+				<input type="text" placeholder="请输入收到的验证码" name="" id="oas" value="" />
+				<p class="sends">发送验证码</p>
+				<img src="/HRzhicha/public/images/webimg/pass_07.jpg" style="right: 130px;" class="cleahs hide" />
+			</div>
+			<div class="seng">下一步</div>
+			<p class="wangjis">长时间未收到，您可以重新发送验证码或<a href="#">联系客服</a>?</p>
+			<p class="gsaw">验证码输入错误！</p>
+		</div>
+		<!--[if !IE]><!-->
+		<!-- <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script> -->
+		<!-- <![endif]-->
+
+		<!--[if lte IE 8]>
+        <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <![endif]-->
+
+		<!--[if gt IE 8]>
+        <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <![endif]-->
+		<script>
+			$("#oas").bind('input propertychange', function() {
+				var bal = $(this).val();
+				if(bal != '') {
+					$('.cleahs').show()
+				} else {
+					$('.cleahs').hide()
+				}
+			})
+			$('.cleahs').click(function() {
+				$('#oas').val('')
+			})
+			$('.land_box .land_lable .show_word').click(function() {
+				if($(this).hasClass('a')) {
+					$(this).removeClass('a')
+					$('#oas').attr('type', 'password')
+					$(this).attr('src', '/HRzhicha/public/images/webimg/pass_10.jpg')
+				} else {
+					$(this).addClass('a')
+					$('#oas').attr('type', 'text')
+					$(this).attr('src', '/HRzhicha/public/images/webimg/pass_13.jpg')
+				}
+			})
+			var sendmin = 60;
+			var flag = true;
+			$('.land_box .land_lable .sends').click(function() {
+				if(flag == true){
+					flag = false
+					var times = setInterval(function() {
+					if(sendmin <= 0) {
+						sendmin = 60;
+						clearInterval(times)
+						$('.sends').html('发送验证码')
+						flag = true
+					} else {
+						sendmin--;
+						$('.sends').html(sendmin + 's后重发')
+					}
+				}, 1000)
+				}else{
+					return false
+				}
+				
+
+			})
+			$('.land_box .x_xy div').click(function(){
+				if($(this).hasClass('a')) {
+					$(this).removeClass('a')
+					$(this).children().hide()
+				} else {
+					$(this).addClass('a')
+					$(this).children().show()
+				}
+			})
+		</script>
+	</body>
+
+</html>

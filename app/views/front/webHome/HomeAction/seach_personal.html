@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>员工职场信用查询-X职查</title>
+		<meta name="keywords" content="职场信用，职信，员工征信，职场征信查询">
+		<meta name="description" content="X职查是一个职场信用共享与查询平台。在X职查平台企业可以把员工的守信和失信行为在系统里共享，也可以在雇佣前或雇佣中查询员工的职场征信。X职查是一个专业的区块链职业信用查询平台。">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="shortcut icon" type="image/png" href="@{'/HRzhicha/public/images/favicon.ico'}" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/layui/css/layui.css" />
+		<link href="/HRzhicha/public/stylesheets/webcss/public.css" rel="stylesheet" type="text/css" />
+		<link href="/HRzhicha/public/stylesheets/webcss/style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/webcss/index.css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/webcss/header.css" />
+		<link rel="stylesheet" type="text/css" href="/HRzhicha/public/stylesheets/webcss/seach_not_person.css" />
+		<script src="/HRzhicha/public/javascripts/webjs/jquery-2.1.1.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="/HRzhicha/public/javascripts/webjs/click.js"></script>
+		<!-- 引入home.css中表单框部分 -->
+		<!-- <link rel="stylesheet" href="css/home.css"> -->
+		<style type="text/css">
+			.reply_none,
+			.reply_none2,
+			.reply_none3 {
+				display: none;
+				/*padding-bottom: 30px;*/
+			}
+			.three_level_review_line{
+				display: none;
+			}
+			.three_level_review_line:nth-of-type(1){
+				display: block;
+			}
+			.three_level_review_line:nth-of-type(2){
+				display: block;
+			}
+		</style>
+
+	</head>
+
+	<body style="background: #F7F7F7;position: relative;">
+
+		<div class="header" style="position: fixed;top: 0;z-index: 99;">
+			<div class="header_mid">
+				<h1><img src="/HRzhicha/public/images/webimg/x-logo.png"/></h1>
+				<p>职场信息共享平台</p>
+				<ul class="margin22">
+					<li>
+						<a href="index1.html">首页</a>
+					</li>
+					<li>
+						<a href="seach_personal.html">查个人</a>
+					</li>
+					<li>
+						<a href="seach_not_company1.html">查企业</a>
+					</li>
+					<li>
+						<a href="my_pay1.html">VIP服务</a>
+					</li>
+					<li>
+						<a href="my_center.html">用户中心</a>
+					</li>
+
+					<li>
+						<a href="about.html">关于我们</a>
+					</li>
+
+				</ul>
+				<img src="/HRzhicha/public/images/webimg/z_icon3.png" class="users" />
+			</div>
+		</div>
+
+		<!-- 搜索框 -->
+		<div class="12">
+			<div class="searchBox">
+				<div class="searchName">
+					<div class="search" style="margin-top: 180px;">
+						<div class="fl">
+							<div class="sea_inp">
+								<input type="text" class="first_input" style="" placeholder="请输入姓名" name="searchName" id="searchName" value="" />
+								<input type="text" class="last_input" placeholder="身份证号" name="searchIdNumber" id="searchIdNumber" value="" />
+								<div class="line"></div>
+								<input type="text" name="webError" id="webError" placeholder="电话" style="width: 320px;font-size: 20px;" value="" />
+							</div>
+							<input type="submit" name="webSearch" id="webSearch" value="查询" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- end -->
+		<a name="back_top"></a>
+		<div class="company_detail">
+
+			<div class="company_basic_information">
+				<div class="company_basic_information_l fl">
+
+					<div class="company_logo fl">
+						<div class="imgbox">
+							周
+						</div>
+					</div>
+
+					<div class="company_information  fr">
+
+						<div class="company_information_title">
+							周建青
+						</div>
+
+						<div class="company_information_txt_list">
+							<div class="company_information_txt_list_l fl">
+								<div>
+									所在地区：青岛
+								</div>
+								<!-- <div>
+									手机号：189****3680
+								</div> -->
+							</div>
+
+							<div class="company_information_txt_list_r fl">
+								<!-- <span>
+									手机号：189****3680
+								</span> -->
+								<span>
+									手机号：189****3680
+								</span>
+								<span style="margin-left: 64px;">
+									身份证号：372565********5214
+								</span>
+							</div>
+							<div class="clear">
+
+							</div>
+						</div>
+
+					</div>
+
+					<div class="clear"></div>
+
+				</div>
+
+				<div class="company_basic_information_r fr">
+
+					<div class="time fr">
+						最近更新：2019-08
+					</div>
+					<div class="clear"></div>
+
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div class="">
+
+				<div class="company_bottom">
+					<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+
+						<div class="11">
+							<ul class="layui-tab-title navigation">
+								<li class="layui-this personLi">
+									<a href="#back_top">基本信息</a>
+								</li>
+								<li class="personLi">
+									<a href="#back_top">社保信息</a>
+								</li>
+								<li class="personLi">
+									<a href="#back_top">银行信息</a>
+								</li>
+								<li class="personLi">
+									<a href="#back_top">司法行政</a>
+								</li>
+								<li class="personLi">
+									<a href="#back_top">我要点评</a>
+								</li>
+
+							</ul>
+						</div>
+						<div class="layui-tab-content">
+							<!-- 基本信息 -->
+							<div class="layui-tab-item layui-show">
+								<div class="">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">基本信息</span>
+										<div class="clear"></div>
+									</div>
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+											<col width="136">
+											<col width="180">
+											<col width="310">
+											<col width="93">
+											<col width="98">
+											<col width="160">
+											<col width="154">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>姓名</th>
+												<th>手机号</th>
+												<th>身份证号</th>
+												<th>性别</th>
+												<th>年龄</th>
+												<th>所在地区</th>
+												<th>学历</th>
+											</tr>
+										</thead>
+										<tbody class="font_line">
+											<tr>
+												<td class="persPad">王志强</td>
+												<td class="persPad">189****3680</td>
+												<td class="persPad">372565********5214</td>
+												<td class="persPad">男</td>
+												<td class="persPad">29</td>
+												<td class="persPad">青岛</td>
+												<td class="persPad">已毕业专本科以上</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<!--<div class="list_pages1">
+										
+											<p>共<span>2</span>页</p>
+											<p>当前第<span>1</span>页</p>
+											<div class="ttts">首页</div>
+											<div>下一页</div>
+											<div class="on">上一页</div>
+											<div>尾页</div>
+										</div>-->
+
+								</div>
+
+							</div>
+							<!-- 社保信息 -->
+							<div class="layui-tab-item ">
+
+								<div class="">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">社保信息</span>
+										<div class="clear"></div>
+									</div>
+									<p style="font-size: 14px; color:#999; margin-left:14px;">暂无数据</p>
+
+								</div>
+
+							</div>
+							<!-- 银行信息 -->
+							<div class="layui-tab-item ">
+
+								<div class="">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">逾期黑名单记录</span>
+										<span id="darkDetail">3条</span>
+										<div class="clear"></div>
+									</div>
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+											<col width="96">
+											<col width="260">
+											<col width="260">
+											<col width="260">
+											<col width="260">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>平台编码</th>
+												<th>平台类型</th>
+												<th>该平台逾期数量</th>
+												<th>逾期金额范围（万元）</th>
+											</tr>
+										</thead>
+										<tbody class="font_line">
+											<tr>
+												<td class="">1</td>
+												<td>EM_0000183053</td>
+												<td>银行</td>
+												<td>8</td>
+												<td>0W-0.2W</td>
+											</tr>
+											<tr>
+												<td class="">2</td>
+												<td>EM_0000183053</td>
+												<td>银行</td>
+												<td>8</td>
+												<td>0W-0.2W</td>
+											</tr>
+											<tr>
+												<td class="">3</td>
+												<td>EM_0000183053</td>
+												<td>银行</td>
+												<td>8</td>
+												<td>0W-0.2W</td>
+											</tr>
+											<tr>
+												<td class="">4</td>
+												<td>EM_0000183053</td>
+												<td>银行</td>
+												<td>8</td>
+												<td>0W-0.2W</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="list_pages2">
+
+										<div class="list_pages2_l fl">
+											<p>共<span>2</span>页</p>
+											<p>当前第<span>1</span>页</p>
+											<div class="clear"></div>
+										</div>
+
+										<div class="list_pages2_r fr">
+											<div class="ttts">首页</div>
+											<div class="on">上一页</div>
+											<div>下一页</div>
+											<div>尾页</div>
+											<i class="clear"></i>
+										</div>
+
+										<div class="clear"></div>
+									</div>
+									<div class="">
+										<div class="li_title">
+											<span class="li_title_line fl"></span>
+											<span class="li_title_txt fl">银行逾期记录</span>
+											<div class="clear"></div>
+										</div>
+										<p class="notData">暂无数据</p>
+									</div>
+									<div class="">
+										<div class="li_title">
+											<span class="li_title_line fl"></span>
+											<span class="li_title_txt fl">涉诉信息</span>
+											<div class="clear"></div>
+										</div>
+										<table class="layui-table layui-table_style change_log">
+											<colgroup>
+												<col width="70">
+												<col width="203">
+												<col width="108">
+												<col width="124">
+												<col width="630">
+											</colgroup>
+											<thead>
+												<tr>
+													<th>序号</th>
+													<th>标题</th>
+													<th>案件类型</th>
+													<th>审件时间</th>
+													<th>具体内容</th>
+												</tr>
+											</thead>
+											<tbody class="font_line">
+												<tr>
+													<td class="">1</td>
+													<td>(2016)云 0821 执 140 号</td>
+													<td>执行公告</td>
+													<td>2018-06-18</td>
+													<td>...终结本次执行程序 李**...</td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+
+								</div>
+							</div>
+							<!-- 司法行政 -->
+							<div class="layui-tab-item ">
+								<div class="">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">被执行记录</span>
+										<span id="darkDetail">3条</span>
+										<div class="clear"></div>
+									</div>
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+											<col width="96">
+											<col width="260">
+											<col width="260">
+											<col width="260">
+											<col width="260">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>执行案号</th>
+												<th>执行标的</th>
+												<th>执行法院</th>
+												<th>立案时间</th>
+											</tr>
+										</thead>
+										<tbody class="font_line">
+											<tr>
+												<td class="">1</td>
+												<td>(2019)鲁0691执723号</td>
+												<td>55593</td>
+												<td>烟台经济技术开发区人民法院</td>
+												<td>2019-07-01</td>
+											</tr>
+											<tr>
+												<td class="">2</td>
+												<td>(2019)鲁0691执723号</td>
+												<td>55593</td>
+												<td>烟台经济技术开发区人民法院</td>
+												<td>2019-07-01</td>
+											</tr>
+											<tr>
+												<td class="">3</td>
+												<td>(2019)鲁0691执723号</td>
+												<td>55593</td>
+												<td>烟台经济技术开发区人民法院</td>
+												<td>2019-07-01</td>
+											</tr>
+											<tr>
+												<td class="">4</td>
+												<td>(2019)鲁0691执723号</td>
+												<td>55593</td>
+												<td>烟台经济技术开发区人民法院</td>
+												<td>2019-07-01</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="list_pages2">
+
+										<div class="list_pages2_l fl">
+											<p>共<span>2</span>页</p>
+											<p>当前第<span>1</span>页</p>
+											<div class="clear"></div>
+										</div>
+
+										<div class="list_pages2_r fr">
+											<div class="ttts">首页</div>
+											<div class="on">上一页</div>
+											<div>下一页</div>
+											<div>尾页</div>
+											<i class="clear"></i>
+										</div>
+
+										<div class="clear"></div>
+
+									</div>
+								</div>
+								<!-- 司法行政-失信记录 -->
+								<div class="">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">失信记录</span>
+										<span id="darkDetail">3条</span>
+										<div class="clear"></div>
+									</div>
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+											<col width="96">
+											<col width="204">
+											<col width="317">
+											<col width="260">
+											<col width="260">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>省份</th>
+												<th>身份证号</th>
+												<th>执行法院</th>
+												<th>立案时间</th>
+											</tr>
+										</thead>
+										<tbody class="font_line">
+											<tr>
+												<td class="">1</td>
+												<td>河南</td>
+												<td>4130261972****7832</td>
+												<td>固始县人民法院</td>
+												<td>2019-07-01</td>
+											</tr>
+											<tr>
+												<td class="">2</td>
+												<td>河北</td>
+												<td>1301241989****0918</td>
+												<td>石家庄市长安区人民医院</td>
+												<td>2019-07-01</td>
+											</tr>
+											<tr>
+												<td class="">3</td>
+												<td>河南</td>
+												<td>4101841986****4411</td>
+												<td>郑州航空港经济综合实验区人民法院</td>
+												<td>2019-07-01</td>
+											</tr>
+
+										</tbody>
+									</table>
+									<div class="list_pages2">
+
+										<div class="list_pages2_l fl">
+											<p>共<span>2</span>页</p>
+											<p>当前第<span>1</span>页</p>
+											<div class="clear"></div>
+										</div>
+
+										<div class="list_pages2_r fr">
+											<div class="ttts">首页</div>
+											<div class="on">上一页</div>
+											<div>下一页</div>
+											<div>尾页</div>
+											<i class="clear"></i>
+										</div>
+
+										<div class="clear"></div>
+
+									</div>
+								</div>
+								<!-- 司法行政-失信记录 -->
+								<div class="">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">失信记录</span>
+										<span id="darkDetail">3条</span>
+										<div class="clear"></div>
+									</div>
+									<table class="layui-table layui-table_style change_log">
+										<colgroup>
+											<col width="96">
+											<col width="310">
+											<col width="414">
+											<col width="318">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>序号</th>
+												<th>案件类型</th>
+												<th>案件来源</th>
+												<th>发案时段</th>
+											</tr>
+										</thead>
+										<tbody class="font_line">
+											<tr>
+												<td class="">1</td>
+												<td>前科</td>
+												<td>前科</td>
+												<td>3个月以内</td>
+											</tr>
+											<tr>
+												<td class="">2</td>
+												<td>前科</td>
+												<td>前科</td>
+												<td>6-12个月</td>
+											</tr>
+											<tr>
+												<td class="">3</td>
+												<td>前科</td>
+												<td>前科</td>
+												<td>5-10年</td>
+											</tr>
+
+										</tbody>
+									</table>
+
+									<div class="list_pages2">
+
+										<div class="list_pages2_l fl">
+											<p>共<span>2</span>页</p>
+											<p>当前第<span>1</span>页</p>
+											<div class="clear"></div>
+										</div>
+
+										<div class="list_pages2_r fr">
+											<div class="ttts">首页</div>
+											<div class="on">上一页</div>
+											<div>下一页</div>
+											<div>尾页</div>
+											<i class="clear"></i>
+										</div>
+
+										<div class="clear"></div>
+
+									</div>
+								</div>
+							</div>
+
+							<!-- 我要点评 -->
+							<div class="layui-tab-item ">
+								<!--我要点评-->
+								<div class="review_company">
+
+									<div class="li_title">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">点评周建青</span>
+										<div class="clear"></div>
+									</div>
+									<div class="review_company_problem">综合评价周建青？</div>
+
+									<textarea name="" rows="2" cols="" class="textarea"></textarea>
+
+									<div class="review_company_bottom">
+
+										<div class="review_company_bottom_l fl">
+											<div class="checkbox fl "></div>
+											<p class="fl">匿名评论</p>
+											<div class="clear"></div>
+										</div>
+
+										<div class="review_company_bottom_r fr">
+
+											<div class="submit_btn fr">
+												提交评论
+											</div>
+											<div class="protocol fr">
+												我已阅读并同意
+												<a target="_blank" href="g_user_commitment.html">《X职查使用者协议承诺书》</a>
+											</div>
+											<div class="clear"></div>
+										</div>
+
+										<div class="clear"></div>
+									</div>
+
+								</div>
+
+								<div class="all_comments">
+
+									<div class="li_title padding57">
+										<span class="li_title_line fl"></span>
+										<span class="li_title_txt fl">全部评论</span>
+										<span class="li_title_num fl">6条</span>
+										<div class="clear"></div>
+									</div>
+
+									<ul class="all_comments_list">
+
+										<li class="li">
+
+											<div class="list_logo_text">
+												<img src="/HRzhicha/public/images/webimg/z_icon4.png" class="logo_img fl" />
+												<p class="fl">张恩特</p>
+												<div class="clear"></div>
+											</div>
+
+											<div class="content_text">
+												公司福利好，有年终奖，大概20万左右，一般年底发，不过自己要交相应的税，公司是不帮交税的，可以的公司，我们在这里有不象牙的工作环埸，中午有饭堂，每年都 有相关的培训及旅游，有交通补贴，有话费补贴，每个月有三天时间可以不来公司在家上班。
+											</div>
+
+											<div class="all_comments_bottom">
+												<div class="all_comments_bottom_l fl">
+													2018-07-15
+												</div>
+												<div class="all_comments_bottom_r fr">
+
+													<div class="like fr">
+														点赞 <span>2</span>
+													</div>
+													<div class="reply fr">
+														<i>回复</i> <span>1</span>
+													</div>
+													<div class="clear"></div>
+
+												</div>
+												<div class="clear"></div>
+											</div>
+
+										</li>
+										<li class="li">
+
+											<div class="list_logo_text">
+												<img src="/HRzhicha/public/images/webimg/z_icon4.png" class="logo_img fl" />
+												<p class="fl">张恩特</p>
+												<div class="clear"></div>
+											</div>
+
+											<div class="content_text">
+												公司福利好，有年终奖，大概20万左右，一般年底发，不过自己要交相应的税，公司是不帮交税的，可以的公司，我们在这里有不象牙的工作环埸，中午有饭堂，每年都 有相关的培训及旅游，有交通补贴，有话费补贴，每个月有三天时间可以不来公司在家上班。
+											</div>
+
+											<div class="all_comments_bottom">
+												<div class="all_comments_bottom_l fl">
+													2018-07-15
+												</div>
+												<div class="all_comments_bottom_r fr">
+
+													<div class="like fr">
+														点赞 <span>2</span>
+													</div>
+													<div class="reply reply1 fr">
+														<i>回复</i> <span>2</span>
+													</div>
+													<div class="clear"></div>
+
+												</div>
+												<div class="clear"></div>
+											</div>
+
+											<div class="reply_list reply_none">
+												<div class="borderBt" style="">
+													<div class="reply_list1">
+
+														<div class="reply_input ">
+
+															<!--<input type="text" name="" class="inp" id="" value="回复  @匿名用户11：" />-->
+															<textarea name="" rows="1" cols="" class="textarea  huifuxinxi" value=""><pre>回复 @张恩特:</pre></textarea>
+															<div class="review_company_bottom">
+
+																<div class="review_company_bottom_l fl">
+																	<div class="checkbox fl"></div>
+																	<p class="fl">匿名评论</p>
+																	<div class="clear"></div>
+																</div>
+
+																<div class="review_company_bottom_r fr">
+																	<div class="submit_btn fr">
+																		提交评论
+																	</div>
+																	<div class="protocol fr">
+																		我已阅读并同意
+																		<a target="_blank" href="g_user_commitment.html">《X职查使用者协议承诺书》</a>
+																	</div>
+																	<div class="clear"></div>
+																</div>
+
+																<div class="clear"></div>
+															</div>
+														</div>
+													</div>
+
+													<div class="all_comments_list2 ">
+													</div>
+													<div class="li linone">
+
+														<div class="list_logo_text">
+															<img src="/HRzhicha/public/images/webimg/z_icon4.png" class="logo_img fl" />
+															<p class="fl">张恩特</p>
+															<div class="clear"></div>
+														</div>
+
+														<div class="content_text">
+															还算满意，半年一次调薪。薪资体系比较完善。
+														</div>
+
+														<div class="all_comments_bottom">
+															<div class="all_comments_bottom_l fl">
+																2018-07-15
+															</div>
+															<div class="all_comments_bottom_r fr">
+
+																<div class="like fr">
+																	点赞 <span>2</span>
+																</div>
+																<div class="reply reply2 fr">
+																	<i>回复</i> <span>3</span>
+																</div>
+																<div class="clear"></div>
+
+															</div>
+															<div class="clear"></div>
+														</div>
+														<div class="reply_list1 paddingBottom0">
+															<div class="reply_none2">
+
+																<div class="" style="padding: 30px;background: #F1F0FD;border-radius:5px;margin-bottom: 20px; ">
+																	<textarea name="" rows="1" cols="" class="textarea  huifuxinxi" value=""><pre>回复 @张恩特:</pre></textarea>
+																	<div class="review_company_bottom">
+																		<div class="review_company_bottom_l fl">
+																			<div class="checkbox fl"></div>
+																			<p class="fl">匿名评论</p>
+																			<div class="clear"></div>
+																		</div>
+																		<div class="review_company_bottom_r fr">
+																			<div class="submit_btn fr">
+																				评论
+																			</div>
+																			<div class="protocol fr">
+																				我已阅读并同意
+																				<a target="_blank" href="g_user_commitment.html">《X职查使用者协议承诺书》</a>
+																			</div>
+																			<div class="clear"></div>
+																		</div>
+																		<div class="clear"></div>
+																	</div>
+																</div>
+															</div>
+															<div class="three_level_review">
+
+																<div class="three_level_review_line">
+																	<div class="three_level_review_list">
+																		<div class="three_level_review_list_title">
+																			<i>张东</i>：具有扎实的工作作风和苦干实干精神，同时具有一定的奉献精神。
+																		</div>
+																	</div>
+																	<div class="all_comments_bottom2">
+																		<div class="all_comments_bottom_l fl">
+																			2018-07-15
+																		</div>
+																		<div class="all_comments_bottom_r fr">
+																			<div class="like fr">
+																				点赞 <span>2</span>
+																			</div>
+																			<div class="reply  fr">
+																				<i>回复</i> <span>0</span>
+																			</div>
+																			<div class="clear"></div>
+																		</div>
+																		<div class="clear"></div>
+																	</div>
+																	<div class="" style="display: none;">
+																		<div class="reply_input ">
+																			<textarea name="" rows="1" cols="" class="textarea  huifuxinxi" value=""><pre>回复 @张恩特:</pre></textarea>
+																			<div class="review_company_bottom">
+																				<div class="review_company_bottom_l fl">
+																					<div class="checkbox fl"></div>
+																					<p class="fl">匿名评论</p>
+																					<div class="clear"></div>
+																				</div>
+																				<div class="review_company_bottom_r fr">
+																					<div class="submit_btn fr">
+																						评论
+																					</div>
+																					<div class="protocol fr">
+																						我已阅读并同意
+																						<a target="_blank" href="g_user_commitment.html">《X职查使用者协议承诺书》</a>
+																					</div>
+																					<div class="clear"></div>
+																				</div>
+
+																				<div class="clear"></div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="three_level_review_line">
+																	<div class="three_level_review_list">
+																		<div class="three_level_review_list_title">
+																			<i>张东</i>：具有扎实的工作作风和苦干实干精神，同时具有一定的奉献精神。
+																		</div>
+																	</div>
+																	<div class="all_comments_bottom2">
+																		<div class="all_comments_bottom_l fl">
+																			2018-07-15
+																		</div>
+																		<div class="all_comments_bottom_r fr">
+																			<div class="like fr">
+																				点赞 <span>2</span>
+																			</div>
+																			<div class="reply reply32 fr">
+																				<i>回复</i> <span>3</span>
+																			</div>
+																			<div class="clear"></div>
+																		</div>
+																		<div class="clear"></div>
+																	</div>
+
+																	<div class="reply32_block" style="display: none;">
+																		<div class="three_level_input ">
+																			<textarea name="" rows="1" cols="" class="textarea  huifuxinxi" value=""><pre>回复 @张东:</pre></textarea>
+																			<div class="review_company_bottom">
+
+																				<div class="review_company_bottom_l fl">
+																					<div class="checkbox fl"></div>
+																					<p class="fl">匿名评论</p>
+																					<div class="clear"></div>
+																				</div>
+																				<div class="review_company_bottom_r fr">
+
+																					<div class="submit_btn fr">
+																						评论
+																					</div>
+																					<div class="protocol fr">
+																						我已阅读并同意
+																						<a target="_blank" href="g_user_commitment.html">《X职查使用者协议承诺书》</a>
+																					</div>
+																					<div class="clear"></div>
+																				</div>
+
+																				<div class="clear"></div>
+																			</div>
+																		</div>
+
+																	</div>
+
+																</div>
+
+																<div class="three_level_review_line">
+																	<div class="three_level_review_list">
+																		<div class="three_level_review_list_title">
+																			<i>张东</i>：具有扎实的工作作风和苦干实干精神，同时具有一定的奉献精神。
+																		</div>
+																	</div>
+																	<div class="all_comments_bottom2">
+																		<div class="all_comments_bottom_l fl">
+																			2018-07-15
+																		</div>
+																		<div class="all_comments_bottom_r fr">
+																			<div class="like fr">
+																				点赞 <span>2</span>
+																			</div>
+																			<div class="reply  fr">
+																				<i>回复</i> <span>0</span>
+																			</div>
+																			<div class="clear"></div>
+																		</div>
+																		<div class="clear"></div>
+																	</div>
+																	<div class="" style="display: none;">
+																		<div class="reply_input ">
+																			<textarea name="" rows="1" cols="" class="textarea  huifuxinxi" value=""><pre>回复 @张恩特:</pre></textarea>
+																			<div class="review_company_bottom">
+																				<div class="review_company_bottom_l fl">
+																					<div class="checkbox fl"></div>
+																					<p class="fl">匿名评论</p>
+																					<div class="clear"></div>
+																				</div>
+																				<div class="review_company_bottom_r fr">
+																					<div class="submit_btn fr">
+																						评论
+																					</div>
+																					<div class="protocol fr">
+																						我已阅读并同意
+																						<a target="_blank" href="g_user_commitment.html">《X职查使用者协议承诺书》</a>
+																					</div>
+																					<div class="clear"></div>
+																				</div>
+
+																				<div class="clear"></div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																
+
+																
+
+																
+
+															
+																	<p class="three_quantity">共30条回复</p>
+
+																
+
+															</div>
+
+														</div>
+
+													</div>
+
+													<div class="li linone">
+
+														<div class="list_logo_text">
+															<img src="/HRzhicha/public/images/webimg/z_icon4.png" class="logo_img fl" />
+															<p class="fl">张恩特</p>
+															<div class="clear"></div>
+														</div>
+
+														<div class="content_text">
+															还算满意，半年一次调薪。薪资体系比较完善。
+														</div>
+
+														<div class="all_comments_bottom">
+															<div class="all_comments_bottom_l fl">
+																2018-07-15
+															</div>
+															<div class="all_comments_bottom_r fr">
+
+																<div class="like fr">
+																	点赞 <span>2</span>
+																</div>
+																<div class="reply reply4  fr">
+																	<i>回复</i> <span>4</span>
+																</div>
+																<div class="clear"></div>
+
+															</div>
+															<div class="clear"></div>
+														</div>
+														<div class="reply_list1 paddingBottom0">
+
+															<div class="reply_none3">
+
+																<!--<input type="text" name="" class="inp" id="" value="回复  张恩特：" />-->
+																<!--<textarea name="" rows="1" cols="" id="916" class="textarea">1</textarea>-->
+																<textarea name="" rows="1" cols="" class="textarea  huifuxinxi" value=""><pre>回复 @张恩特:</pre></textarea>
+																<div class="review_company_bottom">
+
+																	<div class="review_company_bottom_l fl">
+																		<div class="checkbox fl"></div>
+																		<p class="fl">匿名评论</p>
+																		<div class="clear"></div>
+																	</div>
+
+																	<div class="review_company_bottom_r fr">
+
+																		<div class="submit_btn fr">
+																			评论
+																		</div>
+																		<!--<div class="protocol fr">我已阅读并同意《X职查使用者协议承诺书》</div>-->
+																		<div class="clear"></div>
+																	</div>
+
+																	<div class="clear"></div>
+																</div>
+															</div>
+
+														</div>
+
+													</div>
+													<p class="reply_num">共5条回复</p>
+
+												</div>
+
+										</li>
+										<li class="li">
+
+											<div class="list_logo_text">
+												<img src="/HRzhicha/public/images/webimg/z_icon4.png" class="logo_img fl" />
+												<p class="fl">张恩特</p>
+												<div class="clear"></div>
+											</div>
+
+											<div class="content_text">
+												公司福利好，有年终奖，大概20万左右，一般年底发，不过自己要交相应的税，公司是不帮交税的，可以的公司，我们在这里有不象牙的工作环埸，中午有饭堂，每年都 有相关的培训及旅游，有交通补贴，有话费补贴，每个月有三天时间可以不来公司在家上班。
+											</div>
+
+											<div class="all_comments_bottom">
+												<div class="all_comments_bottom_l fl">
+													2018-07-15
+												</div>
+												<div class="all_comments_bottom_r fr">
+
+													<div class="like fr">
+														点赞 <span>2</span>
+													</div>
+													<div class="reply fr">
+														<i>回复</i> <span>1</span>
+													</div>
+													<div class="clear"></div>
+
+												</div>
+												<div class="clear"></div>
+											</div>
+
+										</li>
+										<li class="li">
+
+											<div class="list_logo_text">
+												<img src="/HRzhicha/public/images/webimg/z_icon4.png" class="logo_img fl" />
+												<p class="fl">张恩特</p>
+												<div class="clear"></div>
+											</div>
+
+											<div class="content_text">
+												公司福利好，有年终奖，大概20万左右，一般年底发，不过自己要交相应的税，公司是不帮交税的，可以的公司，我们在这里有不象牙的工作环埸，中午有饭堂，每年都 有相关的培训及旅游，有交通补贴，有话费补贴，每个月有三天时间可以不来公司在家上班。
+											</div>
+
+											<div class="all_comments_bottom">
+												<div class="all_comments_bottom_l fl">
+													2018-07-15
+												</div>
+												<div class="all_comments_bottom_r fr">
+
+													<div class="like fr">
+														点赞 <span>2</span>
+													</div>
+													<div class="reply fr">
+														<i>回复</i> <span>1</span>
+													</div>
+													<div class="clear"></div>
+
+												</div>
+												<div class="clear"></div>
+											</div>
+
+										</li>
+
+									</ul>
+
+									</div>
+
+								</div>
+
+								<!--<div class="layui-tab-item ">
+									<p style="padding-top: 30px;line-height: 30px;">暂无数据</p>
+
+								</div>-->
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		</div>
+		<div class="footer">
+			<div class="footer_mid">
+				<div class="footer_top">
+					<div class="link_list">
+						<p>关于淮安</p>
+						<a href="#">公司简介</a>
+						<a href="#">联系我们</a>
+					</div>
+					<div class="link_list">
+						<p>产品服务</p>
+						<a href="#">服务协议</a>
+						<a href="#">隐私说明</a>
+						<a href="#">法律说明</a>
+					</div>
+					<div class="link_list">
+						<p>帮助中心</p>
+						<a href="#">常见问题</a>
+						<a href="#">平台公告</a>
+					</div>
+					<div class="link_list">
+						<p>下载中心</p>
+						<a href="#">安卓版本</a>
+						<a href="#">iOS版本</a>
+						<div class="code"></div>
+					</div>
+					<div class="link_list">
+						<p>联系方式</p>
+						<span>客服热线 （9:00-17:00）<br />400-6093-818</span>
+						<span>客服邮箱<br />admin@xzhicha.com</span>
+						<div class="icon_list">
+							<img src="/HRzhicha/public/images/webimg/icon_47.jpg" />
+							<img src="/HRzhicha/public/images/webimg/icon_49.jpg" />
+							<img src="/HRzhicha/public/images/webimg/icon_51.jpg" />
+						</div>
+					</div>
+				</div>
+				<div class="footer_bottom">
+					<ul>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+						<li>
+							<a href="#">网贷运营</a>
+						</li>
+					</ul>
+					<p>©2019 山东准安互联网科技有限公司 版权所有.</p>
+				</div>
+			</div>
+		</div>
+		<div class="fade_po hide">
+			<div class="fade_boxss">
+				<h2>选择一种材料类型开始上传</h2>
+				<ul>
+					<li>身份证明<img src="/HRzhicha/public/images/webimg/updata_11.jpg"></li>
+					<li>劳动合同<img src="/HRzhicha/public/images/webimg/updata_11.jpg"></li>
+					<li>借贷合同</li>
+					<li>担保协议</li>
+					<li>购销合同</li>
+					<li>商务合同</li>
+					<li>结婚证</li>
+					<li>判决书</li>
+					<li>租房合同</li>
+					<li>押金条</li>
+					<li>收据</li>
+					<li>收据</li>
+					<li>照片</li>
+					<li>截图</li>
+					<li>其他</li>
+				</ul>
+				<div class="btn_grows">
+					<a href="#" class="fl">上传</a>
+					<a href="#" class="fr">取消</a>
+				</div>
+			</div>
+		</div>
+		<!-- 侧边栏 -->
+		<div class="sidebar" style="z-index: 99;">
+
+			<ul>
+				<li>
+					<a href="">
+						<img src="/HRzhicha/public/images/webimg/actnavbar_101.jpg" alt="" class="icc">
+						<p>在线客服</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="/HRzhicha/public/images/webimg/actnavbar_103.jpg" alt="" class="icc">
+						<p>APP下载</p>
+						<div style="left: -167px;">
+							<em>安卓系统下载</em><img style="width:89px;height:89px;" src="/HRzhicha/public/images/webimg/yingyongbao.png" alt="">
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="/HRzhicha/public/images/webimg/actnavbar_10.jpg" alt="" class="icc">
+						<p>微信服务</p>
+						<div style="left: -167px;display: none;">
+							<em>关注微信公众号</em><img style="width:89px;height:89px;" src="/HRzhicha/public/images/webimg/zhichaWX.jpg" alt="">
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div class="downs_box">
+				<img src="/HRzhicha/public/images/webimg/actnavbar_14.jpg" alt="">
+				<p>TOP</p>
+			</div>
+		</div>
+
+		<div class="shuru" id="shuru" style="display: none;">
+			<div class="shuru_box" id="shuru_box">
+				<p id="P">请填写评价！</p>
+				<div id="sure">确定</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="/HRzhicha/public/stylesheets/layui/layui.js"></script>
+
+		<script type="text/javascript">	
+		
+			$(".three_quantity").click(function(){
+				$('.three_level_review_line').show();
+				
+			})
+			
+			
+				
+			
+			
+			
+			
+			/*$(".three_quantity").click(function(){
+				$('.three_level_review_line').hide();
+			})*/
+			/*var CRT = 2;
+			jQuery(function($) {
+				$(".three_level_review .three_level_review_line").filter(".three_level_review_line:gt(" + (CRT - 1) + ")").hide();
+				$(".three_level_review .three_level_review_line").filter(":last").show().click(function() {
+					$(this).siblings(".three_level_review_line:gt(" + (CRT - 1) + ")").toggle();
+				});
+			});*/
+			
+		</script>
+		<script type="text/javascript">
+			var $textarea = $('.huifuxinxi');
+			var html = $textarea.val();
+			$textarea.val($(html).text());
+		</script>
+		<script type="text/javascript">
+			$('.submit_btn').click(function() {
+				$(".shuru").show()
+			})
+			$("#sure").click(function() {
+				$(".shuru").hide()
+			})
+		</script>
+
+		<script type="text/javascript">
+			$('.reply32 i').click(function() {
+				$('.reply32_block').toggle();
+
+			})
+
+			$('.reply4 i').click(function() {
+				$('.reply_none3').toggle();
+
+			})
+			$('.reply3 i').click(function() {
+
+				$('.reply_none3').toggle();
+			})
+			$('.reply2 i').click(function() {
+
+				$('.reply_none2').toggle();
+
+			})
+			$('.reply1 i').click(function() {
+				$(this).parent('.reply1').parent('.all_comments_bottom_r ').parent('.all_comments_bottom').parent('.li').css('border-bottom', 'none');
+				$('.reply_none').toggle();
+			})
+		</script>
+		<script type="text/javascript">
+			$('.checkbox').click(function() {
+				if($(this).hasClass('on')) {
+					$(this).removeClass('on');
+
+				} else {
+					$(this).addClass('on');
+
+				}
+			})
+		</script>
+		<script>
+			layui.use('element', function() {
+				var $ = layui.jquery,
+					element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+
+			});
+			layui.use('laydate', function() {
+				var laydate = layui.laydate;
+
+				laydate.render({
+					elem: '#test1' //指定元素
+				});
+				laydate.render({
+					elem: '#test2' //指定元素
+				});
+			});
+			$('.list_pages2 .list_pages2_r div').click(function() {
+				$(this).addClass('on').siblings().removeClass('on')
+			})
+		</script>
+
+		<script type="text/javascript">
+			$(window).scroll(function() {
+				var hei = $(document).scrollTop()
+				if(hei >= 180) {
+					$('.11').css({
+						'position': 'fixed',
+						'top': '135px',
+						'left': '0',
+						'right': '0',
+						'height': '77px',
+						'background': '#F7F7F7',
+						'z-index': '9',
+
+					})
+
+					$('.navigation').css({
+						'margin': '20px auto auto',
+					})
+					$('.company_bottom .layui-tab-content').css({
+						'margin-top': '40px',
+					})
+				} else {
+					$('.11').css({
+						'position': 'static',
+						'height': 'auto',
+						'background': 'none',
+						'z-index': '9999',
+					})
+
+					$('.navigation').css({
+						'margin-top': '0',
+						'margin-bottom': '10px',
+					})
+					$('.company_bottom .layui-tab-content').css({
+						'margin-top': '0',
+					})
+
+				}
+
+			});
+		</script>
+
+	</body>
+
+</html>
